@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Costo por kilómetro: eléctrico vs gasolina</title>
+<meta name="description" content="Cargar un eléctrico cuesta $8 a $10 y la gasolina $3,21 el galón. Cuánto cuesta cada kilómetro con escenarios de 10.000, 15.000 y 20.000 km al año.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Costo por kilómetro: eléctrico vs gasolina">
+<meta property="og:description" content="Cargar un eléctrico cuesta $8 a $10 y la gasolina $3,21 el galón. Cuánto cuesta cada kilómetro con escenarios de 10.000, 15.000 y 20.000 km al año.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_EC">
+<meta property="og:image" content="https://cuantocuesta.xyz/img/ficha-costo-por-kilometro-electrico-vs-gasolina-ecuador.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="">
+<style>
+:root{--bg:#0d0f12;--card:#151a20;--tx:#e8edf2;--mut:#8d99a6;--acc:#e8b93b;--acc2:#3ba55d;--bd:#232b33}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+-webkit-font-smoothing:antialiased}
+a{color:var(--acc);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+header{background:linear-gradient(180deg,#151a20,#0d0f12);border-bottom:1px solid var(--bd);padding:14px 0;position:sticky;top:0;z-index:9}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.15rem;letter-spacing:-.4px;color:var(--tx)}
+.logo span{color:var(--acc)}
+nav a{color:var(--mut);font-size:.86rem;margin-left:15px;font-weight:500}
+nav a:hover{color:var(--acc)}
+main{padding:26px 0 60px}
+h1{font-size:1.85rem;line-height:1.22;letter-spacing:-.6px;margin-bottom:12px;font-weight:800}
+h2{font-size:1.3rem;margin:30px 0 11px;letter-spacing:-.3px;font-weight:700;padding-top:6px}
+h3{font-size:1.06rem;margin:22px 0 8px;font-weight:700;color:#cdd6e0}
+p{margin:11px 0}
+ul,ol{margin:11px 0 11px 22px}
+li{margin:6px 0}
+hr{border:0;border-top:1px solid var(--bd);margin:26px 0}
+blockquote{border-left:3px solid var(--acc);background:#151a20;padding:12px 16px;margin:16px 0;color:#c3ccd6;border-radius:0 8px 8px 0}
+code{background:#1e242c;padding:2px 6px;border-radius:4px;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.lead{color:var(--mut);font-size:1.02rem;margin-bottom:22px}
+.meta{color:var(--mut);font-size:.8rem;margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--bd)}
+.tabla-wrap{overflow-x:auto;margin:18px 0;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:440px}
+th{background:#1c232b;text-align:left;padding:10px 12px;font-weight:700;border-bottom:2px solid var(--bd);white-space:nowrap}
+td{padding:9px 12px;border-bottom:1px solid var(--bd)}
+tr:hover td{background:#171d24}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:22px 0}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:11px;padding:17px;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.card h3{margin:0 0 7px;font-size:1rem;color:var(--tx)}
+.card p{color:var(--mut);font-size:.86rem;margin:0}
+.tag{display:inline-block;background:#1e252d;color:var(--acc);font-size:.7rem;padding:3px 9px;border-radius:11px;
+font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:9px}
+.destacado{background:linear-gradient(135deg,#1a2028,#151a20);border:1px solid var(--bd);border-left:3px solid var(--acc);
+border-radius:9px;padding:16px 18px;margin:20px 0}
+.destacado h3{margin-top:0}
+.figura{margin:0 0 24px;padding:0}
+.figura img{width:100%;height:auto;border-radius:11px;border:1px solid var(--bd);display:block}
+figcaption{color:var(--mut);font-size:.78rem;margin-top:8px;text-align:center}
+footer{border-top:1px solid var(--bd);padding:26px 0;color:var(--mut);font-size:.82rem}
+footer a{color:var(--mut)}
+.volver{color:var(--mut);font-size:.85rem;display:inline-block;margin-bottom:16px}
+.legal li{margin:4px 0}
+.intro-seccion{margin:22px 0 30px}
+.intro-seccion p{color:var(--mut);font-size:.95rem;line-height:1.72;margin:0 0 14px}
+.intro-seccion strong{color:var(--tx)}
+.intro-seccion a{color:#e9b949}
+.anuncio{margin:26px 0;padding:14px;background:var(--card);border:1px solid var(--bd);
+  border-radius:10px;text-align:center;min-height:110px}
+.anuncio-etiq{display:block;color:var(--mut);font-size:.68rem;text-transform:uppercase;
+  letter-spacing:.09em;margin-bottom:9px}
+.anuncio ins{background:transparent}
+.calc{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:22px;margin:26px 0}
+.calc-fila{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid var(--bd)}
+.calc-fila:last-child{border-bottom:0}
+.calc-fila > label{flex:0 0 210px;color:var(--tx);font-size:.92rem}
+.calc select,.calc input[type=number]{background:#0e1116;color:var(--tx);border:1px solid var(--bd);
+  border-radius:7px;padding:9px 12px;font-size:.95rem;font-family:inherit;min-width:150px}
+.calc-radios{display:flex;flex-wrap:wrap;gap:16px}
+.calc-radios label{display:flex;align-items:center;gap:7px;color:var(--mut);font-size:.9rem;cursor:pointer}
+.calc-res{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:26px 0}
+.calc-total{background:linear-gradient(160deg,#171b22,#0f1216);border:1px solid var(--bd);
+  border-radius:12px;padding:20px 22px;display:flex;flex-direction:column;gap:7px}
+.calc-total .etiqueta{color:var(--mut);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+.calc-total span:last-child{font-size:2rem;font-weight:700;color:#e9b949}
+.calc-anual span:last-child{color:#7fb3d5;font-size:1.5rem}
+.calc-km span:last-child{color:#8bc98b;font-size:1.5rem}
+.calc-tabla{width:100%;border-collapse:collapse;margin:20px 0;font-size:.92rem}
+.calc-tabla th{text-align:left;color:var(--mut);font-size:.78rem;text-transform:uppercase;
+  letter-spacing:.07em;padding:11px 12px;border-bottom:1px solid var(--bd)}
+.calc-tabla td{padding:11px 12px;border-bottom:1px solid var(--bd);color:var(--tx)}
+.calc-tabla .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.calc-tabla .calc-desc{color:var(--mut);font-size:.85rem}
+.calc-tabla .calc-sum td{border-top:2px solid var(--acc);border-bottom:0;font-weight:700;
+  color:#e9b949;padding-top:14px}
+@media(max-width:600px){
+ h1{font-size:1.5rem}h2{font-size:1.15rem}
+ nav a{margin-left:0;margin-right:14px;display:inline-block}
+ table{font-size:.82rem}
+ .calc-fila > label{flex:1 1 100%}
+ .calc select,.calc input[type=number]{width:100%}
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7009064391847406" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Costo por kilómetro: eléctrico vs gasolina en Ecuador (cálculo real)","description":"Cargar un eléctrico cuesta $8 a $10 y la gasolina $3,21 el galón. Cuánto cuesta cada kilómetro con escenarios de 10.000, 15.000 y 20.000 km al año.","inLanguage":"es-EC","datePublished":"2026-09-26","dateModified":"2026-09-26","author":{"@type":"Organization","name":"Autos Ecuador","url":"https://cuantocuesta.xyz"},"publisher":{"@type":"Organization","name":"Autos Ecuador","url":"https://cuantocuesta.xyz"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://cuantocuesta.xyz/costo-por-kilometro-electrico-vs-gasolina-ecuador.html"},"articleSection":"electricos","isAccessibleForFree":true,"image":"https://cuantocuesta.xyz/img/ficha-costo-por-kilometro-electrico-vs-gasolina-ecuador.png"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://cuantocuesta.xyz/"},{"@type":"ListItem","position":2,"name":"Electricos","item":"https://cuantocuesta.xyz/electricos.html"},{"@type":"ListItem","position":3,"name":"Costo por kilómetro: eléctrico vs gasolina en Ecuador (cálculo real)","item":"https://cuantocuesta.xyz/costo-por-kilometro-electrico-vs-gasolina-ecuador.html"}]}</script>
+</head>
+<body>
+<header><div class="wrap hrow">
+<div class="logo">Autos<span>Ecuador</span></div>
+<nav><a href="index.html">Inicio</a><a href="costos.html">Costos</a><a href="tramites.html">Trámites</a><a href="vendidos.html">Más vendidos</a><a href="comparativas.html">Comparativas</a><a href="electricos.html">Eléctricos</a><a href="calculadora.html">Calculadora</a></nav>
+</div></header>
+<main><div class="wrap">
+<a class="volver" href="index.html">← Inicio</a>
+<span class="tag">electricos</span>
+<h1>Costo por kilómetro: eléctrico vs gasolina en Ecuador (cálculo real)</h1>
+<p class="lead">Cargar un eléctrico cuesta $8 a $10 y la gasolina $3,21 el galón. Cuánto cuesta cada kilómetro con escenarios de 10.000, 15.000 y 20.000 km al año.</p>
+<p class="meta">Actualizado: 2026-09-26</p>
+<figure class="figura"><img src="img/ficha-costo-por-kilometro-electrico-vs-gasolina-ecuador.png" alt="Costo por kilómetro: eléctrico vs gasolina en Ecuador (cálculo real) — gráfico con datos verificados" width="1200" height="675" loading="eager" decoding="async"></figure>
+<p><strong>Un carro eléctrico cuesta entre $0,020 y $0,029 por kilómetro en Ecuador. Un carro a gasolina, entre $0,048 y $0,072.</strong> En la práctica, mover un eléctrico cuesta <strong>entre 2 y 3 veces menos por kilómetro</strong>.</p>
+<p>Esa es la conclusión. Lo que sigue es de dónde sale, con los supuestos sobre la mesa, porque el resultado depende de tres variables: cuánto gastas en &quot;cargar&quot;, cuántos kilómetros rinde de verdad y qué consumo tiene el auto de combustión con el que comparas.</p>
+<blockquote><strong>Transparencia total:</strong> el costo de carga ($8–$10) y la tarifa eléctrica ($0,05–$0,10 por kWh) son datos verificados. La autonomía real de cada modelo <strong>no</strong> lo es: varía por ruta, clima y manejo. Todo lo que depende de autonomía aquí está marcado como estimación.</blockquote>
+<h2>Los datos verificados de partida</h2>
+<div class="tabla-wrap"><table><thead><tr>
+<th>Rubro</th>
+<th>Valor verificado</th>
+</tr></thead><tbody>
+<tr><td>Combustible Extra / Ecopaís</td><td>$3,21 por galón</td></tr>
+<tr><td>Diésel Premium</td><td>$3,15 por galón</td></tr>
+<tr><td>Combustible Súper</td><td>$4,89 por galón</td></tr>
+<tr><td>Costo de una carga eléctrica</td><td>$8,00 – $10,00</td></tr>
+<tr><td>Tarifa de carga establecida</td><td>$0,05 – $0,10 por kWh (según horario)</td></tr>
+<tr><td>Carga en casa, conector 220 V</td><td>~8 horas</td></tr>
+<tr><td>Carga rápida en electolinera</td><td>40 min – 1 hora 30 min</td></tr>
+</tbody></table></div>
+<p><strong>Ojo con la unidad:</strong> en Ecuador el combustible se vende por <strong>galón</strong>, no por litro. Un galón equivale a <strong>3,785 litros</strong>. Comparar un precio por litro ecuatoriano con uno por galón no tiene sentido.</p>
+<h2>Cómo se calcula el costo por kilómetro</h2>
+<p>La fórmula es simple en ambos casos:</p>
+<ul>
+<li><strong>Gasolina:</strong> precio del galón ÷ (rendimiento en km/l × 3,785)</li>
+<li><strong>Eléctrico:</strong> precio de la carga ÷ autonomía real en km</li>
+</ul>
+<p>El problema no es la fórmula. Es que en gasolina el rendimiento depende del modelo y del pie, y en eléctrico la autonomía real depende de la ruta. Por eso el resultado se entrega como <strong>rango</strong>, no como número único.</p>
+<h2>Costo por kilómetro: gasolina según rendimiento</h2>
+<p>Con Extra o Ecopaís a <strong>$3,21 el galón</strong>:</p>
+<div class="tabla-wrap"><table><thead><tr>
+<th>Rendimiento</th>
+<th>km por galón</th>
+<th>Costo por km</th>
+<th>Costo por 100 km</th>
+</tr></thead><tbody>
+<tr><td>12 km/l</td><td>45,42</td><td>$0,0718</td><td>$7,18</td></tr>
+<tr><td>14 km/l</td><td>52,99</td><td>$0,0615</td><td>$6,15</td></tr>
+<tr><td>16 km/l</td><td>60,56</td><td>$0,0538</td><td>$5,38</td></tr>
+<tr><td>18 km/l</td><td>68,13</td><td>$0,0478</td><td>$4,78</td></tr>
+</tbody></table></div>
+<p>Un sedán eficiente ronda los 16 km/l mixtos; un SUV mediano, los 12 a 14. Es decir, <strong>la gasolina cuesta entre $4,78 y $7,18 cada 100 kilómetros</strong>.</p>
+<h2>Costo por kilómetro: eléctrico según autonomía</h2>
+<p>Con una carga de <strong>$8 a $10</strong> y autonomía real estimada (no la declarada de ficha):</p>
+<div class="tabla-wrap"><table><thead><tr>
+<th>Autonomía real</th>
+<th>Carga de $8</th>
+<th>Carga de $10</th>
+</tr></thead><tbody>
+<tr><td>350 km</td><td>$0,0229/km</td><td>$0,0286/km</td></tr>
+<tr><td>400 km</td><td>$0,0200/km</td><td>$0,0250/km</td></tr>
+<tr><td>450 km</td><td>$0,0178/km</td><td>$0,0222/km</td></tr>
+</tbody></table></div>
+<p><strong>Estimación:</strong> el rango práctico es <strong>$0,020 a $0,029 por kilómetro</strong>. Si tu autonomía real es menor que la supuesta, el costo por km sube; si es mayor, baja.</p>
+<p>La comparación directa, sin rodeos:</p>
+<div class="tabla-wrap"><table><thead><tr>
+<th>Concepto</th>
+<th>Eléctrico</th>
+<th>Gasolina</th>
+</tr></thead><tbody>
+<tr><td>Costo por km</td><td>$0,020 – $0,029</td><td>$0,048 – $0,072</td></tr>
+<tr><td>Costo por 100 km</td><td>$2,00 – $2,90</td><td>$4,78 – $7,18</td></tr>
+<tr><td>Factor</td><td>—</td><td><strong>2 a 3 veces más caro</strong></td></tr>
+</tbody></table></div>
+<h2>Escenarios anuales: 10.000, 15.000 y 20.000 km</h2>
+<p>Aquí el ahorro se vuelve concreto. Energía sola, sin mantenimiento ni seguros:</p>
+<div class="tabla-wrap"><table><thead><tr>
+<th>Kilómetros al año</th>
+<th>Eléctrico</th>
+<th>Gasolina (16 km/l)</th>
+<th>Gasolina (12 km/l)</th>
+</tr></thead><tbody>
+<tr><td>10.000 km</td><td>$200 – $290</td><td>$538</td><td>$718</td></tr>
+<tr><td>15.000 km</td><td>$300 – $435</td><td>$807</td><td>$1.077</td></tr>
+<tr><td>20.000 km</td><td>$400 – $580</td><td>$1.077</td><td>$1.435</td></tr>
+</tbody></table></div>
+<p>A <strong>15.000 km al año</strong>, el ahorro en energía va de <strong>$372 a $777</strong> según el rendimiento del auto de combustión con el que compares. A <strong>20.000 km</strong>, el rango sube a <strong>$497 a $1.035</strong>.</p>
+<p>Ese es el número que importa. No el precio de lista, no el &quot;full charge&quot;. El ahorro anual en energía.</p>
+<h2>El mantenimiento diferencial</h2>
+<p>El ahorro no se queda en el combustible. Un eléctrico no tiene cambios de aceite regulares, tiene sistemas de enfriamiento simplificados y usa <strong>frenado regenerativo</strong>, que reduce el desgaste de pastillas y discos.</p>
+<p>Un cambio de aceite en un auto de combustión cuesta <strong>$50 a $90</strong>, según si es mineral, semisintético o sintético:</p>
+<div class="tabla-wrap"><table><thead><tr>
+<th>Tipo de aceite</th>
+<th>Intervalo</th>
+<th>Costo por cambio</th>
+</tr></thead><tbody>
+<tr><td>Sintético</td><td>10.000 – 15.000 km</td><td>$50 – $90</td></tr>
+<tr><td>Semisintético</td><td>7.000 – 10.000 km</td><td>$50 – $90</td></tr>
+<tr><td>Mineral</td><td>5.000 – 7.000 km</td><td>$50 – $90</td></tr>
+</tbody></table></div>
+<p>A 15.000 km al año, un auto con aceite semisintético entra al taller una o dos veces solo por aceite. Un eléctrico no.</p>
+<p><strong>Pero el mantenimiento eléctrico no es gratis ni trivial.</strong> Un estudio académico ecuatoriano identifica estos puntos:</p>
+<ul>
+<li>El mantenimiento <strong>preventivo cuesta más al inicio</strong>, pero genera ahorros significativos a largo plazo frente al correctivo.</li>
+<li>Los <strong>talleres de concesionaria cobran más</strong> que los talleres especializados independientes.</li>
+<li>El punto clave es <strong>comprobar el aislamiento de las conexiones entre batería y motor, y las masas del coche</strong>. Requiere equipamiento específico y técnico especializado, pero <strong>no es una labor compleja ni de costo alto</strong>.</li>
+<li>Barreras reales en Ecuador: <strong>falta de capacitación técnica</strong> en talleres, <strong>repuestos que deben importarse</strong> y necesidad de <strong>equipamiento de diagnóstico eléctrico</strong>.</li>
+</ul>
+<blockquote>El costo de mantenimiento de un eléctrico no desaparece: se mueve de sitio. Dejas de pagar aceite y filtros, empiezas a necesitar un taller que sepa diagnosticar alto voltaje.</blockquote>
+<h2>Referencia: cuánto cuesta mantener un auto a gasolina</h2>
+<p>Para que la comparación no quede coja, un auto a gasolina que recorre <strong>12.000 km al año</strong> cuesta:</p>
+<div class="tabla-wrap"><table><thead><tr>
+<th>Rubro</th>
+<th>Rango anual</th>
+</tr></thead><tbody>
+<tr><td>Combustible</td><td>$650 – $700</td></tr>
+<tr><td>Mantenimiento</td><td>$180 – $300</td></tr>
+<tr><td>Matrícula</td><td>$150 – $300</td></tr>
+<tr><td>Seguro</td><td>~$400</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>$1.480 – $1.900</strong></td></tr>
+</tbody></table></div>
+<p>El mantenimiento por marca en combustión varía bastante: Nissan <strong>$300–$500</strong>, Toyota <strong>$300–$600</strong>, Renault <strong>$400–$600</strong>, Mazda <strong>$500–$700</strong>, Jeep <strong>$700–$1.000</strong>, RAM <strong>$800–$1.200</strong> anuales.</p>
+<p>Ese rango de $180 a $1.200 al año es el otro frente donde el eléctrico compite, aunque con menos puntos de servicio disponibles.</p>
+<h2>Lo que este cálculo NO incluye</h2>
+<p>Para no venderte una historia incompleta, esto queda fuera:</p>
+<ul>
+<li><strong>Precio de compra.</strong> Un eléctrico arranca en <strong>$28.000</strong> y llega a <strong>$150.000</strong>. Un auto de combustión equivalente puede costar menos. El ahorro operativo no siempre recupera la diferencia de entrada.</li>
+<li><strong>Depreciación.</strong> No tenemos curvas verificadas de valor residual de eléctricos en Ecuador.</li>
+<li><strong>Instalación de cargador en casa.</strong> Costo variable; consúltalo con un electricista certificado.</li>
+<li><strong>Seguro y matrícula.</strong> El seguro ronda el <strong>4% del valor del vehículo</strong> el primer año; a mayor valor, mayor prima.</li>
+<li><strong>Incentivos tributarios.</strong> Los eléctricos puros tienen tratamiento fiscal distinto al de los híbridos y al de combustión. El efecto exacto sobre tu precio final <strong>varía y debe verificarse con el SRI</strong>.</li>
+</ul>
+<h2>Veredicto</h2>
+<p>Por kilómetro, el eléctrico gana con claridad: <strong>$0,020–$0,029 contra $0,048–$0,072</strong>. A 15.000 km al año son <strong>$372 a $777 de ahorro solo en energía</strong>, más lo que no gastas en aceite.</p>
+<p>Pero el veredicto depende de tres condiciones:</p>
+<ol>
+<li><strong>Kilometraje alto.</strong> A 10.000 km el ahorro es modesto; a 20.000 km se vuelve decisivo.</li>
+<li><strong>Dónde cargas.</strong> Si cargas en casa con tarifa regulada, ganas. Si dependes de carga pública frecuente, el margen se estrecha.</li>
+<li><strong>Precio de compra.</strong> El eléctrico más barato arranca en $28.000. Si tu presupuesto está muy por debajo, el ahorro operativo no cierra la brecha.</li>
+</ol>
+<p>Si recorres pocos kilómetros al año o el eléctrico no cabe en tu presupuesto, un gasolina eficiente sigue siendo la respuesta racional. La matemática favorece al eléctrico solo cuando el volumen de uso la acompaña.</p>
+<hr><h2>Sigue leyendo</h2><div class="grid">
+<a class="card" href="carros-electricos-ecuador-catalogo-precios-2026.html">
+<h3>Carros eléctricos en Ecuador 2026: catálogo, precios y autonomía real</h3>
+<p>En Ecuador hay 23 marcas y 42 modelos eléctricos, entre $28.000 y $150.000. Catálogo, autonomía</p></a>
+<a class="card" href="hibrido-vs-electrico-vs-gasolina-ecuador-que-conviene.html">
+<h3>Híbrido vs eléctrico vs gasolina en Ecuador: cuál conviene según tu uso</h3>
+<p>Comparación por perfil de uso en Ecuador: ciudad, carretera, kilometraje y acceso a cargador. T</p></a>
+<a class="card" href="incentivos-tributarios-vehiculos-electricos-ecuador.html">
+<h3>Incentivos tributarios para vehículos eléctricos e híbridos en Ecuador</h3>
+<p>Qué incentivos tienen los eléctricos y los híbridos en Ecuador, en qué se diferencian y cómo se</p></a>
+<a class="card" href="red-carga-electrolineras-ecuador-donde-cargar.html">
+<h3>Red de carga en Ecuador: dónde, cuánto y cuánto tarda cargar</h3>
+<p>Ecuador tiene 94 puntos de recarga: 48 en Quito y 11 en Guayaquil. Tiempos reales de carga rápi</p></a>
+</div>
+<div class="destacado">
+<h3>Cómo usamos estos datos</h3>
+<p>Las cifras de esta guía provienen de fuentes públicas oficiales y tarifarios de concesionarios
+publicados. Los valores son referenciales: tasas municipales, promociones y precios de repuestos
+varían. Verifica siempre en la entidad o concesionario antes de decidir.</p></div>
+</div></main>
+<footer><div class="wrap">
+<p><strong>Autos Ecuador</strong> — Costos, trámites y comparativas reales de autos en Ecuador</p>
+<p style="margin-top:9px">Información referencial basada en fuentes oficiales (SRI, ANT, AEADE) y tarifarios
+de concesionarios. Los precios, tasas y requisitos cambian: verifica siempre en la entidad correspondiente
+antes de tomar una decisión.</p>
+<p style="margin-top:9px">Última actualización del sitio: 2026-09-25</p>
+<p style="margin-top:12px" class="pie-legal">
+<a href="acerca.html">Acerca de</a> ·
+<a href="contacto.html">Contacto</a> ·
+<a href="privacidad.html">Privacidad</a> ·
+<a href="cookies.html">Cookies</a>
+</p>
+</div></footer>
+</body>
+</html>
