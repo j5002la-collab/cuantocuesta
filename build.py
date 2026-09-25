@@ -195,6 +195,10 @@ footer{border-top:1px solid var(--bd);padding:26px 0;color:var(--mut);font-size:
 footer a{color:var(--mut)}
 .volver{color:var(--mut);font-size:.85rem;display:inline-block;margin-bottom:16px}
 .legal li{margin:4px 0}
+.intro-seccion{margin:22px 0 30px}
+.intro-seccion p{color:var(--mut);font-size:.95rem;line-height:1.72;margin:0 0 14px}
+.intro-seccion strong{color:var(--tx)}
+.intro-seccion a{color:#e9b949}
 .anuncio{margin:26px 0;padding:14px;background:var(--card);border:1px solid var(--bd);
   border-radius:10px;text-align:center;min-height:110px}
 .anuncio-etiq{display:block;color:var(--mut);font-size:.68rem;text-transform:uppercase;
@@ -502,10 +506,12 @@ varían. Verifica siempre en la entidad o concesionario antes de decidir.</p></d
                   og_imagen=og, schema=schema_articulo(a, img_art))
 
 
-def construir_indice(categoria, articulos, nombre, desc):
+def construir_indice(categoria, articulos, nombre, desc, intro=""):
     cat = [a for a in articulos if a["categoria"] == categoria]
     partes = [f'<a class="volver" href="index.html">← Inicio</a>',
               f'<h1>{escape(nombre)}</h1>', f'<p class="lead">{escape(desc)}</p>']
+    if intro:
+        partes.append(f'<div class="intro-seccion">{intro}</div>')
     if not cat:
         partes.append("<p>Todavía no hay guías publicadas en esta sección.</p>")
     else:
@@ -554,22 +560,92 @@ def main():
 
     # páginas índice de todas las categorías
     INDICES = {
-        "costos": ("Cuánto cuesta mantener cada auto",
-                   "Desglose real de matrícula, seguro, combustible y mantenimiento por modelo."),
-        "tramites": ("Trámites vehiculares",
-                     "Matrícula, traspaso de dominio, revisión técnica y certificados: pasos y costos."),
-        "comparativas": ("Comparativas entre modelos",
-                         "Los autos más vendidos de Ecuador comparados con datos: precio, consumo, seguridad y costos."),
-        "vendidos": ("Los más vendidos, analizados uno por uno",
-                     "Análisis individual de los modelos que dominan el mercado ecuatoriano: precio, consumo, costos y veredicto."),
-        "compra": ("Comprar un auto usado",
-                   "Qué revisar, cómo verificar gravámenes, cómo calcular el precio justo y cómo detectar un choque."),
-        "electricos": ("Eléctricos e híbridos",
-                       "Catálogo, costos reales de carga, incentivos tributarios y red de electrolineras en Ecuador."),
+        "costos": (
+            "Cuánto cuesta mantener cada auto",
+            "Desglose real de matrícula, seguro, combustible y mantenimiento por modelo.",
+            """<p>Mantener un auto en Ecuador cuesta entre <strong>$73 y $360 al mes</strong> según el
+modelo y los kilómetros que hagas. La diferencia no está en el precio de compra: está en el
+cilindraje, el rendimiento y el tipo de combustible.</p>
+<p>Los rubros que casi nadie suma antes de firmar son cuatro: <strong>matrícula</strong> (rubros del
+SRI y la ANT según cilindraje), <strong>seguro</strong> (SPPAT obligatorio, más todo riesgo si lo
+contratas), <strong>combustible</strong> y <strong>mantenimiento preventivo</strong>. Este último se
+acumula por kilómetro recorrido, no por mes, así que se siente poco a poco y sorprende al final.</p>
+<p>Con los precios vigentes —Extra y Ecopaís a <strong>$3,212</strong> el galón, Súper a
+<strong>$4,89</strong> y Diésel Premium a <strong>$3,151</strong>— la decisión que más mueve el
+resultado es el octanaje: si tu versión admite Extra, usarla en lugar de Súper ahorra más de $500
+al año en un SUV mediano.</p>
+<p>Usa la <a href="calculadora.html">calculadora de costo mensual</a> para ver tu caso exacto, o
+empieza por el desglose de cada modelo abajo.</p>"""),
+        "tramites": (
+            "Trámites vehiculares",
+            "Matrícula, traspaso de dominio, revisión técnica y certificados: pasos y costos.",
+            """<p>Los trámites vehiculares en Ecuador son la parte donde más dinero se pierde por
+desinformación: nadie publica los costos completos ni los pasos en orden, y los gestores cobran
+por hacer trámites que puedes hacer tú.</p>
+<p>Los tres más frecuentes tienen un patrón común: <strong>primero se paga, después se valida el
+vehículo</strong>. La matriculación depende del último dígito de la placa, el traspaso de dominio
+exige notaría y el 1% del valor del vehículo, y la revisión técnica tiene precio distinto en cada
+cantón. Bloqueadores habituales: multas de tránsito sin pagar y gravámenes activos.</p>
+<p>Cada guía de esta sección lista el costo de cada rubro, los documentos que debes llevar y los
+errores concretos que hacen que el trámite se caiga y tengas que volver.</p>"""),
+        "comparativas": (
+            "Comparativas entre modelos",
+            "Los autos más vendidos de Ecuador comparados con datos: precio, consumo, seguridad y costos.",
+            """<p>Elegir entre dos modelos que cuestan parecido es más fácil con números que con
+folletos. El mercado ecuatoriano creció un <strong>41,4% en el primer semestre de 2026</strong> —
+récord histórico con <strong>78.185 unidades</strong>— y eso abarató y amplió la oferta: hoy hay
+más opciones en cada rango de precio que hace tres años.</p>
+<p>Estas comparativas enfrentan modelo contra modelo con los mismos criterios: precio real de
+lista, consumo declarado, costo mensual calculado con las tarifas vigentes, seguridad de serie y
+valor de reventa. Cuando un dato no está publicado por el fabricante, lo decimos en lugar de
+rellenarlo con una estimación disfrazada de certeza.</p>
+<p>Ecuador vende el combustible por galón (3,785 litros), así que también comparamos el rendimiento
+en las dos unidades para que puedas contrastarlo con la ficha de tu versión.</p>"""),
+        "vendidos": (
+            "Los más vendidos, analizados uno por uno",
+            "Análisis individual de los modelos que dominan el mercado ecuatoriano: precio, consumo, costos y veredicto.",
+            """<p>Las cinco marcas que dominaron el mercado ecuatoriano en el primer semestre de 2026
+fueron <strong>Kia (12.512 unidades), Chevrolet (9.341), GWM (4.329), Hyundai (4.232) y Toyota
+(3.808)</strong>. No es casualidad: son las que tienen la red de concesionarios y repuestos más
+densa del país, y eso pesa más de lo que parece cuando necesitas un repuesto en Cuenca o en
+Loja.</p>
+<p>Cada análisis sigue la misma estructura: ficha técnica, precio por versión, cuánto cuesta
+mantenerlo mes a mes, qué tan cómodo es para uso familiar o de trabajo, cómo se comporta en la
+sierra y en la costa, y un veredicto claro con el perfil de comprador al que le sirve y al que no.</p>
+<p>Comprar lo más vendido tiene una ventaja concreta y medible: repuestos disponibles, mecánicos que
+lo conocen y un mercado de usados líquido cuando quieras venderlo. Estas guías te dicen si esa
+ventaja compensa el sobreprecio frente a alternativas menos conocidas.</p>"""),
+        "compra": (
+            "Comprar un auto usado",
+            "Qué revisar, cómo verificar gravámenes, cómo calcular el precio justo y cómo detectar un choque.",
+            """<p>El mercado de usados en Ecuador es donde está el riesgo real: un carro chocado o
+inundado puede verse impecable y fallar meses después. La buena noticia es que <strong>casi todo
+es verificable antes de pagar</strong>.</p>
+<p>Tres verificaciones que cuestan poco y evitan pérdidas grandes: consultar <strong>gravámenes y
+multas</strong> en el sistema de la ANT, revisar el <strong>CUV</strong> para ver el historial de
+transferencias, y calcular el <strong>precio justo</strong> con el avalúo del SRI —que se deprecia
+20% cada año con un piso del 10% del precio original— antes de sentarte a negociar.</p>
+<p>También conviene saber qué no te dice nadie: la transferencia de dominio requiere notaría y el
+1% del valor, y si el vendedor desaparece después de cobrar, el trámite se complica mucho más de
+lo que la gente anticipa.</p>"""),
+        "electricos": (
+            "Eléctricos e híbridos",
+            "Catálogo, costos reales de carga, incentivos tributarios y red de electrolineras en Ecuador.",
+            """<p>Los vehículos electrificados ya representan alrededor del <strong>18% de las ventas
+nuevas</strong> en Ecuador, y el ritmo sigue subiendo. Pero la información práctica —cuánto cuesta
+cargar de verdad, cuánto se ahorra frente a gasolina, qué incentivos existen— está dispersa o
+directamente no existe.</p>
+<p>Los números, para que los tengas claros: cargar un eléctrico cuesta entre <strong>$8 y $10</strong>
+por carga completa en tarifa residencial, contra los <strong>$43,97</strong> que cuesta el
+combustible de un sedán a gasolina en 1.000 km. En costo mensual, un eléctrico compacto ronda los
+<strong>$37,50</strong> frente a los <strong>$75,97</strong> de su equivalente a gasolina.</p>
+<p>Las barreras reales no son el costo por kilómetro: son la red de carga pública, el tiempo de
+recarga y la disponibilidad de talleres especializados fuera de Quito y Guayaquil. Estas guías
+cubren las tres con datos del catálogo ecuatoriano.</p>"""),
     }
-    for cat, (nombre, desc) in INDICES.items():
+    for cat, (nombre, desc, intro) in INDICES.items():
         (DIST / f"{cat}.html").write_text(
-            construir_indice(cat, articulos, nombre, desc), encoding="utf-8")
+            construir_indice(cat, articulos, nombre, desc, intro), encoding="utf-8")
 
     # páginas legales (obligatorias para AdSense)
     (DIST / "privacidad.html").write_text(pagina(
