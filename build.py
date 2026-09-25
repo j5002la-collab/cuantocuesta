@@ -12,10 +12,13 @@ import json
 import os
 import re
 import shutil
+import sys
 import unicodedata
 from datetime import date
 from html import escape
 from pathlib import Path
+
+import anuncios
 
 BASE = Path(__file__).parent
 DIST = BASE / "dist"
@@ -192,6 +195,11 @@ footer{border-top:1px solid var(--bd);padding:26px 0;color:var(--mut);font-size:
 footer a{color:var(--mut)}
 .volver{color:var(--mut);font-size:.85rem;display:inline-block;margin-bottom:16px}
 .legal li{margin:4px 0}
+.anuncio{margin:26px 0;padding:14px;background:var(--card);border:1px solid var(--bd);
+  border-radius:10px;text-align:center;min-height:110px}
+.anuncio-etiq{display:block;color:var(--mut);font-size:.68rem;text-transform:uppercase;
+  letter-spacing:.09em;margin-bottom:9px}
+.anuncio ins{background:transparent}
 .calc{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:22px;margin:26px 0}
 .calc-fila{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid var(--bd)}
 .calc-fila:last-child{border-bottom:0}
@@ -238,6 +246,7 @@ def pagina(titulo, descripcion, cuerpo, ruta_rel="", canonical="", og_imagen="",
     ld = "\n".join(
         f'<script type="application/ld+json">{s}</script>' for s in schema
     ) if schema else ""
+    ads_head = anuncios.encabezado()
     return f"""<!DOCTYPE html>
 <html lang="es-EC">
 <head>
@@ -254,6 +263,7 @@ def pagina(titulo, descripcion, cuerpo, ruta_rel="", canonical="", og_imagen="",
 {tw}
 <link rel="canonical" href="{canonical}">
 <style>{CSS}</style>
+{ads_head}
 {ld}
 </head>
 <body>
@@ -462,7 +472,12 @@ def construir_articulo(a, articulos):
             f'</figure>'
         )
 
-    partes.append(cuerpo_html)
+    partes.append(anuncios.insertar_en_cuerpo(cuerpo_html))
+
+    # bloque de cierre: el lector termino el articulo, maxima atencion
+    fin = anuncios.bloque_final()
+    if fin:
+        partes.append(fin)
 
     if rel:
         partes.append('<hr><h2>Sigue leyendo</h2><div class="grid">')
@@ -516,7 +531,11 @@ def main():
         shutil.copytree(origen_img, destino_img)
         print(f"imágenes copiadas: {len(list(destino_img.glob('*.png')))}")
 
-    # copiar archivos estaticos (verificacion de Google, etc.)
+    # AdSense: generar ads.txt ANTES de copiar los estaticos al sitio
+    if anuncios.generar_ads_txt():
+        print("  ✓ ads.txt generado (vendedor autorizado)")
+
+    # copiar archivos estaticos (verificacion de Google, ads.txt, etc.)
     origen_static = ASSETS / "static"
     if origen_static.exists():
         for f in origen_static.iterdir():

@@ -1,0 +1,36 @@
+{
+ "_leeme": "Configuracion de AdSense. Al crear la cuenta, llenar publisher_id con el valor real (formato ca-pub-XXXXXXXXXXXXXXXX). Con el ID puesto, el proximo build inserta los bloques de anuncio y genera ads.txt automaticamente. Sin ID, el sitio se construye igual pero sin anuncios.",
+ "publisher_id": "",
+ "ads_txt_linea": "google.com, {pub}, DIRECT, f08c47fec0942fa0",
+ "slots": {
+  "cabecera": {
+   "activo": true,
+   "formato": "auto",
+   "posicion": "despues del primer parrafo",
+   "nota": "El de mejor rendimiento: el lector ya empezo a leer. Nunca arriba del titulo."
+  },
+  "cuerpo": {
+   "activo": true,
+   "formato": "fluid",
+   "layout": "in-article",
+   "posicion": "despues del segundo H2",
+   "nota": "Se integra en el flujo del texto, no interrumpe."
+  },
+  "final": {
+   "activo": true,
+   "formato": "auto",
+   "posicion": "antes de 'Sigue leyendo'",
+   "nota": "El lector termino el articulo: maxima atencion."
+  }
+ },
+ "politica_google": {
+  "prohibido": [
+   "anuncios en pop-ups o ventanas emergentes",
+   "anuncios que parezcan menu, navegacion o boton de descarga",
+   "mas anuncios que contenido visible",
+   "anuncios flotantes que tapen el contenido en movil",
+   "editar o alterar el codigo de AdSense"
+  ],
+  "limite_orientativo": "No hay numero maximo legal, pero la relacion anuncio/contenido debe dejar leer comodo. 3 bloques por articulo es un techo prudente."
+ }
+}
