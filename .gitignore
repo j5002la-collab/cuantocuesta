@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+
+# Archivos estrategicos y de operacion: NO se publican.
+# Viven en /opt/data/autos-ec-privado/
+PLAN*.md
+deploy*.py
+fix_push.py
+push2.py
+toggle_cname.py
+pages*.py
+dns_check.py
+dnsdirect.py
+monitor_dns.py
+vigilar_dns*.py
+auditar.py
+revisar_repo.py

@@ -1,0 +1,77 @@
+{
+ "dominio": "cuantocuesta.xyz",
+ "ultima": {
+  "revisado": "2026-09-25T04:10:17+00:00",
+  "dominio": "cuantocuesta.xyz",
+  "resuelve_raiz": [
+   "185.199.108.153",
+   "185.199.109.153",
+   "185.199.110.153",
+   "185.199.111.153"
+  ],
+  "apunta_a_github": true,
+  "resuelve_www": [
+   "185.199.108.153",
+   "185.199.109.153",
+   "185.199.110.153",
+   "185.199.111.153"
+  ],
+  "propagado": true,
+  "https_raiz": {
+   "http": 200,
+   "bytes": 14200,
+   "titulo": "Autos Ecuador — Costos, trámites y comparativas de autos"
+  },
+  "https_www": {
+   "http": 200,
+   "bytes": 14200,
+   "titulo": "Autos Ecuador — Costos, trámites y comparativas de autos"
+  }
+ },
+ "historial": [
+  {
+   "revisado": "2026-09-25T02:57:53+00:00",
+   "dominio": "cuantocuesta.xyz",
+   "resuelve_raiz": [],
+   "apunta_a_github": false,
+   "resuelve_www": [],
+   "propagado": false
+  },
+  {
+   "revisado": "2026-09-25T02:59:09+00:00",
+   "dominio": "cuantocuesta.xyz",
+   "resuelve_raiz": [],
+   "apunta_a_github": false,
+   "resuelve_www": [],
+   "propagado": false
+  },
+  {
+   "revisado": "2026-09-25T04:10:17+00:00",
+   "dominio": "cuantocuesta.xyz",
+   "resuelve_raiz": [
+    "185.199.108.153",
+    "185.199.109.153",
+    "185.199.110.153",
+    "185.199.111.153"
+   ],
+   "apunta_a_github": true,
+   "resuelve_www": [
+    "185.199.108.153",
+    "185.199.109.153",
+    "185.199.110.153",
+    "185.199.111.153"
+   ],
+   "propagado": true,
+   "https_raiz": {
+    "http": 200,
+    "bytes": 14200,
+    "titulo": "Autos Ecuador — Costos, trámites y comparativas de autos"
+   },
+   "https_www": {
+    "http": 200,
+    "bytes": 14200,
+    "titulo": "Autos Ecuador — Costos, trámites y comparativas de autos"
+   }
+  }
+ ]
+}

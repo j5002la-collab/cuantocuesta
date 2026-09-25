@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "pais": "Ecuador",
+    "actualizado": "2026-09",
+    "fuentes": [
+      "SRI - Servicio de Rentas Internas (sri.gob.ec)",
+      "ANT - Agencia Nacional de Tránsito",
+      "GAD Municipal Quito / Guayaquil / Cuenca / Ambato",
+      "COOTAD Art. 539"
+    ]
+  },
+  "matricula": {
+    "descripcion": "La matrícula anual reúne cinco rubros distintos que se pagan juntos.",
+    "rubros": [
+      {
+        "nombre": "Impuesto a la Propiedad de Vehículos Motorizados (IPVM)",
+        "entidad": "SRI",
+        "tipo": "Progresivo",
+        "detalle": "Del 0,5% al 6% sobre el avalúo del vehículo. A mayor avalúo, mayor tarifa."
+      },
+      {
+        "nombre": "Impuesto al rodaje municipal",
+        "entidad": "GAD Municipal",
+        "tipo": "Tarifa fija por tramo",
+        "detalle": "Varía por ciudad y por tramo de avalúo (COOTAD Art. 539)."
+      },
+      {
+        "nombre": "Tasa SPPAT (Seguro Obligatorio)",
+        "entidad": "SPPAT",
+        "tipo": "Fija por cilindraje",
+        "monto_referencia": 26.74,
+        "detalle": "$21,11 a $31,67 según cilindraje, para vehículos de 0 a 9 años."
+      },
+      {
+        "nombre": "Tasa ANT de matriculación y servicios",
+        "entidad": "ANT",
+        "tipo": "Fija"
+      },
+      {
+        "nombre": "Revisión Técnica Vehicular",
+        "entidad": "GAD / ANT",
+        "tipo": "Fija por tipo",
+        "detalle": "Livianos $35, pesados $50, taxis $27. Adhesivo $8 adicional."
+      }
+    ],
+    "total_promedio_anual": 180,
+    "rango": "Desde ~$35 (vehículo económico) hasta más de $1.800 (SUV de lujo)",
+    "depreciacion_avaluo": "El avalúo se deprecia un 20% anual, con piso del 10% del PVP original.",
+    "nota_importante": "El avalúo que manda es el registrado en el SRI, que no siempre coincide con lo que pagaste ni con el valor de mercado. Consúltalo por placa antes de presupuestar."
+  },
+  "rodaje_por_ciudad": [
+    {"ciudad": "Quito", "rodaje_aprox": 40},
+    {"ciudad": "Guayaquil", "rodaje_aprox": 30},
+    {"ciudad": "Cuenca", "rodaje_aprox": 25},
+    {"ciudad": "Ambato", "rodaje_aprox": 25}
+  ],
+  "revision_tecnica": {
+    "livianos": 35,
+    "pesados": 50,
+    "taxis": 27,
+    "adhesivo": 8,
+    "nota_rechequeo": "El rechequeo es gratuito dentro del plazo. La tercera revisión cuesta la mitad de la tarifa; la cuarta vuelve a costar tarifa completa.",
+    "multas": "No presentarse o no aprobar genera multa. Matricular fuera del mes asignado también genera multa."
+  },
+  "tramites": [
+    {"nombre": "Certificado Único Vehicular (CUV)", "costo": 7.50, "entidad": "ANT / GAD"},
+    {"nombre": "Especie de matrícula", "costo": 25, "entidad": "ANT"},
+    {"nombre": "Placas nuevas o duplicado", "costo": 23, "entidad": "ANT"},
+    {"nombre": "Placas para motocicleta", "costo": 13, "entidad": "ANT"},
+    {"nombre": "Transferencia de dominio (servicio)", "costo": 10, "entidad": "GAD"},
+    {"nombre": "Cambio de características", "costo": 10.50, "entidad": "GAD"}
+  ],
+  "traspaso_dominio": {
+    "descripcion": "Venta de un vehículo usado de una persona a otra.",
+    "pasos": [
+      "Reconocimiento de firmas del contrato de compraventa ante notario",
+      "Pago del impuesto del 1% en institución financiera autorizada",
+      "Solicitud de registro de cambio de propietario en la ANT o GAD",
+      "Emisión de nueva especie de matrícula"
+    ],
+    "impuesto": "1% sobre el mayor valor entre el precio del contrato y el avalúo del SRI",
+    "costos_adicionales": [
+      "Honorarios de notaría por el contrato de compraventa",
+      "Trámite en ANT o GAD",
+      "Nueva especie de matrícula ($25)",
+      "Tasa de mantenimiento vial (si aplica)"
+    ],
+    "requisitos": [
+      "Cédula de identidad del vendedor y comprador",
+      "Certificado de votación",
+      "Formulario de solicitud de transferencia de dominio",
+      "Documento soporte de propiedad (matrícula o CUV)",
+      "Contrato de compraventa legalizado",
+      "Certificado de improntas",
+      "No tener infracciones de tránsito pendientes"
+    ]
+  },
+  "costos_anuales_referencia": [
+    {
+      "perfil": "Auto a gasolina (12.000 km/año)",
+      "fuente": "Karway Ecuador",
+      "items": [
+        {"concepto": "Matrícula e impuestos", "min": 150, "max": 300},
+        {"concepto": "Gasolina", "min": 650, "max": 700},
+        {"concepto": "Mantenimiento", "min": 180, "max": 300},
+        {"concepto": "Seguro vehicular", "min": 400, "max": 400},
+        {"concepto": "Otros gastos menores", "min": 100, "max": 200}
+      ],
+      "total_min": 1480,
+      "total_max": 1900
+    },
+    {
+      "perfil": "Auto nuevo (primer año)",
+      "fuente": "Karway Ecuador",
+      "items": [
+        {"concepto": "Combustible", "min": 1000, "max": 1000},
+        {"concepto": "Mantenimiento", "min": 400, "max": 400},
+        {"concepto": "Seguro", "min": 600, "max": 600},
+        {"concepto": "Matriculación", "min": 200, "max": 200},
+        {"concepto": "Otros", "min": 300, "max": 300}
+      ],
+      "total_min": 2500,
+      "total_max": 2500
+    },
+    {
+      "perfil": "SUV tipo Kia Sportage (uso familiar)",
+      "fuente": "Análisis de mercado Ecuador",
+      "items": [
+        {"concepto": "Mantenimiento preventivo", "min": 500, "max": 700},
+        {"concepto": "Repuestos (frenos, batería, llantas)", "min": 400, "max": 800},
+        {"concepto": "Combustible", "min": 1500, "max": 2500},
+        {"concepto": "Seguro vehicular", "min": 300, "max": 1200}
+      ],
+      "total_min": 2700,
+      "total_max": 5200
+    },
+    {
+      "perfil": "Nissan Kicks (15.000 km/año, seguro todo riesgo)",
+      "fuente": "Comercial Hidrobo",
+      "items": [
+        {"concepto": "Combustible", "min": 760, "max": 760},
+        {"concepto": "Mantenimiento programado", "min": 320, "max": 320},
+        {"concepto": "Seguro todo riesgo", "min": 1100, "max": 1100},
+        {"concepto": "Matrícula + SPPAT + impuestos", "min": 250, "max": 250},
+        {"concepto": "Llantas (prorrateado)", "min": 250, "max": 250},
+        {"concepto": "Reparaciones imprevistas", "min": 300, "max": 300},
+        {"concepto": "Lavado", "min": 160, "max": 160}
+      ],
+      "total_min": 3140,
+      "total_max": 3140
+    }
+  ],
+  "mantenimiento_por_km": {
+    "fuente": "Ford Quito Motors (tarifario oficial)",
+    "costo_por_km": 0.048,
+    "escala": [
+      {"km": 10000, "costo": 333.41},
+      {"km": 20000, "costo": 434.21},
+      {"km": 30000, "costo": 489.00},
+      {"km": 40000, "costo": 595.24},
+      {"km": 50000, "costo": 689.67},
+      {"km": 60000, "costo": 799.85},
+      {"km": 100000, "costo": 763.27}
+    ]
+  },
+  "intervalos_aceite": {
+    "sintetico": "10.000 a 15.000 km o cada 6 meses",
+    "semisintetico": "7.000 a 10.000 km o cada 6 meses",
+    "mineral": "5.000 a 7.000 km o cada 3 a 6 meses",
+    "nota_ecuador": "En Quito y Guayaquil (tránsito pesado), sierra (altitud) y costa/Amazonía (polvo y humedad) conviene revisar con mayor frecuencia."
+  },
+  "seguro": {
+    "regla_general": "Alrededor del 4% del valor del vehículo durante el primer año",
+    "ejemplo": "Auto de $15.000 = aproximadamente $600 anuales",
+    "sppat_incluido": "El SPPAT cubre atención médica a víctimas de accidentes de tránsito, pero no daña tu auto. Para eso se necesita seguro privado.",
+    "variables": ["Aseguradora", "Modelo del vehículo", "Cobertura elegida", "Deducible", "Historial del conductor"]
+  },
+  "incentivos_electricos": {
+    "exencion_impuestos": "Los vehículos 100% eléctricos tienen incentivos tributarios, incluyendo exención de ciertos impuestos.",
+    "nota": "Uno de cada cuatro carros vendidos en Ecuador en el primer semestre de 2026 fue híbrido o eléctrico.",
+    "porcentaje_electrificados": "18% de las ventas totales"
+  }
+}
