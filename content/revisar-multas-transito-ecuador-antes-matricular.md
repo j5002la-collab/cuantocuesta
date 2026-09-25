@@ -55,6 +55,20 @@ El monto final depende del tipo de infracción, su antigüedad y los recargos ap
 
 Los porcentajes y recargos cambian por ordenanza y por año. Confirma el valor exacto en la entidad antes de pagar: la cifra que muestra el sistema es la que manda.
 
+## Cómo leer tu estado de infracciones
+
+No basta con ver que hay una multa: hay que leer **en qué estado** está, porque cada estado se resuelve distinto.
+
+| Estado | Qué significa | Qué hacer |
+| --- | --- | --- |
+| Pendiente | Multa registrada sin pago | Pagar antes de matricular |
+| En convenio | Con plan de pago vigente y al día | Verificar que no haya cuotas vencidas |
+| Convenio vencido | Se dejó de pagar el plan | Regularizar: vuelve a bloquear |
+| Impugnada | En reclamo, pendiente de resolución | Esperar; puede estar suspendida |
+| En coactiva | Cobro por vía de apremio | Gestionar con la entidad antes de matricular |
+
+Ese es el detalle que se pasa por alto: dos personas con "una multa" pueden estar en situaciones completamente distintas, y solo una de ellas tiene el trámite en regla.
+
 ## Cómo impugnar una multa
 
 Si la infracción no ocurrió, o los datos están mal, puedes impugnar:
@@ -65,6 +79,8 @@ Si la infracción no ocurrió, o los datos están mal, puedes impugnar:
 4. Si te la rechazan, paga o apela según indique la resolución.
 
 Impugnar no borra la deuda por arte de magia: la suspende mientras la autoridad decide. Y si el plazo pasa, pierdes esa vía y te queda solo pagar.
+
+La evidencia es clave: sin fotos, testigos o documentos, la impugnación se cae sola. Y el plazo no se negocia ni se estira por pedido. Si dudas de si vale la pena impugnar, compara el monto de la multa con el tiempo y los papeles que vas a invertir.
 
 ## Casos especiales que conviene revisar
 

@@ -379,6 +379,130 @@ GENERICAS = {
     "top-10-cuanto-cuesta-mantener-auto-ecuador-alt": None,
 }
 
+# ============================================================ NUEVOS 2026-09
+NUEVAS = {
+    "duplicado-matricula-placas-ecuador-perdida-robo": dict(
+        etiqueta="Trámite", titulo="Duplicado de matrícula", sub="Qué hacer si pierdes placas o placa",
+        datos=[("$23", "placas nuevas", ACC), ("$25", "especie de matrícula", ACC2),
+               ("$11", "certificado único", ACC2), ("Denuncia", "si fue robo", ROJO)],
+        nota="Con pérdida no necesitas denuncia; con robo sí, ante la Fiscalía"),
+
+    "cambio-caracteristicas-vehiculo-ecuador-color-motor": dict(
+        etiqueta="Trámite", titulo="Cambio de características", sub="Color, motor o carrocería",
+        datos=[("$10,50", "costo del trámite", ACC), ("Obligatorio", "declararlo", ROJO),
+               ("Revisión", "si cambia el motor", ACC2), ("Matrícula", "hay que actualizarla", ACC2)],
+        nota="Modificar sin declarar puede impedir la venta y dejar el vehículo sin poder transferirse"),
+
+    "revisar-multas-transito-ecuador-antes-matricular": dict(
+        etiqueta="Trámite", titulo="Multas de tránsito", sub="Revisar antes de matricular",
+        datos=[("Bloquea", "la matriculación", ROJO), ("ANT", "donde consultar", ACC2),
+               ("AMT", "en Quito", ACC2), ("Convenios", "vencidos también bloquean", ACC)],
+        nota="No puedes matricular con infracciones pendientes ni con convenios de pago vencidos"),
+
+    "calendario-matriculacion-vehicular-ecuador-mes-placa": dict(
+        etiqueta="Trámite", titulo="Calendario de matriculación", sub="Qué mes te toca según tu placa",
+        datos=[("Último dígito", "define tu mes", ACC), ("Multa", "si te pasas", ROJO),
+               ("Anual", "la obligación", ACC2), ("Atrasos", "se acumulan", ACC2)],
+        nota="Matricular fuera del mes asignado genera una multa aparte del valor de la matrícula"),
+
+    "cuanto-cuesta-seguro-todo-riesgo-ecuador": dict(
+        etiqueta="Costos", titulo="Seguro todo riesgo", sub="Cuánto cuesta y cómo bajarlo",
+        datos=[("4%", "del valor del auto", ACC), ("$600", "ejemplo: auto de $15.000", ACC2),
+               ("$1.100", "SUV con todo riesgo", ACC), ("Deducible", "lo que pagas tú", MUT)],
+        nota="El SPPAT cubre atención médica a víctimas de accidentes, pero NO daña tu auto"),
+
+    "depreciacion-carro-ecuador-cuanto-pierde-valor": dict(
+        etiqueta="Costos", titulo="Depreciación", sub="Cuánto pierde valor un auto por año",
+        datos=[("20%", "anual del avalúo", ROJO), ("10%", "piso del precio original", ACC),
+               ("Toyota", "mejor reventa", ACC2), ("5 años", "la mayor caída", ROJO)],
+        nota="El avalúo del SRI se deprecia 20% cada año con un piso del 10% del precio de venta original"),
+
+    "costo-mantener-carro-electrico-vs-gasolina-ecuador": dict(
+        etiqueta="Costos", titulo="Eléctrico vs gasolina", sub="Costo de mantenimiento real",
+        datos=[("Sin aceite", "el eléctrico no cambia", ACC2), ("Regenerativo", "frenos que duran más", ACC2),
+               ("Talleres", "barrera en Ecuador", ROJO), ("Batería", "el costo mayor", ACC)],
+        nota="La falta de talleres especializados es la barrera real, no el costo de las piezas"),
+
+    "como-detectar-carro-choque-inundacion-ecuador": dict(
+        etiqueta="Compra", titulo="Detectar choque o inundación", sub="Señales que no se ven a simple vista",
+        datos=[("Pintura", "tonos distintos", ROJO), ("Óxido", "en zonas raras", ROJO),
+               ("Olor", "a humedad", ACC), ("CUV", "revela el historial", ACC2)],
+        nota="Un carro inundado puede funcionar bien meses y fallar eléctricamente después"),
+
+    "transferencia-dominio-pasos-tiempos-errores-ecuador": dict(
+        etiqueta="Compra", titulo="Transferencia de dominio", sub="Pasos, tiempos y errores comunes",
+        datos=[("1%", "impuesto del valor", ACC), ("Notaría", "primer paso", ACC2),
+               ("Multas", "causa frecuente de fallo", ROJO), ("Gravamen", "bloquea la venta", ROJO)],
+        nota="Si el vendedor desaparece, la transferencia se complica: exige todo por escrito antes de pagar"),
+
+    "cuantos-km-durar-motor-ecuador-vida-util": dict(
+        etiqueta="Compra", titulo="Cuántos km dura un motor", sub="Vida útil y cómo alargarla",
+        datos=[("200.000+", "km con buen cuidado", ACC2), ("Altitud", "desgasta más", ROJO),
+               ("Aceite", "lo que más alarga", ACC2), ("Tránsito", "Quito y Guayaquil", ROJO)],
+        nota="En la sierra la altitud y en Quito o Guayaquil el tráfico acortan la vida del motor"),
+}
+
+
+def ficha_auto(slug, articulo):
+    """Ficha de respaldo para artículos sin datos definidos a mano.
+
+    Extrae el dato principal del cuerpo del artículo (primer monto en
+    dólares, primer porcentaje y primer kilometraje) para no dejar
+    ninguna página sin imagen.
+    """
+    import re as _re
+
+    cuerpo = articulo.get("cuerpo_md", "")
+    titulo = articulo.get("titulo", slug.replace("-", " ").title())
+    cat = articulo.get("categoria", "general")
+
+    montos = _re.findall(r"\$([\d.,]+)", cuerpo)
+    pcts = _re.findall(r"(\d+[.,]?\d*)\s*%", cuerpo)
+    kms = _re.findall(r"(\d{2}[.,]?\d*)[.\s]?000\s*km", cuerpo)
+
+    datos = []
+    if montos:
+        v = montos[0].rstrip(".")
+        datos.append((f"${v}", "cifra clave", ACC))
+    if pcts:
+        datos.append((f"{pcts[0]}%", "porcentaje clave", ACC2))
+    if kms:
+        datos.append((f"{kms[0]}.000 km", "kilometraje", ACC2))
+    if len(montos) > 1:
+        datos.append((f"${montos[1].rstrip('.')}", "segunda cifra", ACC))
+
+    while len(datos) < 4:
+        relleno = ["Ecuador", "datos verificados", "SRI y ANT", "2026"][len(datos)]
+        datos.append((relleno, "contexto", MUT))
+    datos = datos[:4]
+
+    # partir el título en dos lineas si es muy largo
+    palabras = titulo.split()
+    mitad = max(1, len(palabras) // 2)
+    linea1 = " ".join(palabras[:mitad])
+    linea2 = " ".join(palabras[mitad:]) if len(palabras) > 2 else ""
+
+    fig, ax = lona()
+    cabecera(fig, ax, cat.title(), AZUL if cat == "tramites" else ACC)
+
+    fig.text(0.035, 0.815, linea1, color=TX, fontsize=30,
+             fontweight="bold", va="top", ha="left")
+    if linea2:
+        fig.text(0.035, 0.715, linea2, color=TX, fontsize=30,
+                 fontweight="bold", va="top", ha="left")
+
+    desc = articulo.get("descripcion", "")[:110]
+    if desc:
+        fig.text(0.035, 0.615, desc, color=MUT, fontsize=12.5,
+                 va="top", ha="left", wrap=True)
+
+    x0, ancho, gap = 3, 22.0, 2.0
+    for i, (val, lab, col) in enumerate(datos):
+        dato(ax, x0 + i * (ancho + gap), 22, ancho, 24, val, lab, col)
+
+    pie(fig, "Fuente: SRI, ANT, AEADE y tarifarios publicados. Valores referenciales. cuantocuesta.xyz")
+    return guardar(fig, f"ficha-{slug}.png")
+
 
 def ficha_generica(slug, d):
     fig, ax = lona()
@@ -413,6 +537,31 @@ def main():
         if d is None:
             continue
         generadas.append(ficha_generica(slug, d))
+    for slug, d in NUEVAS.items():
+        cat = d.get("etiqueta", "")
+        if cat == "Trámite":
+            generadas.append(ficha_tramite(slug, d))
+        elif cat == "Costos":
+            generadas.append(ficha_generica(slug, d))
+        else:
+            generadas.append(ficha_generica(slug, d))
+
+    # respaldo: cualquier articulo sin ficha obtiene una generada
+    for f in glob.glob(f"{BASE}/content/*.md"):
+        slug = os.path.basename(f)[:-3]
+        if not os.path.exists(os.path.join(OUT, f"ficha-{slug}.png")):
+            texto = open(f, encoding="utf-8").read()
+            meta = {}
+            m = re.match(r"^---\n(.*?)\n---\n(.*)$", texto, re.S)
+            if m:
+                for ln in m.group(1).splitlines():
+                    if ":" in ln:
+                        k, v = ln.split(":", 1)
+                        meta[k.strip()] = v.strip().strip('"')
+                meta["cuerpo_md"] = m.group(2)
+            gen = ficha_auto(slug, meta)
+            generadas.append(gen)
+            print(f"  ficha automatica: {slug}")
 
     print(f"fichas generadas: {len(generadas)}")
 
