@@ -481,6 +481,14 @@ def main():
         shutil.copytree(origen_img, destino_img)
         print(f"imágenes copiadas: {len(list(destino_img.glob('*.png')))}")
 
+    # copiar archivos estaticos (verificacion de Google, etc.)
+    origen_static = ASSETS / "static"
+    if origen_static.exists():
+        for f in origen_static.iterdir():
+            if f.is_file():
+                shutil.copy2(f, DIST / f.name)
+        print(f"archivos estáticos copiados: {len(list(origen_static.iterdir()))}")
+
     articulos = cargar_contenido()
     print(f"artículos encontrados: {len(articulos)}")
 
