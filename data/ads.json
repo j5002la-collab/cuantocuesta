@@ -1,6 +1,11 @@
 {
- "_leeme": "Configuracion de AdSense. Al crear la cuenta, llenar publisher_id con el valor real (formato ca-pub-XXXXXXXXXXXXXXXX). Con el ID puesto, el proximo build inserta los bloques de anuncio y genera ads.txt automaticamente. Sin ID, el sitio se construye igual pero sin anuncios.",
- "publisher_id": "",
+ "_leeme": "Configuracion de AdSense. MODO: 'verificacion' inserta solo el script del <head>, que es lo que Google necesita para comprobar el sitio — los bloques de anuncio no se muestran hasta que la cuenta este aprobada, asi que ponerlos antes deja huecos vacios. Cuando AdSense apruebe, cambiar modo a 'activo'.",
+ "publisher_id": "ca-pub-7009064391847406",
+ "modo": "verificacion",
+ "_modos": {
+  "verificacion": "solo el script del <head> (estado hasta que aprueben)",
+  "activo": "script + los 3 bloques de anuncio por articulo (tras aprobar)"
+ },
  "ads_txt_linea": "google.com, {pub}, DIRECT, f08c47fec0942fa0",
  "slots": {
   "cabecera": {

@@ -40,14 +40,27 @@ def pub_id():
 
 
 def activo():
+    """El script del <head> se inserta siempre que haya publisher ID."""
     return bool(pub_id())
 
 
+def modo():
+    return (config().get("modo") or "verificacion").strip().lower()
+
+
+def mostrar_bloques():
+    """Los bloques solo van cuando la cuenta esta aprobada.
+
+    Antes de la aprobacion se quedan como huecos vacios y afean el sitio.
+    """
+    return activo() and modo() == "activo"
+
+
 def bloque(nombre):
-    """HTML de un bloque de anuncio. Cadena vacia si AdSense no esta configurado."""
-    p = pub_id()
-    if not p:
+    """HTML de un bloque de anuncio. Cadena vacia si no corresponde mostrarlo."""
+    if not mostrar_bloques():
         return ""
+    p = pub_id()
     s = (config().get("slots") or {}).get(nombre) or {}
     if not s.get("activo"):
         return ""
