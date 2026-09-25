@@ -4,6 +4,7 @@ slug: impuesto-compraventa-vehiculos-usados-ecuador
 categoria: tramites
 descripcion: "El impuesto por compraventa de vehículos usados en Ecuador es el 1% sobre el mayor valor entre contrato y avalúo del SRI. Cómo se calcula y dónde se paga."
 actualizado: 2026-09-26
+seo_titulo: Impuesto del 1% por compraventa de vehículos
 ---
 
 El impuesto por la compraventa de un vehículo usado en Ecuador es del **1%** y se calcula sobre el **mayor valor entre el precio del contrato y el avalúo del SRI**. En un auto de $12.000 con avalúo de $10.500, se pagan **$120**. Si el avalúo fuera mayor que el contrato, pagarías sobre el avalúo.

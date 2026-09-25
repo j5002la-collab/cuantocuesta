@@ -4,6 +4,7 @@ slug: revision-tecnica-vehicular-ecuador-guia
 categoria: tramites
 descripcion: "Revisión técnica vehicular en Ecuador 2026: tarifas ($35 livianos, $50 pesados, $27 taxis), sistema de rechequeo, qué revisan y multas por no asistir."
 actualizado: 2026-09-26
+seo_titulo: Revisión técnica vehicular en Ecuador: cuánto cuesta
 ---
 
 La Revisión Técnica Vehicular en Ecuador cuesta **$35 para vehículos livianos**, **$50 para pesados** y **$27 para taxis**. El adhesivo cuesta **$8 adicionales**. Se realiza una vez al año, en el mes que corresponde a tu placa, y no presentarse genera multa.

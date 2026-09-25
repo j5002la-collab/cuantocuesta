@@ -4,6 +4,7 @@ slug: verificar-gravamenes-multas-carro-usado-ecuador
 categoria: compra
 descripcion: "Cómo consultar gravámenes, reserva de dominio y multas de un carro usado en Ecuador antes de comprarlo, y qué hacer si aparece una deuda pendiente."
 actualizado: 2026-09-26
+seo_titulo: Cómo verificar gravámenes y multas de un carro usado
 ---
 
 Para saber si un carro usado tiene gravámenes o multas en Ecuador debes consultar tres fuentes: el **certificado único vehicular (CUV)**, la **consulta de infracciones de la ANT** y el **registro de gravámenes del SRI**. La consulta se puede hacer con la placa y cuesta poco o nada, y es el paso más importante antes de pagar cualquier anticipo.

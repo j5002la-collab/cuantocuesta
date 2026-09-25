@@ -4,6 +4,7 @@ slug: cuantos-km-durar-motor-ecuador-vida-util
 categoria: compra
 descripcion: "Un motor bien mantenido dura 200.000-300.000 km. Cómo afectan la altura de la sierra y el tráfico, señales de motor cansado y cuánto cuesta reparar o cambiarlo."
 actualizado: 2026-09-26
+seo_titulo: Cuántos kilómetros dura un motor en Ecuador
 ---
 
 Un motor bien mantenido dura **entre 200.000 y 300.000 km**, y en algunos casos supera esa cifra. Un motor descuidado puede quedarse a los 120.000. La diferencia no está en la marca: está en el **aceite a tiempo, el sistema de enfriamiento y los filtros**.

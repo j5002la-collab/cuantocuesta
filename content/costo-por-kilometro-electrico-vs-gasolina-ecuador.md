@@ -4,6 +4,7 @@ slug: costo-por-kilometro-electrico-vs-gasolina-ecuador
 categoria: electricos
 descripcion: "Cargar un eléctrico cuesta $8 a $10 y la gasolina $3,26 el galón. Cuánto cuesta cada kilómetro con escenarios de 10.000, 15.000 y 20.000 km al año."
 actualizado: 2026-09-26
+seo_titulo: Costo por kilómetro: eléctrico vs gasolina
 ---
 
 **Un carro eléctrico cuesta entre $0,020 y $0,029 por kilómetro en Ecuador. Un carro a gasolina, entre $0,048 y $0,072.** En la práctica, mover un eléctrico cuesta **entre 2 y 3 veces menos por kilómetro**.

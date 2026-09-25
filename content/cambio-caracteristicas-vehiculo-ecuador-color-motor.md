@@ -4,6 +4,7 @@ slug: cambio-caracteristicas-vehiculo-ecuador-color-motor
 categoria: tramites
 descripcion: "Cambiar el color, el motor o la carrocería de tu auto exige declararlo en la ANT: cuándo es obligatorio, cuánto cuesta ($10,50) y qué pasa si no lo haces."
 actualizado: 2026-09-26
+seo_titulo: Cambio de características del vehículo en Ecuador
 ---
 
 Si cambiaste el color, el motor o modificaste la carrocería de tu vehículo, tienes que **declararlo en la ANT**. El servicio cuesta alrededor de **$10,50** y sirve para que el registro refleje el estado real del auto. Si no lo haces, el vehículo queda con datos que no coinciden con la realidad — y eso te bloquea traspasos, revisiones y matrícula.

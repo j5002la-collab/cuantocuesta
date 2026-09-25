@@ -4,6 +4,7 @@ slug: precio-justo-carro-usado-ecuador-como-calcularlo
 categoria: compra
 descripcion: "Método de depreciación anual, uso del avalúo del SRI y señales de estafa para calcular y negociar el precio justo de un carro usado en Ecuador."
 actualizado: 2026-09-26
+seo_titulo: Cómo calcular el precio justo de un carro usado
 ---
 
 El precio justo de un carro usado en Ecuador se calcula partiendo del **precio actual de ese modelo nuevo y aplicando una depreciación de aproximadamente 20% anual sobre el avalúo**. Un auto que hoy cuesta $15.799 nuevos vale alrededor de **$12.600 al año de uso** y cerca de **$10.100 a los dos años**, como referencia.

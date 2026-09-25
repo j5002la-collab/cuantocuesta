@@ -4,6 +4,7 @@ slug: como-hacer-traspaso-dominio-vehiculo-ecuador
 categoria: tramites
 descripcion: "Traspaso de dominio en Ecuador paso a paso: los 4 pasos ante notaría y ANT, el impuesto del 1% sobre el mayor valor, costos totales y requisitos 2026."
 actualizado: 2026-09-26
+seo_titulo: Traspaso de dominio de un vehículo en Ecuador
 ---
 
 El traspaso de dominio en Ecuador cuesta, como mínimo, **el 1% del mayor valor entre el precio del contrato y el avalúo del SRI**, más notaría y tasas. En un auto de **$12.000**, ese impuesto son **$120**. El proceso tiene **4 pasos** y se completa entre la notaría, una entidad financiera autorizada y la ANT o el GAD.

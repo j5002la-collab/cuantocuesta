@@ -4,6 +4,7 @@ slug: matricula-vehicular-ecuador-2026-costos-requisitos
 categoria: tramites
 descripcion: "La matrícula vehicular en Ecuador cuesta en promedio $180 al año y reúne 5 rubros. Desglose por rubro, cómo consultar el avalúo por placa y multas por atraso."
 actualizado: 2026-09-26
+seo_titulo: Matrícula vehicular 2026: cuánto cuesta y cómo pagar
 ---
 
 Matricular un auto liviano en Ecuador cuesta en promedio **$180 al año**, pero el rango real va desde unos **$35** para un vehículo económico hasta **más de $1.800** para una SUV de lujo. La cifra depende de un solo número: el avalúo registrado en el SRI.

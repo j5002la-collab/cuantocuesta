@@ -244,6 +244,12 @@ def pagina(titulo, descripcion, cuerpo, ruta_rel="", canonical="", og_imagen="",
 de concesionarios. Los precios, tasas y requisitos cambian: verifica siempre en la entidad correspondiente
 antes de tomar una decisión.</p>
 <p style="margin-top:9px">Última actualización del sitio: {SITIO['actualizado']}</p>
+<p style="margin-top:12px" class="pie-legal">
+<a href="{ruta_rel}acerca.html">Acerca de</a> ·
+<a href="{ruta_rel}contacto.html">Contacto</a> ·
+<a href="{ruta_rel}privacidad.html">Privacidad</a> ·
+<a href="{ruta_rel}cookies.html">Cookies</a>
+</p>
 </div></footer>
 </body>
 </html>"""
@@ -448,7 +454,10 @@ varían. Verifica siempre en la entidad o concesionario antes de decidir.</p></d
 
     img_art = resolver_imagen(a)
     og = f"https://cuantocuesta.xyz/img/{img_art}" if img_art else ""
-    return pagina(a["titulo"], a["descripcion"], "\n".join(partes),
+    # <title> SEO: usa seo_titulo (max 60 chars) si está definido,
+    # dejando el titulo largo solo como H1 visible en la pagina
+    seo_t = a.get("seo_titulo") or a["titulo"]
+    return pagina(seo_t, a["descripcion"], "\n".join(partes),
                   og_imagen=og, schema=schema_articulo(a, img_art))
 
 
@@ -536,13 +545,28 @@ mensaje para responderte.</li>
 </ul>
 
 <h2>Cookies</h2>
-<p>Este sitio puede usar cookies para recordar preferencias y para medir audiencia de forma agregada.
-Puedes bloquear o eliminar cookies desde la configuración de tu navegador; el sitio seguirá funcionando.</p>
+<p>Este sitio usa cookies para recordar preferencias y para medir audiencia de forma agregada.
+Puedes bloquear o eliminar cookies desde la configuración de tu navegador; el sitio seguirá funcionando.
+El detalle completo está en la <a href="cookies.html">política de cookies</a>.</p>
 
-<h2>Publicidad</h2>
-<p>Este sitio puede mostrar anuncios servidos por Google AdSense u otras redes publicitarias. Estos
-proveedores pueden usar cookies para mostrar anuncios basados en visitas previas a este u otros sitios.
-Puedes desactivar la personalización de anuncios en la configuración de anuncios de Google.</p>
+<h2>Publicidad y terceros</h2>
+<p>Este sitio muestra anuncios servidos por <strong>Google AdSense</strong> y puede usar otras redes
+publicitarias. Como consecuencia de esa publicidad, <strong>terceros distintos de nosotros pueden
+colocar y leer cookies en tu navegador</strong>, así como usar identificadores como direcciones IP o
+web beacons para recopilar información.</p>
+<ul class="legal">
+<li>Google, como proveedor externo, usa cookies para publicar anuncios en este sitio.</li>
+<li>La cookie de <strong>DoubleClick DART</strong> permite a Google y sus socios mostrar anuncios
+basados en tus visitas a este y a otros sitios de internet.</li>
+<li>Puedes inhabilitar la publicidad personalizada de Google en
+<a href="https://www.google.com/settings/ads" rel="nofollow noopener" target="_blank">Configuración de anuncios de Google</a>.</li>
+<li>También puedes inhabilitar el uso de cookies de terceros en
+<a href="https://www.aboutads.info/choices/" rel="nofollow noopener" target="_blank">aboutads.info</a>.</li>
+</ul>
+<p>Más información sobre cómo Google trata los datos de los sitios de sus socios:
+<a href="https://policies.google.com/technologies/partner-sites" rel="nofollow noopener" target="_blank">Cómo usa Google los datos</a>.</p>
+<p class="meta">En el Espacio Económico Europeo, Reino Unido y Suiza se muestra un aviso de
+consentimiento que permite aceptar, gestionar o rechazar el uso de cookies publicitarias.</p>
 
 <h2>Enlaces a terceros</h2>
 <p>Algunos artículos enlazan a sitios oficiales (SRI, ANT, municipios) o a páginas de concesionarios y
@@ -557,6 +581,58 @@ continuado del sitio implica la aceptación de la versión vigente.</p>
 
 <h2>Contacto</h2>
 <p>Para consultas sobre esta política, escríbenos desde la página de <a href="contacto.html">contacto</a>.</p>"""), encoding="utf-8")
+
+    # política de cookies (requisito explícito de Google Publisher Policies)
+    (DIST / "cookies.html").write_text(pagina(
+        "Política de cookies — Autos Ecuador",
+        "Qué cookies usa este sitio, para qué sirven y cómo puedes controlarlas.",
+        """<a class="volver" href="index.html">← Inicio</a>
+<h1>Política de cookies</h1>
+<p class="meta">Última actualización: """ + SITIO["actualizado"] + """</p>
+
+<h2>Qué es una cookie</h2>
+<p>Es un archivo pequeño que un sitio guarda en tu navegador. Sirve para recordar preferencias y para
+medir cómo se usa el sitio. No ejecuta programas ni accede a tus archivos.</p>
+
+<h2>Qué usamos</h2>
+<ul class="legal">
+<li><strong>Funcionales:</strong> recuerdan tus preferencias de lectura. Sin ellas el sitio funciona,
+pero pierdes esas comodidades. No se comparten con terceros.</li>
+<li><strong>De medición:</strong> registran páginas visitadas, tiempo de permanencia y tipo de
+dispositivo, de forma agregada. Nos dicen qué contenido resulta útil y cuál hay que mejorar.</li>
+<li><strong>Publicitarias:</strong> las colocan Google AdSense y otras redes para mostrar anuncios.
+Son las únicas que pueden identificar tu navegador en otros sitios.</li>
+</ul>
+
+<h2>Cookies de terceros</h2>
+<p>Al mostrarse publicidad, <strong>Google y sus socios pueden colocar y leer cookies en tu
+navegador</strong> y usar identificadores como direcciones IP o web beacons. La cookie
+<strong>DoubleClick DART</strong> permite mostrar anuncios basados en tus visitas a este y a otros
+sitios. No controlamos esas cookies: las rige la política de privacidad de cada proveedor.</p>
+<p>Más información: <a href="https://policies.google.com/technologies/partner-sites" rel="nofollow noopener" target="_blank">Cómo usa Google los datos de los sitios de sus socios</a>.</p>
+
+<h2>Cómo controlarlas</h2>
+<ul class="legal">
+<li><strong>Anuncios personalizados de Google:</strong> desactívalos en
+<a href="https://www.google.com/settings/ads" rel="nofollow noopener" target="_blank">Configuración de anuncios</a>.</li>
+<li><strong>Cookies de terceros en general:</strong> gestiónalas en
+<a href="https://www.aboutads.info/choices/" rel="nofollow noopener" target="_blank">aboutads.info</a>.</li>
+<li><strong>Desde tu navegador:</strong> todos los navegadores permiten ver, bloquear y borrar
+cookies desde su configuración de privacidad. Bloquearlas no impide leer el sitio.</li>
+<li><strong>Modo privado:</strong> al cerrar la ventana se descartan las cookies de la sesión.</li>
+</ul>
+
+<h2>Consentimiento</h2>
+<p>En el Espacio Económico Europeo, Reino Unido y Suiza se muestra un aviso que permite aceptar,
+gestionar o rechazar las cookies publicitarias antes de que se activen. Fuera de esas regiones, el uso
+continuado del sitio se entiende como aceptación de esta política.</p>
+
+<h2>Cambios</h2>
+<p>Si cambiamos las cookies que usamos, actualizamos la fecha al inicio de esta página.</p>
+
+<h2>Contacto</h2>
+<p>Dudas sobre esta política: escríbenos desde la página de <a href="contacto.html">contacto</a>.</p>"""),
+        encoding="utf-8")
 
     (DIST / "acerca.html").write_text(pagina(
         "Acerca de — Autos Ecuador",
@@ -626,7 +702,7 @@ situación particular con implicaciones legales, acude a un profesional o a la e
     # sitemap
     urls = (["index.html", "costos.html", "tramites.html", "comparativas.html",
              "vendidos.html", "compra.html", "electricos.html",
-             "privacidad.html", "acerca.html", "contacto.html"]
+             "privacidad.html", "cookies.html", "acerca.html", "contacto.html"]
             + [f"{a['slug']}.html" for a in articulos])
     # sitemap con URLs absolutas (Google las exige)
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',

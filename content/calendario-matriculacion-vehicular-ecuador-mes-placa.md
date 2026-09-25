@@ -4,6 +4,7 @@ slug: calendario-matriculacion-vehicular-ecuador-mes-placa
 categoria: tramites
 descripcion: "La matrícula se paga según el último dígito de tu placa. Revisa qué mes te corresponde, la multa por matricular fuera de mes y cómo pagar años atrasados."
 actualizado: 2026-09-26
+seo_titulo: Calendario de matriculación en Ecuador por placa
 ---
 
 La matrícula vehicular se paga **una vez al año, en el mes que corresponde al último dígito de tu placa**. Ese mes lo define el calendario oficial y no es opcional: matricular fuera de tu mes genera multa.

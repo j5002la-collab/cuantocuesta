@@ -4,6 +4,7 @@ slug: duplicado-matricula-placas-ecuador-perdida-robo
 categoria: tramites
 descripcion: "Perdiste o te robaron las placas: pasos, denuncia, requisitos, costos ($23 placas, $25 especie, $11 certificado) y tiempos del duplicado en la ANT."
 actualizado: 2026-09-26
+seo_titulo: Duplicado de matrícula y placas: qué hacer
 ---
 
 Si perdiste las placas o te las robaron, el duplicado se solicita en la **ANT** y cuesta alrededor de **$23 el par de placas** (motos $13), más la **especie de matrícula de $25** y los certificados del trámite. Si fue robo, el orden cambia: primero la denuncia, después el duplicado.

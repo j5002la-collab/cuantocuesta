@@ -4,6 +4,7 @@ slug: que-revisar-comprar-carro-usado-ecuador
 categoria: compra
 descripcion: "Checklist mecánico, documentos y pruebas para revisar un carro usado en Ecuador antes de pagar: cómo detectar choque, inundación y motor dañado."
 actualizado: 2026-09-26
+seo_titulo: Qué revisar antes de comprar un carro usado
 ---
 
 Antes de comprar un carro usado en Ecuador debes revisar tres bloques: **el vehículo por dentro y por debajo**, **los sistemas que no se ven a simple vista** (motor, chasis, caja) y **los documentos y deudas del vendedor**. Si uno de esos tres falla, el precio deja de importar.

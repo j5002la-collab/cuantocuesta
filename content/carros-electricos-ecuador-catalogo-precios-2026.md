@@ -4,6 +4,7 @@ slug: carros-electricos-ecuador-catalogo-precios-2026
 categoria: electricos
 descripcion: "En Ecuador hay 23 marcas y 42 modelos eléctricos, entre $28.000 y $150.000. Catálogo, autonomía real en sierra y costa, y qué revisar antes de comprar."
 actualizado: 2026-09-26
+seo_titulo: Carros eléctricos en Ecuador 2026: precios
 ---
 
 En Ecuador hoy se venden **carros 100% eléctricos de 23 marcas y 42 modelos**, con precios que van desde **$28.000 hasta $150.000**. El piso del mercado ya no es un experimento: son modelos de entrada con autonomía declarada de 500 a 650 km.

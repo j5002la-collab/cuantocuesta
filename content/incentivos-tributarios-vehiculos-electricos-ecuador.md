@@ -4,6 +4,7 @@ slug: incentivos-tributarios-vehiculos-electricos-ecuador
 categoria: electricos
 descripcion: "Qué incentivos tienen los eléctricos y los híbridos en Ecuador, en qué se diferencian y cómo se tramitan. Qué verificar con el SRI antes de comprar."
 actualizado: 2026-09-26
+seo_titulo: Incentivos tributarios para autos eléctricos
 ---
 
 **Los vehículos 100% eléctricos en Ecuador cuentan con incentivos tributarios, entre ellos la exención de ciertos impuestos como el ICE y aranceles de importación según el caso. Los híbridos tienen un tratamiento fiscal distinto, no equivalente.** El detalle exacto varía por tipo de vehículo y debe verificarse con el SRI.

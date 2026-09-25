@@ -4,6 +4,7 @@ slug: revisar-multas-transito-ecuador-antes-matricular
 categoria: tramites
 descripcion: "Con multas pendientes no se matricula: dónde consultar tus infracciones en la ANT y la AMT, qué pasa con convenios vencidos y cómo impugnar a tiempo."
 actualizado: 2026-09-26
+seo_titulo: Revisar multas de tránsito antes de matricular
 ---
 
 Si tienes multas de tránsito pendientes, **no puedes matricular**: el sistema bloquea el trámite hasta que estés al día. Revisar antes de hacer fila te ahorra el viaje, y la consulta es gratuita. Se hace por placa.

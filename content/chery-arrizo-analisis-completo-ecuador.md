@@ -5,6 +5,7 @@ categoria: vendidos
 descripcion: "Vendió 1.534 unidades en 2025 y Chery creció 50,1% en el primer semestre de 2026. Precio, repuestos, costos anuales y veredicto frente al Kia Soluto."
 actualizado: 2026-09-26
 imagen: grafico-costo-chery-arrizo.png
+seo_titulo: Chery Arrizo en Ecuador: precios y costos
 ---
 
 **El Chery Arrizo vendió 1.534 unidades en 2025**, en un año en que su marca creció **+50,1% durante el primer semestre de 2026**. Se comercializa entre **$16.000 y $20.000** y su argumento principal es concreto: repuestos accesibles frente a sedanes de marcas con más historia en el país.

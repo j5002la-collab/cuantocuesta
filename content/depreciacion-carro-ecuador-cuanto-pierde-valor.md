@@ -4,6 +4,7 @@ slug: depreciacion-carro-ecuador-cuanto-pierde-valor
 categoria: costos
 descripcion: "El avalúo del SRI baja 20% al año, con piso del 10% del PVP. Cuánto pierde valor tu carro en el mercado real, qué modelos retienen mejor y una tabla a 5 años."
 actualizado: 2026-09-26
+seo_titulo: Depreciación: cuánto pierde valor un carro por año
 ---
 
 Un carro pierde valor cada año. Para el **SRI**, el avalúo baja un **20% anual**, con un piso del **10% del PVP original**: por más años que pasen, el avalúo no baja de ese piso. En el **mercado real**, la caída tiene su propio ritmo, y ahí el modelo y la marca pesan tanto como los años.

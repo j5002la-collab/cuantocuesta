@@ -4,6 +4,7 @@ slug: certificado-unico-vehicular-cuv-ecuador
 categoria: tramites
 descripcion: "El Certificado Único Vehicular (CUV) cuesta $7,50 en Ecuador. Qué información contiene, cuándo se necesita y cómo obtenerlo en línea o presencial."
 actualizado: 2026-09-26
+seo_titulo: Certificado Único Vehicular (CUV): cómo obtenerlo
 ---
 
 El **Certificado Único Vehicular (CUV)** cuesta **$7,50** en Ecuador y es el documento que acredita los datos legales y técnicos de un vehículo. Se necesita para traspasos, matrículas y varios trámites ante la ANT, el GAD o una aseguradora.

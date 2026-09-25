@@ -4,6 +4,7 @@ slug: cuanto-cuesta-seguro-todo-riesgo-ecuador
 categoria: costos
 descripcion: "El seguro todo riesgo cuesta cerca del 4% del valor del auto: ~$600 al año para uno de $15.000. Qué cubre, deducible, SPPAT y cómo bajar la prima."
 actualizado: 2026-09-26
+seo_titulo: Seguro todo riesgo en Ecuador: cuánto cuesta
 ---
 
 Un seguro todo riesgo en Ecuador cuesta, como regla práctica, alrededor del **4% del valor del vehículo durante el primer año**. Un auto de **$15.000** paga cerca de **$600 al año**. De ahí en adelante la prima baja con la depreciación del auto, aunque no en la misma proporción.
