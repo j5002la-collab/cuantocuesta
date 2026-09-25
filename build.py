@@ -29,7 +29,7 @@ SITIO = {
     "descripcion": "Guías de costos de mantenimiento, trámites vehiculares y "
                    "comparativas de los autos más vendidos en Ecuador. Datos "
                    "actualizados de fuentes oficiales.",
-    "url": "",
+    "url": "https://cuantocuesta.xyz",
     "idioma": "es-EC",
     "anio": date.today().year,
     "actualizado": date.today().isoformat(),
@@ -200,13 +200,18 @@ footer a{color:var(--mut)}
 """
 
 
-def pagina(titulo, descripcion, cuerpo, ruta_rel="", canonical="", og_imagen=""):
+def pagina(titulo, descripcion, cuerpo, ruta_rel="", canonical="", og_imagen="", schema=""):
     nav = ('<nav><a href="' + ruta_rel + 'index.html">Inicio</a>'
            '<a href="' + ruta_rel + 'costos.html">Costos</a>'
            '<a href="' + ruta_rel + 'tramites.html">Trámites</a>'
-           '<a href="' + ruta_rel + 'comparativas.html">Comparativas</a></nav>')
+           '<a href="' + ruta_rel + 'vendidos.html">Más vendidos</a>'
+           '<a href="' + ruta_rel + 'comparativas.html">Comparativas</a>'
+           '<a href="' + ruta_rel + 'electricos.html">Eléctricos</a></nav>')
     og = f'<meta property="og:image" content="{escape(og_imagen)}">' if og_imagen else ""
     tw = '<meta name="twitter:card" content="summary_large_image">' if og_imagen else ""
+    ld = "\n".join(
+        f'<script type="application/ld+json">{s}</script>' for s in schema
+    ) if schema else ""
     return f"""<!DOCTYPE html>
 <html lang="es-EC">
 <head>
@@ -223,6 +228,7 @@ def pagina(titulo, descripcion, cuerpo, ruta_rel="", canonical="", og_imagen="")
 {tw}
 <link rel="canonical" href="{canonical}">
 <style>{CSS}</style>
+{ld}
 </head>
 <body>
 <header><div class="wrap hrow">
@@ -241,6 +247,97 @@ antes de tomar una decisión.</p>
 </div></footer>
 </body>
 </html>"""
+
+
+def _jsonld(obj):
+    """Serializa JSON-LD sin escapar acentos."""
+    return json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+
+
+def schema_articulo(a, img):
+    """Article + BreadcrumbList para una guía."""
+    url = f"{SITIO['url']}/{a['slug']}.html"
+    art = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": a["titulo"],
+        "description": a.get("descripcion", ""),
+        "inLanguage": "es-EC",
+        "datePublished": a.get("actualizado", SITIO["actualizado"]),
+        "dateModified": a.get("actualizado", SITIO["actualizado"]),
+        "author": {"@type": "Organization", "name": SITIO["nombre"],
+                   "url": SITIO["url"]},
+        "publisher": {"@type": "Organization", "name": SITIO["nombre"],
+                      "url": SITIO["url"]},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+        "articleSection": a.get("categoria", "general"),
+        "isAccessibleForFree": True,
+    }
+    if img:
+        art["image"] = f"{SITIO['url']}/img/{img}"
+
+    migas = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1,
+             "name": "Inicio", "item": f"{SITIO['url']}/"},
+            {"@type": "ListItem", "position": 2,
+             "name": a.get("categoria", "general").title(),
+             "item": f"{SITIO['url']}/{a.get('categoria','')}.html"},
+            {"@type": "ListItem", "position": 3,
+             "name": a["titulo"], "item": url},
+        ],
+    }
+    return [_jsonld(art), _jsonld(migas)]
+
+
+def schema_sitio():
+    """WebSite + Organization para la portada."""
+    web = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": SITIO["nombre"],
+        "url": SITIO["url"],
+        "description": SITIO["descripcion"],
+        "inLanguage": "es-EC",
+        "publisher": {"@type": "Organization", "name": SITIO["nombre"]},
+    }
+    org = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": SITIO["nombre"],
+        "url": SITIO["url"],
+        "description": SITIO["descripcion"],
+        "areaServed": {"@type": "Country", "name": "Ecuador"},
+        "knowsLanguage": "es-EC",
+    }
+    return [_jsonld(web), _jsonld(org)]
+
+
+def schema_coleccion(nombre, desc, categoria):
+    """CollectionPage + BreadcrumbList para páginas índice."""
+    url = f"{SITIO['url']}/{categoria}.html"
+    col = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": nombre,
+        "description": desc,
+        "url": url,
+        "inLanguage": "es-EC",
+        "isPartOf": {"@type": "WebSite", "name": SITIO["nombre"],
+                     "url": SITIO["url"]},
+    }
+    migas = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1,
+             "name": "Inicio", "item": f"{SITIO['url']}/"},
+            {"@type": "ListItem", "position": 2, "name": nombre, "item": url},
+        ],
+    }
+    return [_jsonld(col), _jsonld(migas)]
 
 
 def construir_home(articulos):
@@ -290,6 +387,8 @@ en Ecuador. Sin estimaciones vagas: tarifas del SRI, la ANT y tarifarios de conc
         "Autos Ecuador — Costos, trámites y comparativas de autos",
         SITIO["descripcion"],
         "\n".join(partes),
+        canonical=f"{SITIO['url']}/",
+        schema=schema_sitio(),
     )
 
 
@@ -349,7 +448,8 @@ varían. Verifica siempre en la entidad o concesionario antes de decidir.</p></d
 
     img_art = resolver_imagen(a)
     og = f"https://cuantocuesta.xyz/img/{img_art}" if img_art else ""
-    return pagina(a["titulo"], a["descripcion"], "\n".join(partes), og_imagen=og)
+    return pagina(a["titulo"], a["descripcion"], "\n".join(partes),
+                  og_imagen=og, schema=schema_articulo(a, img_art))
 
 
 def construir_indice(categoria, articulos, nombre, desc):
@@ -365,7 +465,8 @@ def construir_indice(categoria, articulos, nombre, desc):
 <h3>{escape(a['titulo'])}</h3>
 <p>{escape(a['descripcion'][:110])}</p></a>""")
         partes.append("</div>")
-    return pagina(nombre, desc, "\n".join(partes))
+    return pagina(nombre, desc, "\n".join(partes),
+                  schema=schema_coleccion(nombre, desc, categoria))
 
 
 def main():
@@ -389,15 +490,24 @@ def main():
         (DIST / f"{a['slug']}.html").write_text(construir_articulo(a, articulos), encoding="utf-8")
         print(f"  ✓ {a['slug']}.html")
 
-    (DIST / "costos.html").write_text(construir_indice(
-        "costos", articulos, "Cuánto cuesta mantener cada auto",
-        "Desglose real de matrícula, seguro, combustible y mantenimiento por modelo."), encoding="utf-8")
-    (DIST / "tramites.html").write_text(construir_indice(
-        "tramites", articulos, "Trámites vehiculares",
-        "Matrícula, traspaso de dominio, revisión técnica y certificados: pasos y costos."), encoding="utf-8")
-    (DIST / "comparativas.html").write_text(construir_indice(
-        "comparativas", articulos, "Comparativas entre modelos",
-        "Los autos más vendidos de Ecuador comparados con datos: precio, consumo, seguridad y costos."), encoding="utf-8")
+    # páginas índice de todas las categorías
+    INDICES = {
+        "costos": ("Cuánto cuesta mantener cada auto",
+                   "Desglose real de matrícula, seguro, combustible y mantenimiento por modelo."),
+        "tramites": ("Trámites vehiculares",
+                     "Matrícula, traspaso de dominio, revisión técnica y certificados: pasos y costos."),
+        "comparativas": ("Comparativas entre modelos",
+                         "Los autos más vendidos de Ecuador comparados con datos: precio, consumo, seguridad y costos."),
+        "vendidos": ("Los más vendidos, analizados uno por uno",
+                     "Análisis individual de los modelos que dominan el mercado ecuatoriano: precio, consumo, costos y veredicto."),
+        "compra": ("Comprar un auto usado",
+                   "Qué revisar, cómo verificar gravámenes, cómo calcular el precio justo y cómo detectar un choque."),
+        "electricos": ("Eléctricos e híbridos",
+                       "Catálogo, costos reales de carga, incentivos tributarios y red de electrolineras en Ecuador."),
+    }
+    for cat, (nombre, desc) in INDICES.items():
+        (DIST / f"{cat}.html").write_text(
+            construir_indice(cat, articulos, nombre, desc), encoding="utf-8")
 
     # páginas legales (obligatorias para AdSense)
     (DIST / "privacidad.html").write_text(pagina(
@@ -506,17 +616,33 @@ agregamos al plan de contenido.</li>
 situación particular con implicaciones legales, acude a un profesional o a la entidad correspondiente.</p>"""), encoding="utf-8")
 
     # sitemap
-    urls = ["index.html", "costos.html", "tramites.html", "comparativas.html",
-            "privacidad.html", "acerca.html", "contacto.html"] + [f"{a['slug']}.html" for a in articulos]
+    urls = (["index.html", "costos.html", "tramites.html", "comparativas.html",
+             "vendidos.html", "compra.html", "electricos.html",
+             "privacidad.html", "acerca.html", "contacto.html"]
+            + [f"{a['slug']}.html" for a in articulos])
+    # sitemap con URLs absolutas (Google las exige)
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
-        sm.append(f"<url><loc>{u}</loc><lastmod>{SITIO['actualizado']}</lastmod></url>")
+        loc = f"{SITIO['url']}/" if u == "index.html" else f"{SITIO['url']}/{u}"
+        # portada e índices con prioridad alta, legales con prioridad baja
+        if u == "index.html":
+            pri = "1.0"
+        elif u in ("privacidad.html", "acerca.html", "contacto.html"):
+            pri = "0.3"
+        elif ".html" in u and u.count("-") < 2:
+            pri = "0.8"
+        else:
+            pri = "0.9"
+        sm.append(f"<url><loc>{loc}</loc>"
+                  f"<lastmod>{SITIO['actualizado']}</lastmod>"
+                  f"<priority>{pri}</priority></url>")
     sm.append("</urlset>")
     (DIST / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")
 
     (DIST / "robots.txt").write_text(
-        "User-agent: *\nAllow: /\nSitemap: sitemap.xml\n", encoding="utf-8")
+        f"User-agent: *\nAllow: /\n\nSitemap: {SITIO['url']}/sitemap.xml\n",
+        encoding="utf-8")
 
     print(f"\n✓ sitio generado en {DIST}")
     print(f"  {len(list(DIST.glob('*.html')))} páginas HTML")
