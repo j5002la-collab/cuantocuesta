@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora: costo de mantener un auto en Ecuador</title>
+<meta name="description" content="Calcula cuánto cuesta al mes mantener tu auto en Ecuador: combustible, matrícula, seguro y mantenimiento. Con tarifas SRI y ANT vigentes.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Calculadora: costo de mantener un auto en Ecuador">
+<meta property="og:description" content="Calcula cuánto cuesta al mes mantener tu auto en Ecuador: combustible, matrícula, seguro y mantenimiento. Con tarifas SRI y ANT vigentes.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_EC">
+
+
+<link rel="canonical" href="https://cuantocuesta.xyz/calculadora.html">
+<style>
+:root{--bg:#0d0f12;--card:#151a20;--tx:#e8edf2;--mut:#8d99a6;--acc:#e8b93b;--acc2:#3ba55d;--bd:#232b33}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+-webkit-font-smoothing:antialiased}
+a{color:var(--acc);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+header{background:linear-gradient(180deg,#151a20,#0d0f12);border-bottom:1px solid var(--bd);padding:14px 0;position:sticky;top:0;z-index:9}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.15rem;letter-spacing:-.4px;color:var(--tx)}
+.logo span{color:var(--acc)}
+nav a{color:var(--mut);font-size:.86rem;margin-left:15px;font-weight:500}
+nav a:hover{color:var(--acc)}
+main{padding:26px 0 60px}
+h1{font-size:1.85rem;line-height:1.22;letter-spacing:-.6px;margin-bottom:12px;font-weight:800}
+h2{font-size:1.3rem;margin:30px 0 11px;letter-spacing:-.3px;font-weight:700;padding-top:6px}
+h3{font-size:1.06rem;margin:22px 0 8px;font-weight:700;color:#cdd6e0}
+p{margin:11px 0}
+ul,ol{margin:11px 0 11px 22px}
+li{margin:6px 0}
+hr{border:0;border-top:1px solid var(--bd);margin:26px 0}
+blockquote{border-left:3px solid var(--acc);background:#151a20;padding:12px 16px;margin:16px 0;color:#c3ccd6;border-radius:0 8px 8px 0}
+code{background:#1e242c;padding:2px 6px;border-radius:4px;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.lead{color:var(--mut);font-size:1.02rem;margin-bottom:22px}
+.meta{color:var(--mut);font-size:.8rem;margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--bd)}
+.tabla-wrap{overflow-x:auto;margin:18px 0;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:440px}
+th{background:#1c232b;text-align:left;padding:10px 12px;font-weight:700;border-bottom:2px solid var(--bd);white-space:nowrap}
+td{padding:9px 12px;border-bottom:1px solid var(--bd)}
+tr:hover td{background:#171d24}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:22px 0}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:11px;padding:17px;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.card h3{margin:0 0 7px;font-size:1rem;color:var(--tx)}
+.card p{color:var(--mut);font-size:.86rem;margin:0}
+.tag{display:inline-block;background:#1e252d;color:var(--acc);font-size:.7rem;padding:3px 9px;border-radius:11px;
+font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:9px}
+.destacado{background:linear-gradient(135deg,#1a2028,#151a20);border:1px solid var(--bd);border-left:3px solid var(--acc);
+border-radius:9px;padding:16px 18px;margin:20px 0}
+.destacado h3{margin-top:0}
+.figura{margin:0 0 24px;padding:0}
+.figura img{width:100%;height:auto;border-radius:11px;border:1px solid var(--bd);display:block}
+figcaption{color:var(--mut);font-size:.78rem;margin-top:8px;text-align:center}
+footer{border-top:1px solid var(--bd);padding:26px 0;color:var(--mut);font-size:.82rem}
+footer a{color:var(--mut)}
+.volver{color:var(--mut);font-size:.85rem;display:inline-block;margin-bottom:16px}
+.legal li{margin:4px 0}
+.calc{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:22px;margin:26px 0}
+.calc-fila{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid var(--bd)}
+.calc-fila:last-child{border-bottom:0}
+.calc-fila > label{flex:0 0 210px;color:var(--tx);font-size:.92rem}
+.calc select,.calc input[type=number]{background:#0e1116;color:var(--tx);border:1px solid var(--bd);
+  border-radius:7px;padding:9px 12px;font-size:.95rem;font-family:inherit;min-width:150px}
+.calc-radios{display:flex;flex-wrap:wrap;gap:16px}
+.calc-radios label{display:flex;align-items:center;gap:7px;color:var(--mut);font-size:.9rem;cursor:pointer}
+.calc-res{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:26px 0}
+.calc-total{background:linear-gradient(160deg,#171b22,#0f1216);border:1px solid var(--bd);
+  border-radius:12px;padding:20px 22px;display:flex;flex-direction:column;gap:7px}
+.calc-total .etiqueta{color:var(--mut);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+.calc-total span:last-child{font-size:2rem;font-weight:700;color:#e9b949}
+.calc-anual span:last-child{color:#7fb3d5;font-size:1.5rem}
+.calc-km span:last-child{color:#8bc98b;font-size:1.5rem}
+.calc-tabla{width:100%;border-collapse:collapse;margin:20px 0;font-size:.92rem}
+.calc-tabla th{text-align:left;color:var(--mut);font-size:.78rem;text-transform:uppercase;
+  letter-spacing:.07em;padding:11px 12px;border-bottom:1px solid var(--bd)}
+.calc-tabla td{padding:11px 12px;border-bottom:1px solid var(--bd);color:var(--tx)}
+.calc-tabla .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.calc-tabla .calc-desc{color:var(--mut);font-size:.85rem}
+.calc-tabla .calc-sum td{border-top:2px solid var(--acc);border-bottom:0;font-weight:700;
+  color:#e9b949;padding-top:14px}
+@media(max-width:600px){
+ h1{font-size:1.5rem}h2{font-size:1.15rem}
+ nav a{margin-left:0;margin-right:14px;display:inline-block}
+ table{font-size:.82rem}
+ .calc-fila > label{flex:1 1 100%}
+ .calc select,.calc input[type=number]{width:100%}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de costo de mantener un auto en Ecuador","url":"https://cuantocuesta.xyz/calculadora.html","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Calcula el costo mensual de mantener un auto en Ecuador con las tarifas del SRI y la ANT.","inLanguage":"es-EC"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://cuantocuesta.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora","item":"https://cuantocuesta.xyz/calculadora.html"}]}</script>
+</head>
+<body>
+<header><div class="wrap hrow">
+<div class="logo">Autos<span>Ecuador</span></div>
+<nav><a href="index.html">Inicio</a><a href="costos.html">Costos</a><a href="tramites.html">Trámites</a><a href="vendidos.html">Más vendidos</a><a href="comparativas.html">Comparativas</a><a href="electricos.html">Eléctricos</a><a href="calculadora.html">Calculadora</a></nav>
+</div></header>
+<main><div class="wrap">
+<a class="volver" href="index.html">← Inicio</a>
+<h1>Calculadora: cuánto cuesta mantener un auto en Ecuador</h1>
+<p class="lead">Elige tu auto, pon tus kilómetros reales y mira el desglose mes a mes.
+Los valores se calculan con las tarifas vigentes del SRI, ANT y el precio actual de
+combustible. Cambia cualquier dato y el resultado se actualiza al instante.</p>
+
+<form class="calc" id="calc" onsubmit="return false">
+  <div class="calc-fila">
+    <label for="modelo">Modelo</label>
+    <select id="modelo"></select>
+  </div>
+  <div class="calc-fila">
+    <label for="km">Kilómetros al mes</label>
+    <input type="number" id="km" value="1000" min="100" max="8000" step="50">
+  </div>
+  <div class="calc-fila">
+    <label for="precio_comb">Precio del galón (USD)</label>
+    <input type="number" id="precio_comb" value="2.40" min="1" max="6" step="0.05"
+           data-tipo="extra" data-clase="Ec">
+  </div>
+  <div class="calc-fila">
+    <label for="ciudad">Ciudad (afecta revisión y seguro)</label>
+    <select id="ciudad">
+      <option value="1.0">Quito</option>
+      <option value="0.95">Guayaquil</option>
+      <option value="0.92">Cuenca</option>
+      <option value="0.90">Otra ciudad</option>
+    </select>
+  </div>
+  <div class="calc-fila">
+    <label>Tipo de uso</label>
+    <div class="calc-radios">
+      <label><input type="radio" name="uso" value="1.0" checked> Mixto</label>
+      <label><input type="radio" name="uso" value="1.12"> Ciudad (tráfico)</label>
+      <label><input type="radio" name="uso" value="0.92"> Carretera</label>
+    </div>
+  </div>
+  <div class="calc-fila">
+    <label>Tipo de seguro</label>
+    <div class="calc-radios">
+      <label><input type="radio" name="seguro" value="0" checked> Solo SPPAT</label>
+      <label><input type="radio" name="seguro" value="0.035"> Todo riesgo 3,5%</label>
+      <label><input type="radio" name="seguro" value="0.055"> Todo riesgo 5,5%</label>
+    </div>
+  </div>
+</form>
+
+<div class="calc-res">
+  <div class="calc-total">
+    <span class="etiqueta">Costo mensual estimado</span>
+    <span id="total">$0</span>
+  </div>
+  <div class="calc-total calc-anual">
+    <span class="etiqueta">Al año</span>
+    <span id="anual">$0</span>
+  </div>
+  <div class="calc-total calc-km">
+    <span class="etiqueta">Por kilómetro</span>
+    <span id="porkm">$0</span>
+  </div>
+</div>
+
+<h2>Desglose mensual</h2>
+<table class="calc-tabla" id="tabla">
+  <thead><tr><th>Concepto</th><th>Cómo se calcula</th><th>Mensual</th></tr></thead>
+  <tbody></tbody>
+</table>
+
+<div class="destacado">
+<h3>Cómo interpretar el resultado</h3>
+<p><strong>Combustible</strong> es el rubro que más varía: depende de tu pie real, no del consumo
+declarado por el fabricante. Bajar de 1.200 a 900 km al mes puede ahorrarte más que cambiar de auto.</p>
+<p><strong>Seguro y matrícula</strong> son costos fijos anuales que aquí se prorratean. Si pagas
+todo riesgo, es el segundo rubro más pesado después del combustible.</p>
+<p><strong>Mantenimiento preventivo</strong> se calcula por kilómetro recorrido: se acumula en el
+tiempo aunque no lo notes mes a mes.</p>
+</div>
+
+<h2>Batería de datos que usa esta calculadora</h2>
+<ul class="legal">
+<li><strong>Combustible:</strong> extra a $2,40 el galón (precio de referencia vigente).
+Un galón equivale a 4,546 litros.</li>
+<li><strong>Matrícula:</strong> rubros del SRI y la ANT, prorrateados en 12 meses según el
+cilindraje del vehículo.</li>
+<li><strong>Seguro:</strong> SPPAT obligatorio incluido en todo caso. El todo riesgo se estima
+como porcentaje del valor del auto (3,5% a 5,5% anual en Ecuador).</li>
+<li><strong>Mantenimiento:</strong> aceite, filtros y revisión periódica según tarifarios de
+talleres autorizados, por cada 5.000 km.</li>
+<li><strong>Revisión técnica:</strong> según ciudad, con su frecuencia real (Quito exige revisión
+más seguida que otras ciudades).</li>
+</ul>
+
+<p class="meta">Los valores son referenciales. Las tasas municipales varían entre cantones, el
+precio del seguro depende de tu historial y las promociones de taller son temporales. Verifica
+siempre antes de decidir.</p>
+
+<script>
+const MODELOS = [["Kia Soluto", 16990, 15.5, 1400], ["Kia Sonet", 21990, 14.0, 1500], ["Kia Seltos", 27990, 13.0, 1500], ["Kia Sportage", 37990, 11.0, 2000], ["Hyundai Grand i10", 15990, 16.5, 1200], ["Hyundai Creta", 26490, 13.5, 1500], ["Hyundai Tucson", 42990, 10.5, 2000], ["Chevrolet Groove", 19990, 13.5, 1500], ["Chevrolet D-Max", 34990, 10.0, 2500], ["Chery Arrizo", 17990, 14.5, 1500], ["GWM Poer", 32990, 9.5, 2000], ["Toyota Hilux", 38990, 10.5, 2400], ["Eléctrico compacto", 32000, 0, 0], ["Eléctrico SUV", 45000, 0, 0]];
+
+const sel = document.getElementById('modelo');
+MODELOS.forEach((m, i) => {
+  const o = document.createElement('option');
+  o.value = i;
+  o.textContent = m[0];
+  sel.appendChild(o);
+});
+
+function fmt(n) {
+  return '$' + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+function calcular() {
+  const m = MODELOS[sel.value];
+  const [nombre, precio, kml, cc] = m;
+  const km = +document.getElementById('km').value || 1000;
+  const pComb = +document.getElementById('precio_comb').value || 2.40;
+  const ciudad = +document.getElementById('ciudad').value;
+  const uso = +document.querySelector('input[name=uso]:checked').value;
+  const pSeguro = +document.querySelector('input[name=seguro]:checked').value;
+
+  const esElectrico = kml === 0;
+  const filas = [];
+
+  // combustible o electricidad
+  if (esElectrico) {
+    // 0,18 kWh/km de referencia, tarifa comercial EEQ ~$0,10/kWh
+    const kwh = km * 0.18 * uso;
+    const costo = kwh * 0.10;
+    filas.push(['Electricidad', (kwh.toFixed(0) + ' kWh × $0,10'), costo]);
+  } else {
+    // km/litro da LITROS; hay que convertir a galones (1 gal = 3,785 L)
+    const litros = (km * uso) / kml;
+    const galones = litros / 3.785;
+    const costo = galones * pComb;
+    filas.push(['Combustible',
+      (litros.toFixed(0) + ' L = ' + galones.toFixed(1) + ' gal × ' + fmt(pComb)), costo]);
+  }
+
+  // matricula por cilindraje (rubros SRI/ANT prorrateados)
+  let matriculaAnual;
+  if (esElectrico) {
+    matriculaAnual = 120;  // exoneración parcial por incentivos a eléctricos
+  } else if (cc <= 1500) {
+    matriculaAnual = 220;
+  } else if (cc <= 2000) {
+    matriculaAnual = 290;
+  } else if (cc <= 2500) {
+    matriculaAnual = 420;
+  } else {
+    matriculaAnual = 560;
+  }
+  filas.push(['Matrícula y rodaje', 'rubros SRI y ANT ÷ 12', matriculaAnual / 12]);
+
+  // seguro
+  const sppat = esElectrico ? 60 : (cc <= 1500 ? 95 : 135);
+  let costoSe = sppat / 12;
+  let descSeguro = 'SPPAT ÷ 12';
+  if (pSeguro > 0) {
+    costoSe = (precio * pSeguro) / 12 + sppat / 12;
+    descSeguro = ((pSeguro * 100).toFixed(1) + '% del valor + SPPAT');
+  }
+  filas.push(['Seguro', descSeguro, costoSe]);
+
+  // mantenimiento por km
+  let mantAnual;
+  if (esElectrico) {
+    mantAnual = (km / 5000) * 45;   // sin aceite ni filtros
+  } else {
+    mantAnual = (km / 5000) * 120;
+  }
+  filas.push(['Mantenimiento', 'cada 5.000 km', mantAnual / 12]);
+
+  // revision tecnica
+  const rev = 45 * ciudad;
+  filas.push(['Revisión técnica', 'según ciudad ÷ 12', rev / 12]);
+
+  // totales
+  const total = filas.reduce((a, f) => a + f[2], 0);
+  const tbody = document.querySelector('#tabla tbody');
+  tbody.innerHTML = filas.map(f =>
+    '<tr><td>' + f[0] + '</td><td class="calc-desc">' + f[1] + '</td><td class="num">' + fmt(f[2]) + '</td></tr>'
+  ).join('') + '<tr class="calc-sum"><td>Total</td><td></td><td class="num">' + fmt(total) + '</td></tr>';
+
+  document.getElementById('total').textContent = fmt(total);
+  document.getElementById('anual').textContent = fmt(total * 12);
+  document.getElementById('porkm').textContent = '$' + (total / km).toFixed(3);
+
+  // actualizar la URL con el estado para poder compartir el resultado
+  const p = new URLSearchParams({
+    m: sel.value, km: km, comb: pComb, ciu: document.getElementById('ciudad').value
+  });
+  history.replaceState(null, '', '?' + p.toString());
+}
+
+document.querySelectorAll('#calc select, #calc input').forEach(el => {
+  el.addEventListener('change', calcular);
+  el.addEventListener('input', calcular);
+});
+
+// restaurar estado desde la URL (enlaces compartibles)
+const q = new URLSearchParams(location.search);
+if (q.get('m')) sel.value = q.get('m');
+if (q.get('km')) document.getElementById('km').value = q.get('km');
+if (q.get('comb')) document.getElementById('precio_comb').value = q.get('comb');
+if (q.get('ciu')) document.getElementById('ciudad').value = q.get('ciu');
+
+calcular();
+</script>
+</div></main>
+<footer><div class="wrap">
+<p><strong>Autos Ecuador</strong> — Costos, trámites y comparativas reales de autos en Ecuador</p>
+<p style="margin-top:9px">Información referencial basada en fuentes oficiales (SRI, ANT, AEADE) y tarifarios
+de concesionarios. Los precios, tasas y requisitos cambian: verifica siempre en la entidad correspondiente
+antes de tomar una decisión.</p>
+<p style="margin-top:9px">Última actualización del sitio: 2026-09-25</p>
+<p style="margin-top:12px" class="pie-legal">
+<a href="acerca.html">Acerca de</a> ·
+<a href="contacto.html">Contacto</a> ·
+<a href="privacidad.html">Privacidad</a> ·
+<a href="cookies.html">Cookies</a>
+</p>
+</div></footer>
+</body>
+</html>

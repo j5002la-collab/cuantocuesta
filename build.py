@@ -192,10 +192,35 @@ footer{border-top:1px solid var(--bd);padding:26px 0;color:var(--mut);font-size:
 footer a{color:var(--mut)}
 .volver{color:var(--mut);font-size:.85rem;display:inline-block;margin-bottom:16px}
 .legal li{margin:4px 0}
+.calc{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:22px;margin:26px 0}
+.calc-fila{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid var(--bd)}
+.calc-fila:last-child{border-bottom:0}
+.calc-fila > label{flex:0 0 210px;color:var(--tx);font-size:.92rem}
+.calc select,.calc input[type=number]{background:#0e1116;color:var(--tx);border:1px solid var(--bd);
+  border-radius:7px;padding:9px 12px;font-size:.95rem;font-family:inherit;min-width:150px}
+.calc-radios{display:flex;flex-wrap:wrap;gap:16px}
+.calc-radios label{display:flex;align-items:center;gap:7px;color:var(--mut);font-size:.9rem;cursor:pointer}
+.calc-res{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:26px 0}
+.calc-total{background:linear-gradient(160deg,#171b22,#0f1216);border:1px solid var(--bd);
+  border-radius:12px;padding:20px 22px;display:flex;flex-direction:column;gap:7px}
+.calc-total .etiqueta{color:var(--mut);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+.calc-total span:last-child{font-size:2rem;font-weight:700;color:#e9b949}
+.calc-anual span:last-child{color:#7fb3d5;font-size:1.5rem}
+.calc-km span:last-child{color:#8bc98b;font-size:1.5rem}
+.calc-tabla{width:100%;border-collapse:collapse;margin:20px 0;font-size:.92rem}
+.calc-tabla th{text-align:left;color:var(--mut);font-size:.78rem;text-transform:uppercase;
+  letter-spacing:.07em;padding:11px 12px;border-bottom:1px solid var(--bd)}
+.calc-tabla td{padding:11px 12px;border-bottom:1px solid var(--bd);color:var(--tx)}
+.calc-tabla .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.calc-tabla .calc-desc{color:var(--mut);font-size:.85rem}
+.calc-tabla .calc-sum td{border-top:2px solid var(--acc);border-bottom:0;font-weight:700;
+  color:#e9b949;padding-top:14px}
 @media(max-width:600px){
  h1{font-size:1.5rem}h2{font-size:1.15rem}
  nav a{margin-left:0;margin-right:14px;display:inline-block}
  table{font-size:.82rem}
+ .calc-fila > label{flex:1 1 100%}
+ .calc select,.calc input[type=number]{width:100%}
 }
 """
 
@@ -206,7 +231,8 @@ def pagina(titulo, descripcion, cuerpo, ruta_rel="", canonical="", og_imagen="",
            '<a href="' + ruta_rel + 'tramites.html">Trámites</a>'
            '<a href="' + ruta_rel + 'vendidos.html">Más vendidos</a>'
            '<a href="' + ruta_rel + 'comparativas.html">Comparativas</a>'
-           '<a href="' + ruta_rel + 'electricos.html">Eléctricos</a></nav>')
+           '<a href="' + ruta_rel + 'electricos.html">Eléctricos</a>'
+           '<a href="' + ruta_rel + 'calculadora.html">Calculadora</a></nav>')
     og = f'<meta property="og:image" content="{escape(og_imagen)}">' if og_imagen else ""
     tw = '<meta name="twitter:card" content="summary_large_image">' if og_imagen else ""
     ld = "\n".join(
@@ -699,10 +725,18 @@ agregamos al plan de contenido.</li>
 <p>No brindamos asesoría legal, contable ni financiera personalizada. Si tu consulta es sobre una
 situación particular con implicaciones legales, acude a un profesional o a la entidad correspondiente.</p>"""), encoding="utf-8")
 
+    # calculadora interactiva (activo de posicionamiento: herramienta real)
+    try:
+        import calculadora as _calc
+        _calc.main()
+    except Exception as e:
+        print(f"  ⚠ calculadora no generada: {e}")
+
     # sitemap
     urls = (["index.html", "costos.html", "tramites.html", "comparativas.html",
              "vendidos.html", "compra.html", "electricos.html",
-             "privacidad.html", "cookies.html", "acerca.html", "contacto.html"]
+             "privacidad.html", "cookies.html", "acerca.html", "contacto.html",
+             "calculadora.html"]
             + [f"{a['slug']}.html" for a in articulos])
     # sitemap con URLs absolutas (Google las exige)
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
