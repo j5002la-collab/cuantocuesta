@@ -58,7 +58,7 @@ En casa, **8 horas** encaja bien con la rutina: enchufas al llegar de noche, sal
 
 El costo **depende del punto y del tipo de vehículo**, y la tarifa regulada varía por horario. Cargar en horario de tarifa baja es la diferencia entre pagar $0,05 o $0,10 por kWh: el doble.
 
-Traducido a costo operativo, esto equivale aproximadamente a **$0,02 a $0,03 por kilómetro** — frente a **$0,048 a $0,072** de un auto a gasolina con Extra o Ecopaís a **$3,26 el galón**. El desglose completo está en nuestra guía de costo por kilómetro.
+Traducido a costo operativo, esto equivale aproximadamente a **$0,02 a $0,03 por kilómetro** — frente a **$0,048 a $0,072** de un auto a gasolina con Extra o Ecopaís a **$3,21 el galón**. El desglose completo está en nuestra guía de costo por kilómetro.
 
 ## Antes de comprar sin cargador en casa
 

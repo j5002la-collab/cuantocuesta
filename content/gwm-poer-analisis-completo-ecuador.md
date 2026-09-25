@@ -25,7 +25,7 @@ Ese último dato es el que sostiene el argumento. GWM creció **+53,7% en el pri
 | Torque | No especificado públicamente |
 | Transmisión | No especificado (varía por versión) |
 | Consumo homologado | No publicado oficialmente |
-| Combustible | Verificar por versión (diésel Premium a $3,20 el galón en el segmento) |
+| Combustible | Verificar por versión (diésel Premium a $3,15 el galón en el segmento) |
 | Precio | $27.000 – $38.000 |
 | Ensamblaje | Ambato, planta de Ciauto |
 | Garantía | Verificar por versión en la agencia |
@@ -44,7 +44,7 @@ El rango de **$11.000 entre la versión más accesible y la más equipada** refl
 
 ## Cuánto cuesta mantenerlo
 
-Escenario: 12.000 km al año. **El consumo no está publicado**, así que usamos una estimación de 11 km/l para uso mixto con la referencia de diésel Premium a **$3,20 el galón**. Es una estimación declarada, no un dato oficial.
+Escenario: 12.000 km al año. **El consumo no está publicado**, así que usamos una estimación de 11 km/l para uso mixto con la referencia de diésel Premium a **$3,15 el galón**. Es una estimación declarada, no un dato oficial.
 
 | Rubro anual | Rango estimado |
 | --- | --- |

@@ -35,9 +35,9 @@ Precios de combustible vigentes:
 
 | Combustible | Precio por galón |
 | --- | --- |
-| Extra / Ecopaís | $3,26 |
-| Diésel Premium | $3,20 |
-| Súper | $5,61 |
+| Extra / Ecopaís | $3,21 |
+| Diésel Premium | $3,15 |
+| Súper | $4,89 |
 
 Ecuador vende el combustible **por galón, no por litro** — detalle que confunde a muchos al comparar consumos.
 

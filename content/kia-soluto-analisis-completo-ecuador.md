@@ -47,7 +47,7 @@ Los precios varían por agencia, ciudad y promoción del mes, así que el rango 
 
 ## Cuánto cuesta mantenerlo
 
-Escenario: 12.000 km al año, versión EX de $18.790, combustible Extra o Ecopaís a **$3,26 el galón**.
+Escenario: 12.000 km al año, versión EX de $18.790, combustible Extra o Ecopaís a **$3,21 el galón**.
 
 | Rubro anual | Rango |
 | --- | --- |

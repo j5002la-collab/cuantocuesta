@@ -45,7 +45,7 @@ El mapa es útil: el Sonet cierra cerca de **$25.000** y el Tucson arranca en **
 
 ## Cuánto cuesta mantenerlo
 
-Escenario: 12.000 km al año, valor de referencia **$28.000** (estimación del segmento), combustible Extra o Ecopaís a **$3,26 el galón** y una estimación declarada de **13 km/l mixto** para un SUV compacto. El consumo del Seltos no está publicado.
+Escenario: 12.000 km al año, valor de referencia **$28.000** (estimación del segmento), combustible Extra o Ecopaís a **$3,21 el galón** y una estimación declarada de **13 km/l mixto** para un SUV compacto. El consumo del Seltos no está publicado.
 
 | Rubro anual | Rango estimado |
 | --- | --- |
@@ -62,7 +62,7 @@ El Seltos se ubica entre dos aguas: cuesta más al año que un Sonet (entre **$2
 
 Dos advertencias sobre este cuadro:
 
-**Octanaje.** Si tu versión exige Súper a **$5,61 el galón** en lugar de Extra a $3,26, el combustible sube de ~$795 a cerca de **$1.370 al año**. Son más de **$570 anuales** por una decisión que se toma al leer el manual, no al negociar el precio.
+**Octanaje.** Si tu versión exige Súper a **$4,89 el galón** en lugar de Extra a $3,21, el combustible sube de ~$795 a cerca de **$1.370 al año**. Son más de **$570 anuales** por una decisión que se toma al leer el manual, no al negociar el precio.
 
 **Matrícula.** El IPVM del SRI es **progresivo, del 0,5% al 6% sobre el avalúo**, y el avalúo se deprecia alrededor del 20% anual con piso del 10% del PVP. En este rango de valor, la matrícula supera el promedio de ~$180 anual que se cita para autos populares.
 

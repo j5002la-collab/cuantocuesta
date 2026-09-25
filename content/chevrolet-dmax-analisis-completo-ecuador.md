@@ -26,7 +26,7 @@ Aquí hay que ser claro: **las fichas publicadas no detallan las cifras mecánic
 | Torque | No especificado públicamente |
 | Transmisión | No especificado públicamente (varía por versión) |
 | Consumo homologado | No publicado oficialmente |
-| Combustible | Diésel Premium a $3,20 el galón (referencia nacional) |
+| Combustible | Diésel Premium a $3,15 el galón (referencia nacional) |
 | Precio | $34.000 – $46.000 |
 | Garantía | Verificar por versión en la agencia |
 
@@ -44,7 +44,7 @@ Doce mil dólares de diferencia entre la versión más accesible y la más equip
 
 ## Cuánto cuesta mantenerlo
 
-Escenario: 12.000 km al año, diésel a $3,20 el galón. **El consumo no está publicado**, así que usamos una estimación de 11 km/l para un uso mixto en camioneta diésel. Tómalo como referencia, no como dato oficial: con carga y en carretera de montaña el gasto sube.
+Escenario: 12.000 km al año, diésel a $3,15 el galón. **El consumo no está publicado**, así que usamos una estimación de 11 km/l para un uso mixto en camioneta diésel. Tómalo como referencia, no como dato oficial: con carga y en carretera de montaña el gasto sube.
 
 | Rubro anual | Rango estimado |
 | --- | --- |
@@ -61,7 +61,7 @@ Dos advertencias sobre ese cuadro:
 
 La matrícula de un vehículo de $40.000 no es la de un auto de $16.000. El IPVM del SRI es **progresivo, del 0,5% al 6% sobre el avalúo**, y para camionetas de este valor pesa bastante más que el promedio de ~$180 anual que la gente cita.
 
-El consumo es el rubro que más se mueve. Si tu D-Max trabaja cargada o en sierra, el gasto en diésel puede fácilmente superar los $1.200 al año. Aun así, el diésel Premium a $3,20 el galón sigue siendo más barato que la Extra y la Ecopaís a $3,26, y rinde más por galón.
+El consumo es el rubro que más se mueve. Si tu D-Max trabaja cargada o en sierra, el gasto en diésel puede fácilmente superar los $1.200 al año. Aun así, el diésel Premium a $3,15 el galón sigue siendo más barato que la Extra y la Ecopaís a $3,21, y rinde más por galón.
 
 Precios unitarios de referencia en talleres certificados: cambio de aceite y filtro **$50–$90**, filtro de combustible **$30–$60** (crítico en diésel), pastillas delanteras **$80–$150**, amortiguadores **$200–$350**, batería **$100–$200**, llanta **$120–$250**.
 

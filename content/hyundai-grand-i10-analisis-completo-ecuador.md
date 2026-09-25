@@ -47,7 +47,7 @@ Si el Grand i10 es uno de los pocos autos nuevos disponibles por debajo de $14.0
 
 ## Cuánto cuesta mantenerlo
 
-Escenario: 12.000 km al año, versión de $16.500, combustible Extra o Ecopaís a **$3,26 el galón** y una estimación declarada de **15 km/l mixto** (Hyundai no publica el consumo homologado).
+Escenario: 12.000 km al año, versión de $16.500, combustible Extra o Ecopaís a **$3,21 el galón** y una estimación declarada de **15 km/l mixto** (Hyundai no publica el consumo homologado).
 
 | Rubro anual | Rango estimado |
 | --- | --- |

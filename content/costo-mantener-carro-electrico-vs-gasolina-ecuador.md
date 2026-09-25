@@ -79,7 +79,7 @@ Escenario: **12.000 km al año**.
 | Rubro | Gasolina (referencia) | Eléctrico (estimado) |
 | --- | --- | --- |
 | Matrícula | $150-300 | Varía según avalúo, con incentivos según el caso |
-| Energía / combustible | $650-700 (Extra/Ecopaís a $3,26 el galón) | Muy inferior por km |
+| Energía / combustible | $650-700 (Extra/Ecopaís a $3,21 el galón) | Muy inferior por km |
 | Mantenimiento periódico | $180-300 | Menor: sin aceite, filtros, bujías ni correa |
 | Seguro | ~$400 | Similar, calculado sobre el valor del vehículo |
 | Otros (llantas, frenos, imprevistos) | $100-200 | Similar, con llantas exigidas e imprevistos más caros |

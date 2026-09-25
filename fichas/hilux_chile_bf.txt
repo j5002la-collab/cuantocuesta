@@ -1,0 +1,1615 @@
+ESCANEA PARA MÁS INFO
+
+ESPECIFICACIONES TÉCNICAS - VERSIONES SR y SRV
+SR
+VERSIÓN
+4X4 2.8 AT
+4X2 2.4 MT
+4X4 2.4 MT
+4X4 2.8 MT
+4X2 2.7 MT GASOLINA
+DESEMPEÑO
+Características motor
+1GD-FTV
+1GD-FTV
+2TR-FE
+Tipo
+4 cilindros en línea con turbocompresor de geometría Variable (VTG) e intercooler.
+4 cilindros en línea
+Alimentación
+Inyección secuencial electrónica (SFI)
+Distribución
+16 válvulas DOHC con cadena de distribución
+16 válvulas DOHC con cadena de distribución (Dual VVT-i)
+Relación de compresión
+15,6:1
+10,2:1
+Cilindrada (cc)
+2775
+2775
+2694
+Potencia máxima (HP / RPM)
+201 / 3400
+201 / 3400
+164 / 5200
+Par Motor - torque máximo (Nm / RPM)
+500/1600-2800
+420/1400-3400
+245/4000
+Tipo de dirección
+Hidráulica de piñón y cremallera
+Hidráulica de piñón y cremallera
+Tipo de transmisión
+Automática (6 Vel.)
+Automática (6 Vel.)
+Manual (5 Vel.)
+Tracción
+)laic
+n
+e
+r
+e
+fid
+ e
+d
+ a
+cit
+á
+m
+o
+t
+u
+a
+ 
+n
+óix
+e
+n
+o
+c
+s
+e
+d
+ 
+n
+o
+c
+(  
+4
+x
+4
+)
+C
+R
+T
+ 
+n
+o
+c a
+r
+e
+s
+a
+r
+T
+(  
+2
+x
+4
+)
+C
+R
+T
+ 
+n
+o
+c a
+r
+e
+s
+a
+r
+T
+( 
+2
+x
+4
+Tipo combustible (Norma emisiones)
+Gasolina (Euro 6b)
+Gasolina (Euro 6b)
+)l/
+m
+k
+( )
+o
+txi
+m
+/a
+r
+e
+te
+rr
+a
+c/o
+n
+a
+b
+r
+u
+(  elbits
+u
+b
+m
+o
+c o
+t
+n
+ei
+m
+id
+n
+e
+R
+10,9/14,7/13,1
+11,9/15,3/13,8
+6,9/10,9/9
+DIMENSIONES
+Ángulo de ataque (grados)
+31
+Ángulo de salida (grados)
+26
+Batalla (mm)
+3085
+Capacidad de arrastre con freno (kg)
+2000
+Capacidad de arrastre sin freno (kg)
+750
+Capacidad del estanque de combustible (Lts.)
+80
+Despeje del piso (mm)
+227
+Dimensiones (Largo/Ancho/Alto)
+5335/1855/1815
+Neumáticos
+265/60R18
+Llantas de aleación
+SI 18" (Bitono)
+Peso Bruto (Kg)
+3090
+2810
+2710
+Suspensión Delantera
+Independiente con doble brazo de suspensión, resortes helicoidales, amortiguadores telescópicos y barra
+Suspensión Trasera
+Eje rígido con elásticos longitudinales y amortiguadores telescópicos
+SEGURIDAD
+Sistema Toyota Safety Sense
+SI (PCS+LDA+ACC)
+Airbags 
+SI, 7 (2 Frontal + 1 Rodilla Conductor + 2 Lateral + 2 Cortina)
+Anclaje de seguridad para sillas de niño ISOFIX
+SI
+Bloqueo de diferencial trasero
+SI
+Control de balanceo de remolque (TSC)
+SI
+Control de tracción (TRC)
+SI
+Frenos con sistema ABS + EBD + Brake Assist (BA) + Luces de frenado de 
+emergencia (EBS)
+SI
+Frenos (Delanteros/Traseros)
+Discos ventilados/Tambor
+Sistema de asistencia de partida en pendiente (HAC)
+SI
+Sistema de control de estabilidad (VSC)
+SI
+Sensores de estacionamiento (delanteros/traseros)
+SI (2/4)
+EQUIPAMIENTO
+Aire acondicionado
+SI + Climatizador bi-zona
+Alzavidrios eléctricos
+SI
+Asiento deslizable
+Eléctrico
+Asientos delanteros calefaccionados 
+SI
+Cámara de retroceso en manilla de portalón
+SI
+Cierre a distancia
+SI
+Conector 12V
+2
+Control Crucero
+SI, Adaptativo
+NO
+Control de mandos al volante
+SI
+Cubre Pick-up con Ganchos para sujeción de carga
+SI
+Display de información múltiple 
+Pantalla a color de 4,2” (TFT)
+Espejos exteriores eléctricos
+SI (cromado), Abatible
+Espejos con señalizador
+SI
+Espejo Electrocromático
+SI
+Faros delanteros con regulacion en altura
+LED (Automatico)
+Luces Diurnas y sistema "Follow me home"
+SI
+Manillas exteriores 
+Cromado (Si)
+Material de asientos
+Cuero
+Modos de Conducción (ECO y Power)
+SI
+Neblineros
+SI, LED
+NO
+Pantalla touch con BT- USB - Apple Carplay &
+Android auto (Número de parlantes)
+9" (6)
+Smart entry y Push Start Button
+SI
+Selector electrónico de tracción 4x4
+SI
+NO
+SI
+SI
+NO
+Switch regeneración de filtro DPF
+SI
+NO
+Guardafangos
+SI
+11,8/15,7/14
+SRV
+2GD-FTV
+4 cilindros en línea con turbocompresor de geometría Variable (VTG) e intercooler.
+Inyección directa electrónica Common-Rail
+16 válvulas DOHC con cadena de distribución
+15,6:1
+2393
+148 / 3400
+400/1600-2000
+Hidráulica de piñón y cremallera
+Manual (6 Vel.)
+)laic
+n
+e
+r
+e
+fid
+ e
+d
+ a
+cit
+á
+m
+o
+t
+u
+a
+ 
+n
+óix
+e
+n
+o
+c
+s
+e
+d
+ 
+n
+o
+c
+(  
+4
+x
+4
+Diesel (Euro 6b)
+Independiente con doble brazo de suspensión, resortes helicoidales, amortiguadores telescópicos y barra
+31
+26
+3085
+2000
+750
+80
+227
+5335/1855/1815
+265/65R17
+SI 17" (Negra)
+2910
+NO
+Eje rígido con elásticos longitudinales y amortiguadores telescópicos
+NO
+SI, 7 (2 Frontal + 1 Rodilla Conductor + 2 Lateral + 2 Cortina)
+SI
+SI
+SI
+SI
+SI
+Discos ventilados/Tambor
+SI
+SI
+SI (cromado)
+SI + Climatizador bi-zona
+SI
+Mecánico
+NO
+SI
+SI
+1
+SI
+SI
+SI
+Pantalla a color de 4,2” (TFT)
+SI
+SI
+NO
+Sí. Halogenos
+SI
+Color Carrocería
+Tela
+SI
+SI, LED
+9" (6)
+NO
+SI
+vista
+360°
+SRV
+VERSIÓN
+4X2 2.4 MT
+4X4 2.4 MT
+4X4 2.8 MT
+4X2 2.7 MT GASOLINA
+4X4 2.8 AT
+DESEMPEÑO
+Características motor
+1GD-FTV
+2TR-FE
+1GD-FTV
+Tipo
+4 cilindros en línea
+4 cilindros en línea con turbocompresor de geometría Variable (VTG) e intercooler.
+Alimentación
+Inyección secuencial electrónica (SFI)
+Inyección directa electrónica Common-Rail
+Distribución
+16 válvulas DOHC con cadena de distribución (Dual VVT-i)
+16 válvulas DOHC con cadena de distribución
+Relación de compresión
+10,2:1
+15,6:1
+Cilindrada (cc)
+2755
+2694
+2755
+Potencia máxima (HP / RPM)
+201 / 3400
+164 / 5200
+201 / 3400
+Par Motor - torque máximo (Nm / RPM)
+420/1400-3400
+245/4000
+500/1600-2800
+Tipo de dirección
+Hidráulica de piñón y cremallera
+Hidráulica de piñón y cremallera
+Tipo de transmisión
+Manual (5 Vel.)
+Automática (6 Vel.)
+Tracción
+4x2 (Trasera con TRC)
+4x2 (Trasera con TRC)
+4x4 (con desconexión automática de diferencial)
+Tipo combustible (Norma emiSiones)
+Gasolina (Euro 6b)
+Diesel (Euro 6b)
+Rendimiento combustible (urbano/carretera/mixto) (km/l)
+11,1 / 15,1 / 13,3
+6,9 / 10,7 / 8,9
+10,5 / 14,1 / 12,5
+DIMENSIONES
+Ángulo de ataque (grados)
+31
+Ángulo de salida (grados)
+26
+Batalla (mm)
+3085
+Capacidad de arrastre con freno (kg)
+2000
+Capacidad de arrastre sin freno (kg)
+750
+Capacidad del estanque de combustible (Lts.)
+80
+Despeje del piso (mm)
+227
+Dimensiones (Largo/Ancho/Alto)
+5335/1855/1815
+Neumáticos
+265/60R18
+Llantas de aleación
+SÍ 18" (Bitono)
+Peso Bruto (Kg)
+2810
+2710
+3090
+Suspensión Delantera
+Independiente con doble brazo de suspenSÍón, resortes helicoidales, amortiguadores telescópicos y barra
+Suspensión Trasera
+Eje rígido con elásticos longitudinales y amortiguadores telescópicos
+SEGURIDAD
+Sistema Toyota Safety Sense
+SÍ (PCS+LDA+ACC)
+Airbags 
+SÍ, 7 (2 Frontal + 1 Rodilla Conductor + 2 Lateral + 2 Cortina)
+Anclaje de seguridad para Sillas de niño ISOFIX
+SÍ
+Bloqueo de diferencial trasero
+SÍ, con swich
+Control de balanceo de remolque (TSC)
+SÍ
+Control de tracción (TRC)
+SÍ
+Frenos con Sistema ABS + EBD + Brake AsSist (BA) + Luces de frenado de emergencia (EBS)
+SÍ
+Frenos (Delanteros/Traseros)
+Discos ventilados/Tambor
+Sistema de asistencia de partida en pendiente (HAC)
+SÍ
+Sistema de control de estabilidad (VSC)
+SÍ
+Sensores de estacionamiento (delanteros/traseros)
+SÍ (2/4)
+EQUIPAMIENTO
+Aire acondicionado
+SÍ + Climatizador bi-zona
+Alzavidrios eléctricos
+SÍ
+Asiento deslizable
+Eléctrico
+Asientos delanteros calefaccionados 
+SÍ
+Cámara de retroceso en manilla de portalón
+SÍ
+Cierre a distancia
+SÍ
+Conector 12V
+2
+Control Crucero
+No
+SÍ, Adaptativo
+Control de mandos al volante
+SÍ
+Cubre Pick-up con ganchos para sujeción de carga
+SÍ
+Display de información múltiple 
+Pantalla a color de 4,2” (TFT)
+Espejos exteriores eléctricos
+SÍ (cromado), Abatible
+Espejos con señalizador
+SÍ
+Espejo Electrocromático
+SÍ
+Faros delanteros con regulación en altura
+LED (Automatico)
+Guantera refrigerada
+SÍ
+Luces Diurnas y Sistema "Follow me home"
+SÍ
+Manillas exteriores 
+Cromado (SÍ)
+Material de aSientos
+Cuero
+Modos de Conducción (ECO y Power)
+SÍ
+Neblineros
+No
+SÍ, LED
+Pantalla touch con BT- USB - Apple Carplay & Android auto (Número de parlantes)
+9" (6)
+Smart entry y Push Start Button
+SÍ
+Selector electrónico de tracción 4x4
+No
+SÍ
+SÍ
+No
+SÍ
+Switch regeneración de filtro DPF
+No
+SÍ
+Guardafangos
+SÍ
+Las especificaciones indicadas para este modelo son meramente referenciales y están sujetas a disponibilidad de fábrica,
+por lo que deberán ser confirmadas y/o verificadas al momento de la compra con su concesionario local.
+SR
+2GD-FTV
+4 cilindros en línea con turbocompresor de geometría Variable (VTG) e intercooler.
+15,6:1
+2393
+148 / 3400
+Inyección directa electrónica Common-Rail
+16 válvulas DOHC con cadena de distribución
+4x4 (con desconexión automática de diferencial)
+Diesel (Euro 6b)
+400/1600-2000
+Hidráulica de piñón y cremallera
+Manual (6 Vel.)
+750
+80
+3085
+2000
+11,4 / 14,5 / 13,2
+31
+26
+Independiente con doble brazo de suspenSÍón, resortes helicoidales, amortiguadores telescópicos y barra
+Eje rígido con elásticos longitudinales y amortiguadores telescópicos
+SÍ 17" (Negra)
+2910
+227
+5335/1855/1815
+265/65R17
+SÍ, con swich
+SÍ
+SÍ
+No
+SÍ, 7 (2 Frontal + 1 Rodilla Conductor + 2 Lateral + 2 Cortina)
+SÍ
+No
+SÍ + Climatizador bi-zona
+SÍ
+SÍ
+SÍ
+Discos ventilados/Tambor
+SÍ
+1
+No
+SÍ
+SÍ
+Mecánico
+SÍ
+No
+Pantalla a color de 4,2” (TFT)
+SÍ (cromado)
+SÍ
+SÍ
+SÍ
+SÍ
+Color Carrocería
+Tela
+Sí. Halogenos
+SÍ
+SÍ
+SÍ
+9" (6)
+No
+SÍ
+SÍ, LED
+VERSIÓN
+4X2 2.4 MT
+4X2 2.4 MT TSS
+4X4 2.4 MT
+4X4 2.4 MT TSS
+DESEMPEÑO
+Características motor
+Tipo
+Alimentación
+Distribución
+Relación de compresión
+Cilindrada (cc)
+Potencia máxima (HP / RPM)
+Par motor - torque máximo (Nm / RPM)
+Tipo de dirección
+Tipo de transmisión
+Tracción
+Tipo combustible (Norma emisiones)
+Rendimiento combustible (urbano/carretera/mixto) (km/l)
+DIMENSIONES
+Ángulo de ataque (grados)
+Ángulo de salida (grados)
+Batalla (mm)
+Capacidad de arrastre con freno (kg)
+Capacidad de arrastre sin freno (kg)
+Capacidad del estanque de combustible (Lts.)
+Despeje del piso (mm)
+Dimensiones (largo/ancho/alto)
+Neumáticos
+Llantas de aleación
+Peso bruto (kg)
+Suspensión delantera
+Suspensión trasera
+SEGURIDAD
+Sistema Toyota Safety Sense
+No
+SÍ (PCS+LDA+ACC)
+No
+SÍ (PCS+LDA+ACC)
+Airbags 
+Anclaje de seguridad para sillas de niño ISOFIX
+Bloqueo de diferencial trasero
+Asociado al TRC
+SÍ, con swich
+Asociado al TRC
+SÍ, con swich
+Control de balanceo de remolque (TSC)
+Control de tracción (TRC)
+Frenos con sistema ABS + EBD + Brake Assist (BA) + Luces de frenado de emergencia (EBS)
+Frenos (delanteros/traseros)
+Sistema de asistencia de partida en pendiente (HAC)
+Sistema de control de estabilidad (VSC)
+Inmovilizador y alarma
+EQUIPAMIENTO
+Aire acondicionado
+Alzavidrios eléctricos
+Asiento deslizable
+Cierre a distancia
+Conector 12V
+Control crucero
+Sí
+Sí, adaptativo
+Sí
+Sí, adaptativo
+Control de mandos al volante
+Cubre Pick-up con ganchos para sujeción de carga
+Display de información múltiple 
+Espejos exteriores eléctricos
+Faros delanteros con regulación en altura
+Manillas exteriores 
+Material de asientos
+Pantalla touch con BT- USB - Apple Carplay & Android auto (número de parlantes)
+Selector electrónico de tracción 4x4
+Switch regeneración de filtro DPF
+Guardafangos
+15,6:1
+DX
+2GD-FTV
+4 cilindros en línea con turbocompresor de geometría Variable (VTG) e intercooler.
+Inyección directa electrónica Common-Rail
+16 válvulas DOHC con cadena de distribución
+2000
+2393
+148 / 3400
+400/1600-2000
+Hidráulica de piñón y cremallera
+Manual (6 Vel.)
+4x2 
+4x4 
+Diesel (Euro 6b)
+11,4 / 14,5 / 13,2
+30
+25
+3085
+Sí
+750
+80
+215
+5335/1815/1815
+225/70R17
+No (Silver)
+2810
+2910
+Independiente con doble brazo de suspensión, resortes helicoidales, amortiguadores telescópicos y barra
+Eje rígido con elásticos longitudinales y amortiguadores telescópicos
+SÍ, 7 (2 Frontal + 1 Rodilla Conductor + 2 Lateral + 2 Cortina)
+1
+Sí
+Sí
+Sí
+Discos ventilados/tambor
+Sí
+Sí
+Sí
+Sí
+Sí
+Mecánico
+Sí
+Sí
+Sí
+Sí
+Pantalla a color de 4,2” (TFT)
+Sí (negro)
+SÍ, Halógenos
+Negro
+Tela
+7" (4)
+No
+Sí
+Sí
+ESPECIFICACIONES TÉCNICAS - VERSIONES DX
+Diciembre2024
+
+VERSIÓN
+4X2 2.4 MT
+4X2 2.4 MT TSS
+4X4 2.4 MT
+4X4 2.4 MT TSS
+DESEMPEÑO
+Características motor
+Tipo
+Alimentación
+Distribución
+Relación de compresión
+Cilindrada (cc)
+Potencia máxima (HP / RPM)
+Par Motor - torque máximo (Nm / RPM)
+Tipo de dirección
+Tipo de transmisión
+Tracción
+Tipo combustible (Norma emisiones)
+Rendimiento combustible  (urbano/carretera/mixto) (km/l)
+DIMENSIONES
+Ángulo de ataque (grados)
+Ángulo de salida (grados)
+Batalla (mm)
+Capacidad de arrastre con freno (kg)
+Capacidad de arrastre sin freno (kg)
+Capacidad del estanque de combustible (Lts.)
+Despeje del piso (mm)
+Dimensiones (Largo/Ancho/Alto)
+Neumáticos
+Llantas de aleación
+Peso Bruto (Kg)
+Suspensión Delantera
+Suspensión Trasera
+SEGURIDAD
+Sistema Toyota Safety Sense
+NO
+SI (PCS+LDA+ACC)
+NO
+SI (PCS+LDA+ACC)
+Airbags 
+Anclaje de seguridad para sillas de niño ISOFIX
+Bloqueo de diferencial trasero
+NO
+SI
+NO
+SI
+Control de balanceo de remolque (TSC)
+Control de tracción (TRC)
+Frenos con sistema ABS + EBD + Brake Assist (BA) + Luces de frenado de emergencia (EBS)
+Frenos (Delanteros/Traseros)
+Sistema de asistencia de partida en pendiente (HAC)
+Sistema de control de estabilidad (VSC)
+Sensores de estacionamiento (delanteros/traseros)
+EQUIPAMIENTO
+Aire acondicionado
+Alzavidrios eléctricos
+Asiento deslizable
+Asientos delanteros calefaccionados 
+Cámara de retroceso en manilla de portalón
+Cierre a distancia
+Conector 12V
+Control Crucero
+SI
+Si, adaptativo
+SI
+Si, adaptativo
+Control de mandos al volante
+Cubre Pick-up con Ganchos para sujeción de carga
+Display de información múltiple 
+Espejos exteriores eléctricos
+Espejos con señalizador
+Espejo Electrocromático
+Faros delanteros con regulacion en altura
+Luces Diurnas y sistema "Follow me home"
+Manillas exteriores 
+Material de asientos
+Modos de Conducción (ECO y Power)
+Neblineros
+Pantalla touch con BT- USB - Apple Carplay & Android auto (Número de parlantes)
+Smart entry y Push Start Button
+Selector electrónico de tracción 4x4
+Switch regeneración de filtro DPF
+Guardafangos
+15,6:1
+DX
+2GD-FTV
+4 cilindros en línea con turbocompresor de geometría Variable (VTG) e intercooler.
+Inyección directa electrónica Common-Rail
+16 válvulas DOHC con cadena de distribución
+2000
+2393
+148 / 3400
+400/1600-2000
+Hidráulica de piñón y cremallera
+Manual (6 Vel.)
+4x2  (Trasera con TRC)
+4x4  (con desconexión automática de diferencial)
+Diesel (Euro 6b)
+11,8/15,7/14
+30
+25
+3085
+SI
+750
+80
+215
+5335/1815/1815
+225/70R17
+NO (silver)
+2810
+2910
+Independiente con doble brazo de suspensión, resortes helicoidales, amortiguadores telescópicos y barra
+Eje rígido con elásticos longitudinales y amortiguadores telescópicos
+SI, 7 (2 Frontal + 1 Rodilla Conductor + 2 Lateral + 2 Cortina)
+NO
+SI
+SI
+SI
+Discos ventilados/Tambor
+SI
+SI
+NO
+SI
+SI
+Mecánico
+NO
+Tela
+SI
+1
+SI
+SI
+Pantalla a color de 4,2” (TFT)
+SI (negro)
+NO
+NO
+Si, Halógenos
+NO
+Negro
+SI
+SI
+NO
+NO
+7" (4)
+NO
+NO
+SI
+ESPECIFICACIONES TÉCNICAS - VERSIón dx cabina doble
+colores
+disponibles
+BLANCO
+gris
+negro
+plata
+rojo
+VERSiÓN
+4X2 2.4 MT
+4X2 2.4 MT TSS
+4X4 2.4 MT
+4X4 2.4 MT TSS
+DESEMPEÑO
+Características motor
+Tipo
+Alimentación
+Distribución
+Relación de compresión
+Cilindrada (cc)
+Potencia máxima (HP / RPM)
+Par Motor - torque máximo (Nm / RPM)
+Tipo de dirección
+Tipo de transmisión
+Tracción
+Tipo combustible (Norma emiSiones)
+Rendimiento combustible (urbano/carretera/mixto) (km/l)
+DIMENSIONES
+Ángulo de ataque (grados)
+Ángulo de salida (grados)
+Batalla (mm)
+Capacidad de arrastre con freno (kg)
+Capacidad de arrastre sin freno (kg)
+Capacidad del estanque de combustible (Lts.)
+Despeje del piso (mm)
+Dimensiones (Largo/Ancho/Alto)
+Neumáticos
+Llantas de aleación
+Peso Bruto (Kg)
+Suspensión Delantera
+Suspensión Trasera
+SEGURIDAD
+Sistema Toyota Safety Sense
+No
+SÍ (PCS+LDA+ACC)
+No
+SÍ (PCS+LDA+ACC)
+Airbags 
+Anclaje de seguridad para Sillas de niño ISOFIX
+Bloqueo de diferencial trasero
+Asociado al TRC
+SÍ, con swich
+Asociado al TRC
+SÍ, con swich
+Control de balanceo de remolque (TSC)
+Control de tracción (TRC)
+Frenos con Sistema ABS + EBD + Brake AsSist (BA) + Luces de frenado de emergencia (EBS)
+Frenos (Delanteros/Traseros)
+Sistema de asistencia de partida en pendiente (HAC)
+Sistema de control de estabilidad (VSC)
+Sensores de estacionamiento (delanteros/traseros)
+EQUIPAMIENTO
+Aire acondicionado
+Alzavidrios eléctricos
+Asiento deslizable
+Asientos delanteros calefaccionados 
+Cámara de retroceso en manilla de portalón
+Cierre a distancia
+Conector 12V
+Control Crucero
+SÍ
+SÍ, adaptativo
+SÍ
+SÍ, adaptativo
+Control de mandos al volante
+Cubre Pick-up con ganchos para sujeción de carga
+Display de información múltiple 
+Espejos exteriores eléctricos
+Espejos con señalizador
+Espejo Electrocromático
+Faros delanteros con regulación en altura
+Guantera refrigerada
+Luces Diurnas y Sistema "Follow me home"
+Manillas exteriores 
+Material de aSientos
+Modos de Conducción (ECO y Power)
+Neblineros
+Pantalla touch con BT- USB - Apple Carplay & Android auto (Número de parlantes)
+Smart entry y Push Start Button
+Selector electrónico de tracción 4x4
+Switch regeneración de filtro DPF
+Guardafangos
+Manual (6 Vel.)
+4x4 
+Diesel (Euro 6b)
+11,4 / 14,5 / 13,2
+2393
+148 / 3400
+400/1600-2000
+Hidráulica de piñón y cremallera
+215
+5335/1815/1815
+225/70R17
+No (SÍlver)
+4x2 
+SÍ, Halogenos
+SÍ
+Pantalla a color de 4,2” (TFT)
+SÍ
+No
+SÍ
+SÍ
+80
+Las especificaciones indicadas para este modelo son meramente referenciales y están sujetas a disponibilidad de fábrica,
+por lo que deberán ser confirmadas y/o verificadas al momento de la compra con su concesionario local.
+DX
+2GD-FTV
+4 cilindros en línea con turbocompresor de geometría Variable (VTG) e intercooler.
+Inyección directa electrónica Common-Rail
+16 válvulas DOHC con cadena de distribución
+15,6:1
+No
+7" (4)
+No
+SÍ
+SÍ (negro)
+No
+No
+30
+25
+3085
+2000
+750
+SÍ
+2910
+Independiente con doble brazo de suspenSÍón, resortes helicoidales, amortiguadores telescópicos y barra
+Eje rígido con elásticos longitudinales y amortiguadores telescópicos
+SÍ, 7 (2 Frontal + 1 Rodilla Conductor + 2 Lateral + 2 Cortina)
+SÍ
+SÍ
+SÍ
+SÍ
+Discos ventilados/Tambor
+SÍ
+2810
+Mecánico
+No
+No
+SÍ
+1
+SÍ
+SÍ
+No
+No
+Negro
+Tela
+No
+No
+Diciembre2024
+VERSIÓN
+4X2 2.4 MT
+4X4 2.4 MT
+4X4 2.8 MT
+DESEMPEÑO
+Características motor
+1GD-FTV
+Tipo
+Alimentación
+Distribución
+Relación de compresión
+Cilindrada (cc)
+2755
+Potencia máxima (HP / RPM)
+201 / 3400
+Par motor - torque máximo (Nm / RPM)
+420/1400-3400
+Tipo de dirección
+Tipo de transmisión
+Tracción
+4x2 (Trasera con TRC)
+Tipo combustible (Norma emisiones)
+Rendimiento combustible (urbano/carretera/mixto) (km/l)
+11,1 / 15,1 / 13,3
+DIMENSIONES
+Ángulo de ataque (grados)
+Ángulo de salida (grados)
+Batalla (mm)
+Capacidad de arrastre con freno (kg)
+Capacidad de arrastre sin freno (kg)
+Capacidad del estanque de combustible (Lts.)
+Despeje del piso (mm)
+Dimensiones (largo/ancho/alto)
+Neumáticos
+Llantas de aleación
+Peso bruto (kg)
+2810
+Suspensión delantera
+Suspensión trasera
+SEGURIDAD
+Airbags 
+Anclaje de seguridad para sillas de niño ISOFIX
+Bloqueo de diferencial trasero
+Control de balanceo de remolque (TSC)
+Control de tracción (TRC)
+Frenos con sistema ABS + EBD + Brake Assist (BA) + Luces de frenado de emergencia (EBS)
+Frenos (delanteros/traseros)
+Sistema de asistencia de partida en pendiente (HAC)
+Sistema de control de estabilidad (VSC)
+Inmovilizador y alarma
+EQUIPAMIENTO
+Aire acondicionado
+Alzavidrios eléctricos
+Asiento deslizable
+Cámara de retroceso en manilla de portalón
+Cierre a distancia
+Conector 12V
+Control crucero
+Control de mandos al volante
+Cubre Pick-up con ganchos para sujeción de carga
+Display de información múltiple 
+Espejos exteriores eléctricos
+Espejos con señalizador
+Espejo electrocromático
+Faros delanteros con regulación en altura
+Guantera refrigerada
+Luces diurnas y sistema "Follow me home"
+Manillas exteriores 
+Material de asientos
+Modos de conducción (ECO y Power)
+Neblineros
+Pantalla touch con BT- USB - Apple Carplay & Android auto (número de parlantes)
+Smart entry y push start button
+Selector electrónico de tracción 4x4
+No
+Sí
+Sí
+Switch regeneración de filtro DPF
+Guardafangos
+15,6:1
+SR
+2GD-FTV
+4 cilindros en línea con turbocompresor de geometría Variable (VTG) e intercooler.
+Inyección directa electrónica Common-Rail
+16 válvulas DOHC con cadena de distribución
+2000
+2393
+148 / 3400
+400/1600-2000
+Hidráulica de piñón y cremallera
+Manual (6 Vel.)
+4x4 
+Diesel (Euro 6b)
+11,4 / 14,5 / 13,2
+30
+25
+3085
+SÍ, con swich
+750
+80
+227
+5335/1855/1815
+265/65R17
+Sí 17" (Negra)
+2910
+Independiente con doble brazo de suspensión, resortes helicoidales, amortiguadores telescópicos y barra
+Eje rígido con elásticos longitudinales y amortiguadores telescópicos
+SÍ, 7 (2 Frontal + 1 Rodilla Conductor + 2 Lateral + 2 Cortina)
+Sí
+SÍ
+Sí
+Sí
+Sí
+Discos ventilados/ tambor
+Sí
+Sí
+Sí
+SÍ + Climatizador bi-zona
+Sí
+Mecánico
+Sí
+Color Carrocería
+1
+Sí
+Sí
+Sí
+Pantalla a color de 4,2” (TFT)
+SÍ (cromado)
+Sí
+No
+Sí. Halógenos
+Sí
+Sí
+Sí
+Tela
+Sí
+Sí, LED
+9" (6)
+No
+Sí
+ESPECIFICACIONES TÉCNICAS - VERSIONES sr
+
+VERSIÓN
+4X2 2.4 MT
+4X2 2.4 MT TSS
+4X4 2.4 MT
+4X4 2.4 MT TSS
+DESEMPEÑO
+Características motor
+Tipo
+Alimentación
+Distribución
+Relación de compresión
+Cilindrada (cc)
+Potencia máxima (HP / RPM)
+Par Motor - torque máximo (Nm / RPM)
+Tipo de dirección
+Tipo de transmisión
+Tracción
+Tipo combustible (Norma emisiones)
+Rendimiento combustible  (urbano/carretera/mixto) (km/l)
+DIMENSIONES
+Ángulo de ataque (grados)
+Ángulo de salida (grados)
+Batalla (mm)
+Capacidad de arrastre con freno (kg)
+Capacidad de arrastre sin freno (kg)
+Capacidad del estanque de combustible (Lts.)
+Despeje del piso (mm)
+Dimensiones (Largo/Ancho/Alto)
+Neumáticos
+Llantas de aleación
+Peso Bruto (Kg)
+Suspensión Delantera
+Suspensión Trasera
+SEGURIDAD
+Sistema Toyota Safety Sense
+NO
+SI (PCS+LDA+ACC)
+NO
+SI (PCS+LDA+ACC)
+Airbags 
+Anclaje de seguridad para sillas de niño ISOFIX
+Bloqueo de diferencial trasero
+NO
+SI
+NO
+SI
+Control de balanceo de remolque (TSC)
+Control de tracción (TRC)
+Frenos con sistema ABS + EBD + Brake Assist (BA) + Luces de frenado de emergencia (EBS)
+Frenos (Delanteros/Traseros)
+Sistema de asistencia de partida en pendiente (HAC)
+Sistema de control de estabilidad (VSC)
+Sensores de estacionamiento (delanteros/traseros)
+EQUIPAMIENTO
+Aire acondicionado
+Alzavidrios eléctricos
+Asiento deslizable
+Asientos delanteros calefaccionados 
+Cámara de retroceso en manilla de portalón
+Cierre a distancia
+Conector 12V
+Control Crucero
+SI
+Si, adaptativo
+SI
+Si, adaptativo
+Control de mandos al volante
+Cubre Pick-up con Ganchos para sujeción de carga
+Display de información múltiple 
+Espejos exteriores eléctricos
+Espejos con señalizador
+Espejo Electrocromático
+Faros delanteros con regulacion en altura
+Luces Diurnas y sistema "Follow me home"
+Manillas exteriores 
+Material de asientos
+Modos de Conducción (ECO y Power)
+Neblineros
+Pantalla touch con BT- USB - Apple Carplay & Android auto (Número de parlantes)
+Smart entry y Push Start Button
+Selector electrónico de tracción 4x4
+Switch regeneración de filtro DPF
+Guardafangos
+15,6:1
+DX
+2GD-FTV
+4 cilindros en línea con turbocompresor de geometría Variable (VTG) e intercooler.
+Inyección directa electrónica Common-Rail
+16 válvulas DOHC con cadena de distribución
+2000
+2393
+148 / 3400
+400/1600-2000
+Hidráulica de piñón y cremallera
+Manual (6 Vel.)
+4x2  (Trasera con TRC)
+4x4  (con desconexión automática de diferencial)
+Diesel (Euro 6b)
+11,8/15,7/14
+30
+25
+3085
+SI
+750
+80
+215
+5335/1815/1815
+225/70R17
+NO (silver)
+2810
+2910
+Independiente con doble brazo de suspensión, resortes helicoidales, amortiguadores telescópicos y barra
+Eje rígido con elásticos longitudinales y amortiguadores telescópicos
+SI, 7 (2 Frontal + 1 Rodilla Conductor + 2 Lateral + 2 Cortina)
+NO
+SI
+SI
+SI
+Discos ventilados/Tambor
+SI
+SI
+NO
+SI
+SI
+Mecánico
+NO
+Tela
+SI
+1
+SI
+SI
+Pantalla a color de 4,2” (TFT)
+SI (negro)
+NO
+NO
+Si, Halógenos
+NO
+Negro
+SI
+SI
+NO
+NO
+7" (4)
+NO
+NO
+SI
+ESPECIFICACIONES TÉCNICAS - VERSIón dx cabina doble
+colores
+disponibles
+BLANCO
+gris
+negro
+plata
+rojo
+VERSiÓN
+4X2 2.4 MT
+4X2 2.4 MT TSS
+4X4 2.4 MT
+4X4 2.4 MT TSS
+DESEMPEÑO
+Características motor
+Tipo
+Alimentación
+Distribución
+Relación de compresión
+Cilindrada (cc)
+Potencia máxima (HP / RPM)
+Par Motor - torque máximo (Nm / RPM)
+Tipo de dirección
+Tipo de transmisión
+Tracción
+Tipo combustible (Norma emiSiones)
+Rendimiento combustible (urbano/carretera/mixto) (km/l)
+DIMENSIONES
+Ángulo de ataque (grados)
+Ángulo de salida (grados)
+Batalla (mm)
+Capacidad de arrastre con freno (kg)
+Capacidad de arrastre sin freno (kg)
+Capacidad del estanque de combustible (Lts.)
+Despeje del piso (mm)
+Dimensiones (Largo/Ancho/Alto)
+Neumáticos
+Llantas de aleación
+Peso Bruto (Kg)
+Suspensión Delantera
+Suspensión Trasera
+SEGURIDAD
+Sistema Toyota Safety Sense
+No
+SÍ (PCS+LDA+ACC)
+No
+SÍ (PCS+LDA+ACC)
+Airbags 
+Anclaje de seguridad para Sillas de niño ISOFIX
+Bloqueo de diferencial trasero
+Asociado al TRC
+SÍ, con swich
+Asociado al TRC
+SÍ, con swich
+Control de balanceo de remolque (TSC)
+Control de tracción (TRC)
+Frenos con Sistema ABS + EBD + Brake AsSist (BA) + Luces de frenado de emergencia (EBS)
+Frenos (Delanteros/Traseros)
+Sistema de asistencia de partida en pendiente (HAC)
+Sistema de control de estabilidad (VSC)
+Sensores de estacionamiento (delanteros/traseros)
+EQUIPAMIENTO
+Aire acondicionado
+Alzavidrios eléctricos
+Asiento deslizable
+Asientos delanteros calefaccionados 
+Cámara de retroceso en manilla de portalón
+Cierre a distancia
+Conector 12V
+Control Crucero
+SÍ
+SÍ, adaptativo
+SÍ
+SÍ, adaptativo
+Control de mandos al volante
+Cubre Pick-up con ganchos para sujeción de carga
+Display de información múltiple 
+Espejos exteriores eléctricos
+Espejos con señalizador
+Espejo Electrocromático
+Faros delanteros con regulación en altura
+Guantera refrigerada
+Luces Diurnas y Sistema "Follow me home"
+Manillas exteriores 
+Material de aSientos
+Modos de Conducción (ECO y Power)
+Neblineros
+Pantalla touch con BT- USB - Apple Carplay & Android auto (Número de parlantes)
+Smart entry y Push Start Button
+Selector electrónico de tracción 4x4
+Switch regeneración de filtro DPF
+Guardafangos
+Manual (6 Vel.)
+4x4 
+Diesel (Euro 6b)
+11,4 / 14,5 / 13,2
+2393
+148 / 3400
+400/1600-2000
+Hidráulica de piñón y cremallera
+215
+5335/1815/1815
+225/70R17
+No (SÍlver)
+4x2 
+SÍ, Halogenos
+SÍ
+Pantalla a color de 4,2” (TFT)
+SÍ
+No
+SÍ
+SÍ
+80
+Las especificaciones indicadas para este modelo son meramente referenciales y están sujetas a disponibilidad de fábrica,
+por lo que deberán ser confirmadas y/o verificadas al momento de la compra con su concesionario local.
+DX
+2GD-FTV
+4 cilindros en línea con turbocompresor de geometría Variable (VTG) e intercooler.
+Inyección directa electrónica Common-Rail
+16 válvulas DOHC con cadena de distribución
+15,6:1
+No
+7" (4)
+No
+SÍ
+SÍ (negro)
+No
+No
+30
+25
+3085
+2000
+750
+SÍ
+2910
+Independiente con doble brazo de suspenSÍón, resortes helicoidales, amortiguadores telescópicos y barra
+Eje rígido con elásticos longitudinales y amortiguadores telescópicos
+SÍ, 7 (2 Frontal + 1 Rodilla Conductor + 2 Lateral + 2 Cortina)
+SÍ
+SÍ
+SÍ
+SÍ
+Discos ventilados/Tambor
+SÍ
+2810
+Mecánico
+No
+No
+SÍ
+1
+SÍ
+SÍ
+No
+No
+Negro
+Tela
+No
+No
+ESPECIFICACIONES TÉCNICAS - VERSIONES srV
+SRV
+VERSIÓN
+4X4 2.8 AT
+DESEMPEÑO
+Características motor
+1GD-FTV
+Tipo
+4 cilindros en línea con turbocompresor de geometría Variable (VTG) e intercooler.
+Alimentación
+Inyección directa electrónica Common-Rail
+Distribución
+16 válvulas DOHC con cadena de distribución
+Relación de compresión
+15,6:1
+Cilindrada (cc)
+2755
+Potencia máxima (HP / RPM)
+201 / 3400
+Par motor - torque máximo (Nm / RPM)
+500/1600-2800
+Tipo de dirección
+Hidráulica de piñón y cremallera
+Tipo de transmisión
+Automática (6 Vel.)
+Tracción
+4x4 (con desconexión automática de diferencial)
+Tipo combustible (Norma emisiones)
+Diesel (Euro 6b)
+Rendimiento combustible (urbano/carretera/mixto) (km/l)
+10,5 / 14,1 / 12,5
+DIMENSIONES
+Ángulo de ataque (grados)
+30
+Ángulo de salida (grados)
+25
+Batalla (mm)
+3085
+Capacidad de arrastre con freno (kg)
+2000
+Capacidad de arrastre sin freno (kg)
+750
+Capacidad del estanque de combustible (Lts.)
+80
+Despeje del piso (mm)
+227
+Dimensiones (largo/ancho/alto)
+5335/1855/1815
+Neumáticos
+265/60R18
+Llantas de aleación
+Sí 18" (Bitono)
+Peso bruto (kg)
+3090
+Suspensión delantera
+Independiente con doble brazo de suspensión, resortes helicoidales, amortiguadores telescópicos y barra
+Suspensión trasera
+Eje rígido con elásticos longitudinales y amortiguadores telescópicos
+SEGURIDAD
+Sistema Toyota Safety Sense
+SÍ (PCS+LDA+ACC)
+Airbags 
+SÍ, 7 (2 Frontal + 1 Rodilla Conductor + 2 Lateral + 2 Cortina)
+Anclaje de seguridad para sillas de niño ISOFIX
+Sí
+Bloqueo de diferencial trasero
+Sí, con swich
+Control de balanceo de remolque (TSC)
+Sí
+Control de tracción (TRC)
+Sí
+Frenos con sistema ABS + EBD + Brake Assist (BA) + Luces de frenado de emergencia (EBS)
+Sí
+Frenos (delanteros/traseros)
+Discos ventilados/ tambor
+Sistema de asistencia de partida en pendiente (HAC)
+Sí
+Sistema de control de estabilidad (VSC)
+Sí
+Inmovilizador y alarma
+Sí
+Sensores de estacionamiento (delanteros/traseros)
+Sí (2/4)
+EQUIPAMIENTO
+Aire acondicionado
+Sí + Climatizador bi-zona
+Alzavidrios eléctricos
+Sí
+Asiento deslizable
+Eléctrico
+Asientos delanteros calefaccionados 
+Sí
+Cámara de retroceso en manilla de portalón
+Sí
+Cierre a distancia
+Sí
+Conector 12V
+2
+Control crucero
+SÍ, Adaptativo
+Control de mandos al volante
+Sí
+Cubre Pick-up con ganchos para sujeción de carga
+Sí
+Display de información múltiple 
+Pantalla a color de 4,2” (TFT)
+Espejos exteriores eléctricos
+SÍ (cromado), Abatible
+Espejos con señalizador
+Sí
+Espejo electrocromático
+Sí
+Faros delanteros con regulación en altura
+LED (Automático)
+Guantera refrigerada
+Sí
+Luces diurnas y sistema "Follow me home"
+Sí
+Manillas exteriores 
+Cromado (SÍ)
+Material de asientos
+Cuero
+Modos de conducción (ECO y Power)
+Sí
+Neblineros
+SÍ, LED
+Pantalla touch con BT- USB - Apple Carplay & Android auto (número de parlantes)
+9" (6)
+Smart entry y push start button
+Sí
+Selector electrónico de tracción 4x4
+Sí
+Switch regeneración de filtro DPF
+Sí
+Guardafangos
+Sí
+Diciembre2024

@@ -40,7 +40,7 @@ El Soluto es **185 mm más largo** que el Groove, pero el Groove es un SUV: gana
 
 La ficha técnica de Chevrolet Ecuador no publica consumo homologado del Groove. Con 1.5 L y peso de SUV compacto, el rango esperable está entre 12 y 14 km/l mixto — **verifícalo en tu prueba de manejo**, no lo tomes como dato oficial.
 
-A 12.000 km al año con Extra o Ecopaís a $3,26 el galón:
+A 12.000 km al año con Extra o Ecopaís a $3,21 el galón:
 
 - Soluto MT: 774,2 litros al año → **$666,81 al año**
 - Soluto AT: 845,1 litros al año → **$727,85 al año**
@@ -76,7 +76,7 @@ Tres años más de cobertura son tres años en los que un fallo de fábrica no s
 
 ## Costo a 5 años, con números
 
-Supuestos: 12.000 km al año, combustible Extra/Ecopaís a $3,26 el galón, matrícula de referencia $180 al año, seguro estimado en 4% del valor el primer año. El mantenimiento de concesionario no está publicado por marca en nuestras fuentes; en marcas generalistas se mueve entre **$300 y $600 al año**, así que usamos $450 como referencia para ambos.
+Supuestos: 12.000 km al año, combustible Extra/Ecopaís a $3,21 el galón, matrícula de referencia $180 al año, seguro estimado en 4% del valor el primer año. El mantenimiento de concesionario no está publicado por marca en nuestras fuentes; en marcas generalistas se mueve entre **$300 y $600 al año**, así que usamos $450 como referencia para ambos.
 
 | Rubro a 5 años | Kia Soluto EX ($18.790) | Chevrolet Groove Premier ($24.490) |
 | --- | --- | --- |

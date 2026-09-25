@@ -2,7 +2,7 @@
 titulo: "Costo por kilómetro: eléctrico vs gasolina en Ecuador (cálculo real)"
 slug: costo-por-kilometro-electrico-vs-gasolina-ecuador
 categoria: electricos
-descripcion: "Cargar un eléctrico cuesta $8 a $10 y la gasolina $3,26 el galón. Cuánto cuesta cada kilómetro con escenarios de 10.000, 15.000 y 20.000 km al año."
+descripcion: "Cargar un eléctrico cuesta $8 a $10 y la gasolina $3,21 el galón. Cuánto cuesta cada kilómetro con escenarios de 10.000, 15.000 y 20.000 km al año."
 actualizado: 2026-09-26
 seo_titulo: Costo por kilómetro: eléctrico vs gasolina
 ---
@@ -17,9 +17,9 @@ Esa es la conclusión. Lo que sigue es de dónde sale, con los supuestos sobre l
 
 | Rubro | Valor verificado |
 | --- | --- |
-| Combustible Extra / Ecopaís | $3,26 por galón |
-| Diésel Premium | $3,20 por galón |
-| Combustible Súper | $5,61 por galón |
+| Combustible Extra / Ecopaís | $3,21 por galón |
+| Diésel Premium | $3,15 por galón |
+| Combustible Súper | $4,89 por galón |
 | Costo de una carga eléctrica | $8,00 – $10,00 |
 | Tarifa de carga establecida | $0,05 – $0,10 por kWh (según horario) |
 | Carga en casa, conector 220 V | ~8 horas |
@@ -38,7 +38,7 @@ El problema no es la fórmula. Es que en gasolina el rendimiento depende del mod
 
 ## Costo por kilómetro: gasolina según rendimiento
 
-Con Extra o Ecopaís a **$3,26 el galón**:
+Con Extra o Ecopaís a **$3,21 el galón**:
 
 | Rendimiento | km por galón | Costo por km | Costo por 100 km |
 | --- | --- | --- | --- |

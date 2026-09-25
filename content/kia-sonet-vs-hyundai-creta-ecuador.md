@@ -49,7 +49,7 @@ Si viajas con tres adultos atrás de forma habitual, el segmento mediano se sien
 
 Aquí hay un dato que sorprende a muchos: **la versión automática IVT consume menos que la manual** — 18,03 contra 15,14 km/l combinados. El 1.5 L con transmisión IVT está optimizado para bajas vueltas sostenidas.
 
-Traducido a dinero, con 12.000 km al año y Extra/Ecopaís a $3,26 el galón:
+Traducido a dinero, con 12.000 km al año y Extra/Ecopaís a $3,21 el galón:
 
 | Versión | Litros al año | Costo al año | Costo a 5 años |
 | --- | --- | --- | --- |

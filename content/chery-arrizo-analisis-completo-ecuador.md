@@ -45,7 +45,7 @@ Ventaja de precio: el Arrizo entra en **$16.000**, unos $200 por encima del Chev
 
 ## Cuánto cuesta mantenerlo
 
-Escenario: 12.000 km al año, versión de **$20.000**, combustible Extra o Ecopaís a **$3,26 el galón** y una estimación declarada de **14 km/l mixto**, porque el consumo homologado no está publicado.
+Escenario: 12.000 km al año, versión de **$20.000**, combustible Extra o Ecopaís a **$3,21 el galón** y una estimación declarada de **14 km/l mixto**, porque el consumo homologado no está publicado.
 
 | Rubro anual | Rango estimado |
 | --- | --- |

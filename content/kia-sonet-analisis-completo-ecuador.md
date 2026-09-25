@@ -50,7 +50,7 @@ Ventaja concreta del ensamblaje local: **disponibilidad de repuestos y tiempos d
 
 ## Cuánto cuesta mantenerlo
 
-Escenario: 12.000 km al año, combustible Extra o Ecopaís a **$3,26 el galón**, precio entre $21.599 y $25.000.
+Escenario: 12.000 km al año, combustible Extra o Ecopaís a **$3,21 el galón**, precio entre $21.599 y $25.000.
 
 | Rubro anual | Versión manual | Versión IVT |
 | --- | --- | --- |

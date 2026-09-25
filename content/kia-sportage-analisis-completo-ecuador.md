@@ -47,7 +47,7 @@ Los precios varían por agencia, versión y promoción del mes. Cotiza al menos 
 
 ## Cuánto cuesta mantenerlo
 
-Escenario: 12.000 km al año, auto de alrededor de **$34.000** (valor de referencia del segmento), combustible Extra o Ecopaís a **$3,26 el galón** y una estimación declarada de **11 km/l mixto** para un SUV mediano. El consumo del Sportage no está publicado: la cifra es estimación, no dato oficial.
+Escenario: 12.000 km al año, auto de alrededor de **$34.000** (valor de referencia del segmento), combustible Extra o Ecopaís a **$3,21 el galón** y una estimación declarada de **11 km/l mixto** para un SUV mediano. El consumo del Sportage no está publicado: la cifra es estimación, no dato oficial.
 
 | Rubro anual | Rango estimado |
 | --- | --- |
@@ -62,7 +62,7 @@ Escenario: 12.000 km al año, auto de alrededor de **$34.000** (valor de referen
 
 Dos sensibilidades importantes:
 
-**Octanaje.** Si el manual de tu versión exige Súper a **$5,61 el galón** en lugar de Extra o Ecopaís a $3,26, el gasto en combustible sube a cerca de **$1.617 al año**. Son casi **$680 más** solo por el tipo de combustible. Verifica ese punto en la agencia antes de comprar: es la diferencia de costo operativo más grande de todo el cuadro.
+**Octanaje.** Si el manual de tu versión exige Súper a **$4,89 el galón** en lugar de Extra o Ecopaís a $3,21, el gasto en combustible sube a cerca de **$1.617 al año**. Son casi **$680 más** solo por el tipo de combustible. Verifica ese punto en la agencia antes de comprar: es la diferencia de costo operativo más grande de todo el cuadro.
 
 **Matrícula.** El IPVM del SRI es **progresivo, del 0,5% al 6% sobre el avalúo**, y el avalúo se deprecia cerca del 20% anual con un piso del 10% del PVP. En un vehículo de $34.000, la matrícula supera ampliamente el promedio de ~$180 anual que se cita para autos populares.
 

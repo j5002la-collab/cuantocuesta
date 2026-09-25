@@ -135,7 +135,7 @@ Antes de firmar, suma estos rubros a tu presupuesto mensual:
 
 - **Matrícula:** ~$180 al año
 - **Seguro:** ~4% del valor del vehículo el primer año ($800 en un auto de $20.000)
-- **Combustible:** Extra/Ecopaís a $3,26 el galón; Súper a $5,61
+- **Combustible:** Extra/Ecopaís a $3,21 el galón; Súper a $4,89
 - **Mantenimiento anual por marca:** desde $300–500 (Nissan) y $300–600 (Toyota) hasta $800–1.200 (RAM)
 
 En un auto de $20.000, entre combustible, seguro, matrícula y mantenimiento estás mirando **entre $175 y $250 al mes** solo en costos de operación, antes de la cuota del crédito.

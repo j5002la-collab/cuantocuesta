@@ -1,218 +1,318 @@
 {
-  "meta": {
-    "moneda": "USD",
-    "pais": "Ecuador",
-    "actualizado": "2026-09",
-    "fuentes": [
-      "AEADE (Asociación de Empresas Automotrices del Ecuador)",
-      "SRI - Servicio de Rentas Internas",
-      "ANT - Agencia Nacional de Tránsito",
-      "Concesionarios oficiales de cada marca"
-    ],
-    "nota": "Precios de lista referenciales. Varían por agencia, promoción y versión."
+ "meta": {
+  "moneda": "USD",
+  "pais": "Ecuador",
+  "actualizado": "2026-09-25",
+  "fuentes": [
+   "AEADE (Asociación de Empresas Automotrices del Ecuador)",
+   "SRI - Servicio de Rentas Internas",
+   "ANT - Agencia Nacional de Tránsito",
+   "Concesionarios oficiales de cada marca"
+  ],
+  "nota": "Precios de lista referenciales. Varían por agencia, promoción y versión."
+ },
+ "modelos": [
+  {
+   "slug": "kia-soluto",
+   "nombre": "Kia Soluto",
+   "marca": "Kia",
+   "segmento": "Sedán B",
+   "precio_desde": 15799,
+   "precio_hasta": 18790,
+   "versiones": [
+    "LX",
+    "EX"
+   ],
+   "motor": "1.4 L MPI, 4 cilindros, 16 válvulas",
+   "potencia_hp": 94,
+   "torque_nm": 132,
+   "transmision": "Manual 5 vel. / Automática 4 vel.",
+   "consumo_urbano": 13.8,
+   "consumo_carretera": 18.2,
+   "consumo_mixto": 15.5,
+   "unidad_consumo": "km/l",
+   "tanque_l": 43,
+   "maletero_l": 475,
+   "peso_kg": 1095,
+   "airbags": 6,
+   "garantia": "10 años o 160.000 km",
+   "origen": "Importado (Corea del Sur)",
+   "unidades_2025": 8725,
+   "ranking": "Sedán más vendido del Ecuador",
+   "notas": "El auto de pasajeros más vendido del país. Excelente consumo y relación precio-equipamiento. Compite directo con Nissan Versa y Hyundai Accent."
   },
-  "modelos": [
-    {
-      "slug": "kia-soluto",
-      "nombre": "Kia Soluto",
-      "marca": "Kia",
-      "segmento": "Sedán B",
-      "precio_desde": 15799,
-      "precio_hasta": 18790,
-      "versiones": ["LX", "EX"],
-      "motor": "1.4 L MPI, 4 cilindros, 16 válvulas",
-      "potencia_hp": 94,
-      "torque_nm": 132,
-      "transmision": "Manual 5 vel. / Automática 4 vel.",
-      "consumo_urbano": 13.8,
-      "consumo_carretera": 18.2,
-      "consumo_mixto": 15.5,
-      "unidad_consumo": "km/l",
-      "tanque_l": 43,
-      "maletero_l": 475,
-      "peso_kg": 1095,
-      "airbags": 6,
-      "garantia": "10 años o 160.000 km",
-      "origen": "Importado (Corea del Sur)",
-      "unidades_2025": 8725,
-      "ranking": "Sedán más vendido del Ecuador",
-      "notas": "El auto de pasajeros más vendido del país. Excelente consumo y relación precio-equipamiento. Compite directo con Nissan Versa y Hyundai Accent."
-    },
-    {
-      "slug": "chevrolet-groove",
-      "nombre": "Chevrolet Groove",
-      "marca": "Chevrolet",
-      "segmento": "SUV compacto",
-      "precio_desde": 19999,
-      "precio_hasta": 24490,
-      "versiones": ["LTZ", "Premier MT"],
-      "motor": "1.5 L DVCP",
-      "potencia_hp": 98,
-      "torque_nm": 143,
-      "transmision": "Manual 6 vel.",
-      "consumo_mixto": 14.0,
-      "unidad_consumo": "km/l",
-      "airbags": 4,
-      "garantia": "7 años o 150.000 km",
-      "origen": "Importado",
-      "unidades_2025": 4063,
-      "ranking": "SUV más vendido del Ecuador",
-      "notas": "Líder del segmento SUV. Red de servicio Chevrolet en todo el país, incluidas ciudades intermedias. Cuota desde $309/mes en planes de financiamiento."
-    },
-    {
-      "slug": "kia-sonet",
-      "nombre": "Kia Sonet",
-      "marca": "Kia",
-      "segmento": "SUV subcompacto",
-      "precio_desde": 21599,
-      "precio_hasta": 25000,
-      "versiones": ["Entry", "LX", "EX", "SX", "X Line", "GT Line"],
-      "motor": "1.5 L, 4 cilindros",
-      "potencia_hp": 113,
-      "torque_nm": 144,
-      "transmision": "Manual / IVT (automática)",
-      "consumo_mixto": 15.14,
-      "consumo_mixto_ivt": 18.03,
-      "unidad_consumo": "km/l",
-      "tanque_l": 45,
-      "maletero_l": 392,
-      "airbags": 6,
-      "garantia": "10 años o 160.000 km",
-      "origen": "ENSAMBLADO EN QUITO (Aymesa)",
-      "unidades_2025": 3593,
-      "ranking": "3.er más vendido en H1 2026",
-      "notas": "Ensamblado en Ecuador, lo que da ventaja en disponibilidad de repuestos y tiempos de entrega. 6 airbags de serie."
-    },
-    {
-      "slug": "hyundai-tucson",
-      "nombre": "Hyundai Tucson",
-      "marca": "Hyundai",
-      "segmento": "SUV mediano",
-      "precio_desde": 32499,
-      "precio_hasta": 40000,
-      "motor": "2.5 L atmosférico",
-      "transmision": "Automática",
-      "airbags": 6,
-      "garantia": "5 años sin límite de kilometraje",
-      "origen": "Importado / ensamblado (según versión)",
-      "unidades_2025": 2395,
-      "ranking": "Top 5 SUV",
-      "notas": "Comparte plataforma con Kia Sportage. Perfil más orientado al confort familiar. Reputación de fiabilidad y red de servicio consolidada."
-    },
-    {
-      "slug": "hyundai-grand-i10",
-      "nombre": "Hyundai Grand i10",
-      "marca": "Hyundai",
-      "segmento": "Hatchback A",
-      "precio_desde": 13990,
-      "precio_hasta": 16500,
-      "motor": "1.2 L",
-      "transmision": "Manual / Automática",
-      "airbags": 2,
-      "origen": "Importado",
-      "unidades_2025": 1690,
-      "ranking": "Segundo auto de pasajeros más vendido",
-      "notas": "Opción económica de entrada. Ideal para uso urbano y primer auto."
-    },
-    {
-      "slug": "chery-arrizo",
-      "nombre": "Chery Arrizo",
-      "marca": "Chery",
-      "segmento": "Sedán B",
-      "precio_desde": 16000,
-      "precio_hasta": 20000,
-      "origen": "Importado",
-      "unidades_2025": 1534,
-      "ranking": "Tercer auto de pasajeros más vendido",
-      "notas": "Repuestos accesibles. Marca china con crecimiento fuerte (Chery +50,1% en H1 2026)."
-    },
-    {
-      "slug": "suzuki-swift",
-      "nombre": "Suzuki Swift",
-      "marca": "Suzuki",
-      "segmento": "Hatchback B",
-      "precio_desde": 15990,
-      "precio_hasta": 19000,
-      "origen": "Importado",
-      "unidades_2025": 1374,
-      "ranking": "Cuarto auto de pasajeros más vendido",
-      "notas": "Bajo consumo y bajo costo de mantenimiento. Buena opción urbana."
-    },
-    {
-      "slug": "chevrolet-dmax",
-      "nombre": "Chevrolet D-Max",
-      "marca": "Chevrolet",
-      "segmento": "Camioneta 4x4",
-      "precio_desde": 34000,
-      "precio_hasta": 46000,
-      "origen": "Importado",
-      "unidades_2025": 5515,
-      "ranking": "Camioneta más vendida del Ecuador",
-      "notas": "Líder absoluto del segmento de camionetas. Fuerte en uso de trabajo y zonas rurales."
-    },
-    {
-      "slug": "gwm-poer",
-      "nombre": "GWM Poer",
-      "marca": "GWM",
-      "segmento": "Camioneta 4x4",
-      "precio_desde": 27000,
-      "precio_hasta": 38000,
-      "origen": "ENSAMBLADO EN AMBATO (Ciauto)",
-      "unidades_2025": 4092,
-      "ranking": "Segunda camioneta más vendida",
-      "notas": "Ensamblada en Ecuador. Precio más bajo que las camionetas japonesas o americanas equivalentes. GWM creció +53,7% en H1 2026."
-    },
-    {
-      "slug": "toyota-hilux",
-      "nombre": "Toyota Hilux",
-      "marca": "Toyota",
-      "segmento": "Camioneta 4x4",
-      "precio_desde": 38000,
-      "precio_hasta": 55000,
-      "origen": "Importado",
-      "unidades_2025": 1483,
-      "ranking": "Referente histórico del segmento",
-      "notas": "Intervalos de mantenimiento más largos que el promedio, lo que reduce el costo anual. Alta retención de valor."
-    }
-  ],
-  "marcas_mantenimiento": [
-    {"marca": "Nissan", "modelo": "Qashqai / Versa", "anual_min": 300, "anual_max": 500},
-    {"marca": "Toyota", "modelo": "Hilux / RAV4", "anual_min": 300, "anual_max": 600},
-    {"marca": "Renault", "modelo": "Duster / Koleos", "anual_min": 400, "anual_max": 600},
-    {"marca": "Mazda", "modelo": "CX-5 / Mazda 3", "anual_min": 500, "anual_max": 700},
-    {"marca": "Jeep", "modelo": "Grand Cherokee / Wrangler", "anual_min": 700, "anual_max": 1000},
-    {"marca": "RAM", "modelo": "1500", "anual_min": 800, "anual_max": 1200}
-  ],
-  "repuestos_referencia": [
-    {"item": "Cambio de aceite y filtro", "min": 50, "max": 90, "frecuencia_km": 5000},
-    {"item": "Alineación y balanceo", "min": 30, "max": 50, "frecuencia_km": 10000},
-    {"item": "Filtro de aire", "min": 20, "max": 40, "frecuencia_km": 10000},
-    {"item": "Filtro de combustible", "min": 30, "max": 60, "frecuencia_km": 15000},
-    {"item": "Líquido de frenos", "min": 40, "max": 70, "frecuencia_km": 30000},
-    {"item": "Cambio de bujías", "min": 50, "max": 100, "frecuencia_km": 40000},
-    {"item": "Pastillas de freno delanteras", "min": 80, "max": 150},
-    {"item": "Amortiguadores delanteros", "min": 200, "max": 350},
-    {"item": "Batería", "min": 100, "max": 200},
-    {"item": "Llanta (unidad)", "min": 120, "max": 250},
-    {"item": "Correa de distribución", "min": 250, "max": 400}
-  ],
-  "combustible": {
-    "extra_ecopais": 3.26,
-    "diesel_premium": 3.20,
-    "super": 5.61,
-    "unidad": "USD por galón",
-    "nota": "Ecuador vende el combustible por galón, no por litro."
+  {
+   "slug": "chevrolet-groove",
+   "nombre": "Chevrolet Groove",
+   "marca": "Chevrolet",
+   "segmento": "SUV compacto",
+   "precio_desde": 19999,
+   "precio_hasta": 24490,
+   "versiones": [
+    "LTZ",
+    "Premier MT"
+   ],
+   "motor": "1.5 L DVCP",
+   "potencia_hp": 98,
+   "torque_nm": 143,
+   "transmision": "Manual 6 vel.",
+   "consumo_mixto": 14.0,
+   "unidad_consumo": "km/l",
+   "airbags": 4,
+   "garantia": "7 años o 150.000 km",
+   "origen": "Importado",
+   "unidades_2025": 4063,
+   "ranking": "SUV más vendido del Ecuador",
+   "notas": "Líder del segmento SUV. Red de servicio Chevrolet en todo el país, incluidas ciudades intermedias. Cuota desde $309/mes en planes de financiamiento."
   },
-  "electricos": {
-    "marcas_disponibles": 23,
-    "modelos_disponibles": 42,
-    "rango_precios": "$28.000 - $150.000",
-    "puntos_recarga": 94,
-    "puntos_quito": 48,
-    "puntos_guayaquil": 11,
-    "carga_rapida_tiempo": "40 min - 1,5 h",
-    "carga_casa_220v": "~8 horas",
-    "costo_por_carga": "$8 - $10",
-    "tarifa_kwh": "$0,05 - $0,10 según horario"
+  {
+   "slug": "kia-sonet",
+   "nombre": "Kia Sonet",
+   "marca": "Kia",
+   "segmento": "SUV subcompacto",
+   "precio_desde": 21599,
+   "precio_hasta": 25000,
+   "versiones": [
+    "Entry",
+    "LX",
+    "EX",
+    "SX",
+    "X Line",
+    "GT Line"
+   ],
+   "motor": "1.5 L, 4 cilindros",
+   "potencia_hp": 113,
+   "torque_nm": 144,
+   "transmision": "Manual / IVT (automática)",
+   "consumo_mixto": 15.14,
+   "consumo_mixto_ivt": 18.03,
+   "unidad_consumo": "km/l",
+   "tanque_l": 45,
+   "maletero_l": 392,
+   "airbags": 6,
+   "garantia": "10 años o 160.000 km",
+   "origen": "ENSAMBLADO EN QUITO (Aymesa)",
+   "unidades_2025": 3593,
+   "ranking": "3.er más vendido en H1 2026",
+   "notas": "Ensamblado en Ecuador, lo que da ventaja en disponibilidad de repuestos y tiempos de entrega. 6 airbags de serie."
+  },
+  {
+   "slug": "hyundai-tucson",
+   "nombre": "Hyundai Tucson",
+   "marca": "Hyundai",
+   "segmento": "SUV mediano",
+   "precio_desde": 32499,
+   "precio_hasta": 40000,
+   "motor": "2.5 L atmosférico",
+   "transmision": "Automática",
+   "airbags": 6,
+   "garantia": "5 años sin límite de kilometraje",
+   "origen": "Importado / ensamblado (según versión)",
+   "unidades_2025": 2395,
+   "ranking": "Top 5 SUV",
+   "notas": "Comparte plataforma con Kia Sportage. Perfil más orientado al confort familiar. Reputación de fiabilidad y red de servicio consolidada."
+  },
+  {
+   "slug": "hyundai-grand-i10",
+   "nombre": "Hyundai Grand i10",
+   "marca": "Hyundai",
+   "segmento": "Hatchback A",
+   "precio_desde": 13990,
+   "precio_hasta": 16500,
+   "motor": "1.2 L",
+   "transmision": "Manual / Automática",
+   "airbags": 2,
+   "origen": "Importado",
+   "unidades_2025": 1690,
+   "ranking": "Segundo auto de pasajeros más vendido",
+   "notas": "Opción económica de entrada. Ideal para uso urbano y primer auto."
+  },
+  {
+   "slug": "chery-arrizo",
+   "nombre": "Chery Arrizo",
+   "marca": "Chery",
+   "segmento": "Sedán B",
+   "precio_desde": 16000,
+   "precio_hasta": 20000,
+   "origen": "Importado",
+   "unidades_2025": 1534,
+   "ranking": "Tercer auto de pasajeros más vendido",
+   "notas": "Repuestos accesibles. Marca china con crecimiento fuerte (Chery +50,1% en H1 2026)."
+  },
+  {
+   "slug": "suzuki-swift",
+   "nombre": "Suzuki Swift",
+   "marca": "Suzuki",
+   "segmento": "Hatchback B",
+   "precio_desde": 15990,
+   "precio_hasta": 19000,
+   "origen": "Importado",
+   "unidades_2025": 1374,
+   "ranking": "Cuarto auto de pasajeros más vendido",
+   "notas": "Bajo consumo y bajo costo de mantenimiento. Buena opción urbana."
+  },
+  {
+   "slug": "chevrolet-dmax",
+   "nombre": "Chevrolet D-Max",
+   "marca": "Chevrolet",
+   "segmento": "Camioneta 4x4",
+   "precio_desde": 34000,
+   "precio_hasta": 46000,
+   "origen": "Importado",
+   "unidades_2025": 5515,
+   "ranking": "Camioneta más vendida del Ecuador",
+   "notas": "Líder absoluto del segmento de camionetas. Fuerte en uso de trabajo y zonas rurales."
+  },
+  {
+   "slug": "gwm-poer",
+   "nombre": "GWM Poer",
+   "marca": "GWM",
+   "segmento": "Camioneta 4x4",
+   "precio_desde": 27000,
+   "precio_hasta": 38000,
+   "origen": "ENSAMBLADO EN AMBATO (Ciauto)",
+   "unidades_2025": 4092,
+   "ranking": "Segunda camioneta más vendida",
+   "notas": "Ensamblada en Ecuador. Precio más bajo que las camionetas japonesas o americanas equivalentes. GWM creció +53,7% en H1 2026."
+  },
+  {
+   "slug": "toyota-hilux",
+   "nombre": "Toyota Hilux",
+   "marca": "Toyota",
+   "segmento": "Camioneta 4x4",
+   "precio_desde": 38000,
+   "precio_hasta": 55000,
+   "origen": "Importado",
+   "unidades_2025": 1483,
+   "ranking": "Referente histórico del segmento",
+   "notas": "Intervalos de mantenimiento más largos que el promedio, lo que reduce el costo anual. Alta retención de valor."
   }
+ ],
+ "marcas_mantenimiento": [
+  {
+   "marca": "Nissan",
+   "modelo": "Qashqai / Versa",
+   "anual_min": 300,
+   "anual_max": 500
+  },
+  {
+   "marca": "Toyota",
+   "modelo": "Hilux / RAV4",
+   "anual_min": 300,
+   "anual_max": 600
+  },
+  {
+   "marca": "Renault",
+   "modelo": "Duster / Koleos",
+   "anual_min": 400,
+   "anual_max": 600
+  },
+  {
+   "marca": "Mazda",
+   "modelo": "CX-5 / Mazda 3",
+   "anual_min": 500,
+   "anual_max": 700
+  },
+  {
+   "marca": "Jeep",
+   "modelo": "Grand Cherokee / Wrangler",
+   "anual_min": 700,
+   "anual_max": 1000
+  },
+  {
+   "marca": "RAM",
+   "modelo": "1500",
+   "anual_min": 800,
+   "anual_max": 1200
+  }
+ ],
+ "repuestos_referencia": [
+  {
+   "item": "Cambio de aceite y filtro",
+   "min": 50,
+   "max": 90,
+   "frecuencia_km": 5000
+  },
+  {
+   "item": "Alineación y balanceo",
+   "min": 30,
+   "max": 50,
+   "frecuencia_km": 10000
+  },
+  {
+   "item": "Filtro de aire",
+   "min": 20,
+   "max": 40,
+   "frecuencia_km": 10000
+  },
+  {
+   "item": "Filtro de combustible",
+   "min": 30,
+   "max": 60,
+   "frecuencia_km": 15000
+  },
+  {
+   "item": "Líquido de frenos",
+   "min": 40,
+   "max": 70,
+   "frecuencia_km": 30000
+  },
+  {
+   "item": "Cambio de bujías",
+   "min": 50,
+   "max": 100,
+   "frecuencia_km": 40000
+  },
+  {
+   "item": "Pastillas de freno delanteras",
+   "min": 80,
+   "max": 150
+  },
+  {
+   "item": "Amortiguadores delanteros",
+   "min": 200,
+   "max": 350
+  },
+  {
+   "item": "Batería",
+   "min": 100,
+   "max": 200
+  },
+  {
+   "item": "Llanta (unidad)",
+   "min": 120,
+   "max": 250
+  },
+  {
+   "item": "Correa de distribución",
+   "min": 250,
+   "max": 400
+  }
+ ],
+ "combustible": {
+  "extra_ecopais": 3.212,
+  "diesel_premium": 3.151,
+  "super": 4.89,
+  "unidad": "USD por galón",
+  "vigencia": "12 de septiembre al 11 de octubre de 2026",
+  "fuente": "Petroecuador / Decreto 468",
+  "nota": "Ecuador vende el combustible por galón (1 galón = 3,785 litros). Extra y Ecopaís tienen precio regulado; la Súper es liberada, así que cada estación fija su valor (referencia Petroecuador $4,89).",
+  "octanaje": {
+   "extra": 85,
+   "ecopais": 85,
+   "super": 95
+  }
+ },
+ "electricos": {
+  "marcas_disponibles": 23,
+  "modelos_disponibles": 42,
+  "rango_precios": "$28.000 - $150.000",
+  "puntos_recarga": 94,
+  "puntos_quito": 48,
+  "puntos_guayaquil": 11,
+  "carga_rapida_tiempo": "40 min - 1,5 h",
+  "carga_casa_220v": "~8 horas",
+  "costo_por_carga": "$8 - $10",
+  "tarifa_kwh": "$0,05 - $0,10 según horario"
+ }
 }

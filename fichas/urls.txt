@@ -1,0 +1,13 @@
+tucson_hyundai_ec|https://www.hyundai.com.ec/static/media/nuevo-tucson-ficha-tecnica.8ea68457.pdf
+tucson_hyundai_cl|https://www.hyundai.cl/content/uploads/ficha-tecnica-tucson-2-versiones-21.5x28-cm.pdf
+arrizo5_chery_pe|https://www.autoland.com.pe/file/v1755116821255/general/chery-arrizo%205-peru-ficha-tecnica.pdf
+arrizo5pro_chery_pe|https://dhteemohy7ejo.cloudfront.net/web/modelos/arrizo-5-pro/productos/fichaTecnica/17717-arrizo5pro_02012024.pdf
+arrizo5_distrivehic_ec|https://4560037.fs1.hubspotusercontent-na1.net/hubfs/4560037/CHERY/FICHAS%20TECNICAS%20CHERY/Arrizo%205/Ficha%20Tecnica%20Web%20Chery%20Arrizo%205.pdf
+arrizo5pro_distrivehic_ec|https://4560037.fs1.hubspotusercontent-na1.net/hubfs/4560037/CHERY/FICHAS%20TECNICAS%20CHERY/Arrizo%205%20pro/Ficha_Tecnica_Chery_Arrizo_5_PRO.pdf
+arrizo5promax_distrivehic_ec|https://4560037.fs1.hubspotusercontent-na1.net/hubfs/4560037/CHERY/MODELOS/Arrizo%205%20Pro%20Max/Fichas-tecnicas/2024/Ficha%20Tecnica%20Chery%20Arrizo%205%20PRO%20MAX_compressed.pdf
+groove_my26|https://tuagenciadelrio.com/wp-content/uploads/2025/08/MY26-GROOVE-FICHA-TECNICA.pdf
+hilux_chile_bf|https://www.brunofritsch.cl/file/v1739300617747/general/toyota-hilux-ficha-tecnica.pdf
+hilux_toyocosta_ec|https://www.toyocosta.com/wp-content/uploads/2024/10/Toyota-Hilux-Ficha-Tecnica.pdf
+hilux_colombia_2026|https://www.toyota.com.co/images/pdf/FT_TOYOTA_HILUX.pdf
+hilux_colombia_2021|https://autoamerica.com.co/wp-content/uploads/2020/08/FT-HILUX-DIGITAL-2021.pdf
+hilux_tuyomotor|https://tuyomotor.com/wp-content/uploads/2025/07/FT_TOYOTA_HILUX_compressed-1.pdf

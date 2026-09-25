@@ -26,7 +26,7 @@ Esto es lo que dice el mercado ecuatoriano hoy: los **electrificados son el 18% 
 | Repuestos | Disponibles | Disponibles | Deben importarse en parte |
 | Incentivos tributarios | No aplican | Régimen distinto | Incentivos (verificar con el SRI) |
 
-Los números de costo por kilómetro son verificados en origen: carga de **$8 a $10** y tarifa de **$0,05 a $0,10 por kWh** contra Extra o Ecopaís a **$3,26 el galón**. El cálculo completo está en nuestra guía de costo por kilómetro.
+Los números de costo por kilómetro son verificados en origen: carga de **$8 a $10** y tarifa de **$0,05 a $0,10 por kWh** contra Extra o Ecopaís a **$3,21 el galón**. El cálculo completo está en nuestra guía de costo por kilómetro.
 
 ## Perfil 1: ciudad, poco kilometraje (menos de 10.000 km/año)
 

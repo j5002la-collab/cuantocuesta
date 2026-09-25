@@ -1,0 +1,69 @@
+{
+ "_leeme": "Capacidad de tanque SOLO con dato verificado. Si un modelo no esta aqui, la calculadora no muestra la seccion de tanque para el. No agregar estimaciones: el activo del sitio son los datos verificables.",
+ "_actualizado": "2026-09-25",
+ "valores": {
+  "Kia Soluto": {
+   "tanque_l": 43,
+   "fuente": "Ficha tecnica oficial Kia 2026 (kia.cl / rutamotor FT-Kia-Soluto-2026)",
+   "consumo_km_galon": 73,
+   "consumo_km_l": 19.29,
+   "fuente_consumo": "https://www.kia.com/ec/showroom/soluto-ab-19my.html",
+   "octanaje": "Extra / Ecopais",
+   "confianza": "oficial"
+  },
+  "Kia Seltos": {
+   "tanque_l": null,
+   "fuente": "no encontrado en ficha publica",
+   "consumo_km_galon": 55,
+   "consumo_km_l": 14.53,
+   "fuente_consumo": "https://www.kia.com/ec/showroom/seltos-sp2i-20my.html",
+   "octanaje": "verificar en manual",
+   "confianza": "oficial (consumo) / sin dato (tanque)"
+  },
+  "Kia Sportage": {
+   "tanque_l": 54,
+   "fuente": "kia.com/ec (reportado por investigacion previa, pendiente re-verificar en ficha)",
+   "consumo_km_galon": null,
+   "consumo_km_l": null,
+   "fuente_consumo": "no encontrado",
+   "octanaje": "verificar en manual",
+   "confianza": "tercero"
+  },
+  "Chevrolet Groove": {
+   "tanque_l": 45,
+   "fuente": "Ficha tecnica Chevrolet Groove MY26 (ficha del fabricante)",
+   "consumo_km_galon": null,
+   "consumo_km_l": 16.58,
+   "detalle_consumo": "Ciudad 13,95 / Carretera 21,53 / Combinado 16,58 (CVT)",
+   "fuente_consumo": "Ficha tecnica Chevrolet Groove MY26",
+   "octanaje": "Extra / Ecopais",
+   "confianza": "oficial"
+  },
+  "Toyota Hilux": {
+   "tanque_l": 80,
+   "fuente": "Ficha tecnica oficial Toyota Ecuador (Hilux 4x2/4x4 CD Diesel)",
+   "consumo_km_galon": null,
+   "consumo_km_l": null,
+   "fuente_consumo": "no consolidado",
+   "octanaje": "Diesel Premium",
+   "confianza": "oficial (tanque)"
+  },
+  "Chery Arrizo": {
+   "tanque_l": 41.6,
+   "fuente": "Ficha tecnica Distrivehic Ecuador: '11 gal' = 41,6 L",
+   "consumo_km_galon": null,
+   "consumo_km_l": null,
+   "fuente_consumo": "no consolidado",
+   "octanaje": "Extra / Ecopais",
+   "confianza": "oficial (tanque, convertido de galones)"
+  }
+ },
+ "sin_dato": {
+  "Kia Sonet": "consumo y tanque no publicados en la web oficial de Kia Ecuador",
+  "Hyundai Grand i10": "ficha Mexico tiene el campo pero no se pudo extraer el valor",
+  "Hyundai Creta": "Hyundai Mexico publica 40 L (Creta) / 50 L (Creta Grand) - falta confirmar version ecuatoriana",
+  "Hyundai Tucson": "no consolidado",
+  "Chevrolet D-Max": "Chevrolet Ecuador publica '975 km por tanque' (marketing), no la capacidad",
+  "GWM Poer": "no consolidado"
+ }
+}

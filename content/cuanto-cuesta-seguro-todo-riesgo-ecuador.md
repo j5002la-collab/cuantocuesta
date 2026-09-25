@@ -109,7 +109,7 @@ Para un auto a gasolina que rueda **12.000 km al año**, el seguro es uno de los
 | Rubro | Rango referencial anual |
 | --- | --- |
 | Matrícula | $150-300 |
-| Gasolina (Extra/Ecopaís $3,26 el galón) | $650-700 |
+| Gasolina (Extra/Ecopaís $3,21 el galón) | $650-700 |
 | Mantenimiento | $180-300 |
 | Seguro | ~$400 |
 | Otros (llantas, frenos, imprevistos) | $100-200 |

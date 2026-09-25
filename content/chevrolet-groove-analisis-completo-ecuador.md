@@ -26,7 +26,7 @@ Ese precio explica el volumen. En un 2025 que cerró con 124.505 vehículos nuev
 | Largo | 4.220 mm |
 | Consumo homologado | No publicado oficialmente |
 | Maletero | No especificado en la ficha consultada |
-| Combustible | Extra o Ecopaís a $3,26 el galón |
+| Combustible | Extra o Ecopaís a $3,21 el galón |
 | Garantía | 7 años o 150.000 km |
 
 El motor de 1.5 L entrega **98 hp y 143 Nm**, con caja manual de 6 velocidades. La ficha no publica consumo homologado: con ese motor y peso de SUV compacto, el rango esperable es de 12 a 14 km/l mixto. **Verifícalo en tu prueba de manejo.**
@@ -43,7 +43,7 @@ Hay **$4.491 de diferencia** entre la versión de entrada y la tope. Los precios
 
 ## Cuánto cuesta mantenerlo
 
-Escenario: 12.000 km al año, versión Premier MT de $24.490, combustible Extra o Ecopaís a $3,26 el galón. Como el consumo no está publicado, usamos **13 km/l mixto como estimación declarada**.
+Escenario: 12.000 km al año, versión Premier MT de $24.490, combustible Extra o Ecopaís a $3,21 el galón. Como el consumo no está publicado, usamos **13 km/l mixto como estimación declarada**.
 
 | Rubro anual | Rango estimado |
 | --- | --- |

@@ -47,7 +47,7 @@ La referencia de segmento es útil: el Kia Sportage, que comparte plataforma, ve
 
 Escenario: 12.000 km al año, vehículo de **$32.499 a $40.000**, estimación declarada de **11 km/l mixto** (el consumo no está publicado). Aquí la variable más grande es el octanaje, así que mostramos los dos escenarios.
 
-| Rubro anual | Si usa Extra ($3,26/gal) | Si usa Súper ($5,61/gal) |
+| Rubro anual | Si usa Extra ($3,21/gal) | Si usa Súper ($4,89/gal) |
 | --- | --- | --- |
 | Combustible (estimación 11 km/l) | ~$939 | ~$1.617 |
 | Mantenimiento (aceite, filtros, alineación) | $400 – $700 | $400 – $700 |
