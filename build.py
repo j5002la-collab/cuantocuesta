@@ -827,11 +827,22 @@ situación particular con implicaciones legales, acude a un profesional o a la e
     except Exception as e:
         print(f"  ⚠ calculadora no generada: {e}")
 
+    # comparador de modelos (interactivo + paginas estaticas por par)
+    try:
+        import comparador
+        n, archivos = comparador.generar_todo(raiz=str(BASE), paginas=pagina)
+        print(f"  ✓ comparador: {n} archivos generados")
+        pares = [a for a in archivos if a.startswith("comparar/")]
+    except Exception as e:
+        print(f"  ⚠ comparador no generado: {e}")
+        archivos, pares = [], []
+
     # sitemap
     urls = (["index.html", "costos.html", "tramites.html", "comparativas.html",
              "vendidos.html", "compra.html", "electricos.html",
              "privacidad.html", "cookies.html", "acerca.html", "contacto.html",
-             "calculadora.html"]
+             "calculadora.html", "comparador.html"]
+            + pares
             + [f"{a['slug']}.html" for a in articulos])
     # sitemap con URLs absolutas (Google las exige)
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',

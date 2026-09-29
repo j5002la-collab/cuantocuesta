@@ -1,0 +1,370 @@
+===== PAGINA 1 =====
+NUEVOKIA
+VIX
+ESPECIFICACIONESTECNICAS
+EX 1.6L 6MT
+EX 1.6L 6AT
+EX 1.6L 6MT FULL
+EX1.6L6AT FULL
+Dimensiones
+Largo total (mm)
+4.315
+Ancho total (mm)
+1.800
+Alto total (mm)
+1.620
+Distancia entre ejes (mm)
+2.610
+Motor
+Cilindrada (cc)
+1.591
+Consumo km/1 (Ciudad, Carretera,Mixto)
+11,2/17,9 /14,6
+10,8 /17,0/14,1
+11,2/17,9/14,6
+10,8/17,0 /14,1
+Cantidad de cilindros
+4
+Sistema de alimentacion
+Inyeccion Multipunto (MPI)
+Potencia (hp/rpm)
+121/6.300
+Torque (kg-f/rpm)
+15,4/4.850
+Transmision
+Mecanica 6 velocidades
+SI
+SI
+Automatica 6velocidades
+SI
+SI
+Tipo de combustible
+Gasolina
+Capacidad
+N°Pasajeros
+5
+Capacidad estanque combustible (l)
+50
+Maletero ()
+433
+Suspension
+Delantera
+McPherson
+Trasera
+Doble barra de torsion
+Neumaticos
+205/65 R16
+205/65 R16
+215/60 R17
+215/60 R17
+Direccion
+Asistida Electricamente
+EQUIPAMIENTO
+Interior
+Alzavidrios electricos totales
+SI
+SI
+SI
+SI
+Alzavidrio Delantero con Funcion Auto“Up/Down"
+SI
+SI
+SI
+SI
+Alzavidrio Delantero con Funcion"Auto Stop"
+SI
+SI
+SI
+SI
+Asientos traseros abatibles 60/40
+SI
+SI
+SI
+SI
+Asiento conductor regulable en altura
+SI
+SI
+SI
+SI
+Asientos con tapiz tela
+SI
+SI
+SI
+SI
+Computador a bordo
+SI
+SI
+SI
+SI
+Bluetoothconreconocimiento devoz
+SI
+SI
+SI
+SI
+Tweeters
+SI
+SI
+SI
+SI
+Radio con pantalla LCD 10,25" touch a color
+SI
+SI
+SI
+SI
+Conectividad Apple CarPlay & Android Auto
+SI
+SI
+SI
+SI
+Cargador inalambrico para celulares (Q1)
+SI
+SI
+SI
+SI
+Cargador USB y salida 12V en Consola Central
+SI
+SI
+SI
+SI
+Cargador USB posterior
+SI
+SI
+SI
+SI
+Aire acondicionado
+SI
+SI
+SI
+SI
+Smart key y boton de encendido
+SI
+SI
+SI
+SI
+Control crucero
+SI
+SI
+SI
+SI
+Control de audio en volante
+SI
+SI
+SI
+SI
+Volante regulable en altura y profundidad
+SI
+SI
+SI
+SI
+Volante y palanca de cambio de cuero
+SI
+SI
+SI
+SI
+Encendido automatico de luces
+SI
+SI
+SI
+SI
+Cierre centralizado
+SI
+SI
+SI
+SI
+Cubre equipaje
+SI
+SI
+SI
+SI
+Modo de seleccion de manejo (Eco /Normal / Sport)
+SI
+SI
+Modo deselecciondeterreno(Nieve/Barro/Arena)
+SI
+SI
+Partida de motor a distancia
+SI
+SI
+Head up Display
+-
+SI
+SI
+Espejoretrovisor electrocromatico
+SI
+SI
+Climatizador
+SI
+Exterior
+Guardafangos
+SI
+SI
+SI
+SI
+Manillas exteriores cromadas
+SI
+SI
+SI
+SI
+Espejos exteriores electricos
+SI
+SI
+SI
+SI
+Espejos exteriores con serializador/abatibles electricamente
+SI
+SI
+SI
+SI
+Barras en techo
+SI
+SI
+SI
+SI
+Spoiler trasero
+SI
+SI
+SI
+SI
+Neblineros delanteros
+SI
+SI
+SI
+SI
+Parachoques
+Negro
+Negro
+Glossy & Satin
+Glossy & Satin
+Antena Tiburon
+SI
+SI
+SI
+SI
+Rueda derepuesto Full Size
+SI
+SI
+SI
+SI
+Opcion carroceria Bi-color
+SI
+SI
+SI
+-
+Llantas de aleacion aro 16"
+SI
+SI
+-
+Llantas de aleacion aro 17"
+-
+SI
+SI
+Beltline Cromado
+SI
+SI
+Sensor de lluvia
+SI
+SI
+Luces de posicionamiento LED
+SI
+SI
+Luces diurnas LED
+SI
+SI
+Luces traseras LED
+SI
+SI
+Sunroof
+-
+SI
+Seguridad
+Carroceria con deformacion programada
+SI
+SI
+SI
+SI
+Barras de proteccion doble de acero en las puertas
+SI
+SI
+SI
+SI
+Cinturonesdeseguridaddelanteroscon alturaregulable
+SI
+SI
+SI
+SI
+Cinturones de seguridad delanteros pretensionados
+SI
+SI
+SI
+SI
+Cinturon de seguridad del medio de 3 puntos
+SI
+SI
+SI
+SI
+Columna de direccion colapsable
+SI
+SI
+SI
+SI
+Doble airbag delantero
+SI
+SI
+SI
+SI
+Camara deretroceso conlineasadaptativasintegrada enlaradio
+SI
+SI
+SI
+SI
+Sensor de proximidad delantero y trasero
+SI
+SI
+SI
+SI
+Frenos de disco traseros y delantero
+SI
+SI
+SI
+SI
+Frenos ABS con EBD
+SI
+SI
+SI
+SI
+Inmovilizador
+SI
+SI
+SI
+SI
+Anclaje ISOFIX
+SI
+SI
+SI
+SI
+Sistema automatico luces de emergencia
+SI
+SI
+SI
+SI
+ Diciembre 2020
+Control de estabilidad (ESC)
+SI
+SI
+SI
+Sistema de asistencia de frenado (BAS)
+SI
+SI
+SI
+Sistema de estabilidad (VSM)
+SI
+SI
+SI
+Asistente de partida en pendiente (HAC)
+SI
+SI
+SI
+Airbags lateralesdelanterosy airbagsdecortina
+SI
+SI
+Todas las fotos y especificaciones de esta ficha estan basadas en la informacion disponible al momento de la publicacion y estan sujetas a cambios sin previo aviso. Esta ficha es

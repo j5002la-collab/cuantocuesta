@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comparador de autos en Ecuador: elige dos modelos y compara</title>
+<meta name="description" content="Compara precio, motor, consumo y seguridad de los autos mas vendidos de Ecuador. Datos oficiales, lado a lado, con los huecos visibles en vez de estimaciones.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Comparador de autos en Ecuador: elige dos modelos y compara">
+<meta property="og:description" content="Compara precio, motor, consumo y seguridad de los autos mas vendidos de Ecuador. Datos oficiales, lado a lado, con los huecos visibles en vez de estimaciones.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_EC">
+
+
+<link rel="canonical" href="https://cuantocuesta.xyz/comparador.html">
+<style>
+:root{--bg:#0d0f12;--card:#151a20;--tx:#e8edf2;--mut:#8d99a6;--acc:#e8b93b;--acc2:#3ba55d;--bd:#232b33}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+-webkit-font-smoothing:antialiased}
+a{color:var(--acc);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+header{background:linear-gradient(180deg,#151a20,#0d0f12);border-bottom:1px solid var(--bd);padding:14px 0;position:sticky;top:0;z-index:9}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.15rem;letter-spacing:-.4px;color:var(--tx)}
+.logo span{color:var(--acc)}
+nav a{color:var(--mut);font-size:.86rem;margin-left:15px;font-weight:500}
+nav a:hover{color:var(--acc)}
+main{padding:26px 0 60px}
+h1{font-size:1.85rem;line-height:1.22;letter-spacing:-.6px;margin-bottom:12px;font-weight:800}
+h2{font-size:1.3rem;margin:30px 0 11px;letter-spacing:-.3px;font-weight:700;padding-top:6px}
+h3{font-size:1.06rem;margin:22px 0 8px;font-weight:700;color:#cdd6e0}
+p{margin:11px 0}
+ul,ol{margin:11px 0 11px 22px}
+li{margin:6px 0}
+hr{border:0;border-top:1px solid var(--bd);margin:26px 0}
+blockquote{border-left:3px solid var(--acc);background:#151a20;padding:12px 16px;margin:16px 0;color:#c3ccd6;border-radius:0 8px 8px 0}
+code{background:#1e242c;padding:2px 6px;border-radius:4px;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.lead{color:var(--mut);font-size:1.02rem;margin-bottom:22px}
+.meta{color:var(--mut);font-size:.8rem;margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--bd)}
+.tabla-wrap{overflow-x:auto;margin:18px 0;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:440px}
+th{background:#1c232b;text-align:left;padding:10px 12px;font-weight:700;border-bottom:2px solid var(--bd);white-space:nowrap}
+td{padding:9px 12px;border-bottom:1px solid var(--bd)}
+tr:hover td{background:#171d24}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:22px 0}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:11px;padding:17px;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.card h3{margin:0 0 7px;font-size:1rem;color:var(--tx)}
+.card p{color:var(--mut);font-size:.86rem;margin:0}
+.tag{display:inline-block;background:#1e252d;color:var(--acc);font-size:.7rem;padding:3px 9px;border-radius:11px;
+font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:9px}
+.destacado{background:linear-gradient(135deg,#1a2028,#151a20);border:1px solid var(--bd);border-left:3px solid var(--acc);
+border-radius:9px;padding:16px 18px;margin:20px 0}
+.destacado h3{margin-top:0}
+.figura{margin:0 0 24px;padding:0}
+.figura img{width:100%;height:auto;border-radius:11px;border:1px solid var(--bd);display:block}
+figcaption{color:var(--mut);font-size:.78rem;margin-top:8px;text-align:center}
+footer{border-top:1px solid var(--bd);padding:26px 0;color:var(--mut);font-size:.82rem}
+footer a{color:var(--mut)}
+.volver{color:var(--mut);font-size:.85rem;display:inline-block;margin-bottom:16px}
+.legal li{margin:4px 0}
+.intro-seccion{margin:22px 0 30px}
+.intro-seccion p{color:var(--mut);font-size:.95rem;line-height:1.72;margin:0 0 14px}
+.intro-seccion strong{color:var(--tx)}
+.intro-seccion a{color:#e9b949}
+.anuncio{margin:26px 0;padding:14px;background:var(--card);border:1px solid var(--bd);
+  border-radius:10px;text-align:center;min-height:110px}
+.anuncio-etiq{display:block;color:var(--mut);font-size:.68rem;text-transform:uppercase;
+  letter-spacing:.09em;margin-bottom:9px}
+.anuncio ins{background:transparent}
+.calc{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:22px;margin:26px 0}
+.calc-fila{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid var(--bd)}
+.calc-fila:last-child{border-bottom:0}
+.calc-fila > label{flex:0 0 210px;color:var(--tx);font-size:.92rem}
+.calc select,.calc input[type=number]{background:#0e1116;color:var(--tx);border:1px solid var(--bd);
+  border-radius:7px;padding:9px 12px;font-size:.95rem;font-family:inherit;min-width:150px}
+.calc-radios{display:flex;flex-wrap:wrap;gap:16px}
+.calc-radios label{display:flex;align-items:center;gap:7px;color:var(--mut);font-size:.9rem;cursor:pointer}
+.calc-res{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:26px 0}
+.calc-total{background:linear-gradient(160deg,#171b22,#0f1216);border:1px solid var(--bd);
+  border-radius:12px;padding:20px 22px;display:flex;flex-direction:column;gap:7px}
+.calc-total .etiqueta{color:var(--mut);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em}
+.calc-total span:last-child{font-size:2rem;font-weight:700;color:#e9b949}
+.calc-anual span:last-child{color:#7fb3d5;font-size:1.5rem}
+.calc-km span:last-child{color:#8bc98b;font-size:1.5rem}
+.calc-tabla{width:100%;border-collapse:collapse;margin:20px 0;font-size:.92rem}
+.calc-tabla th{text-align:left;color:var(--mut);font-size:.78rem;text-transform:uppercase;
+  letter-spacing:.07em;padding:11px 12px;border-bottom:1px solid var(--bd)}
+.calc-tabla td{padding:11px 12px;border-bottom:1px solid var(--bd);color:var(--tx)}
+.calc-tabla .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.calc-tabla .calc-desc{color:var(--mut);font-size:.85rem}
+.calc-tabla .calc-sum td{border-top:2px solid var(--acc);border-bottom:0;font-weight:700;
+  color:#e9b949;padding-top:14px}
+@media(max-width:600px){
+ h1{font-size:1.5rem}h2{font-size:1.15rem}
+ nav a{margin-left:0;margin-right:14px;display:inline-block}
+ table{font-size:.82rem}
+ .calc-fila > label{flex:1 1 100%}
+ .calc select,.calc input[type=number]{width:100%}
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7009064391847406" crossorigin="anonymous"></script>
+
+<style>
+.cmp-panel{display:flex;gap:12px;align-items:flex-end;background:var(--card,#151a20);
+ border:1px solid var(--bd,#232b33);border-radius:12px;padding:16px;margin:18px 0;flex-wrap:wrap}
+.cmp-sel{flex:1;min-width:180px}
+.cmp-sel label{display:block;font-size:13px;color:var(--mut,#8d99a6);margin-bottom:6px}
+.cmp-sel select{width:100%;padding:10px 12px;border-radius:8px;background:var(--bg,#0d0f12);
+ color:var(--tx,#e8edf2);border:1px solid var(--bd,#232b33);font-size:15px}
+.cmp-vs{color:var(--mut,#8d99a6);font-weight:700;padding-bottom:10px}
+.cmp-veredicto{background:var(--card,#151a20);border-left:3px solid var(--acc,#e8b93b);
+ border-radius:8px;padding:14px 16px;margin:16px 0}
+.cmp-veredicto p{margin:0 0 6px}
+.cmp-nota{color:var(--mut,#8d99a6);font-size:14px}
+.cmp-tabla-wrap{overflow-x:auto;margin:18px 0}
+.cmp-tabla{width:100%;border-collapse:collapse;font-size:15px}
+.cmp-tabla th,.cmp-tabla td{padding:10px 12px;border-bottom:1px solid var(--bd,#232b33);
+ text-align:left;vertical-align:top}
+.cmp-tabla thead th{color:var(--acc,#e8b93b);font-size:14px;text-transform:uppercase;
+ letter-spacing:.04em;border-bottom:2px solid var(--bd,#232b33)}
+.cmp-tabla tbody th{color:var(--mut,#8d99a6);font-weight:400;width:38%}
+.cmp-grupo td{background:var(--bg,#0d0f12);color:var(--acc,#e8b93b);font-weight:700;
+ font-size:13px;text-transform:uppercase;letter-spacing:.06em;padding-top:16px}
+.cmp-mejor{color:var(--acc2,#3ba55d);font-weight:700}
+.cmp-peor{color:var(--mut,#8d99a6)}
+.cmp-np{color:var(--mut,#8d99a6);font-style:italic;font-size:14px}
+.cmp-nc{color:var(--mut,#8d99a6);font-size:12px;font-weight:400;font-style:italic}
+.cmp-vacio{color:var(--mut,#8d99a6)}
+.cmp-sugerencias{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.cmp-sug{display:inline-block;padding:8px 12px;border:1px solid var(--bd,#232b33);
+ border-radius:8px;background:var(--card,#151a20);font-size:14px;color:var(--tx,#e8edf2)}
+.cmp-sug:hover{border-color:var(--acc,#e8b93b);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="wrap hrow">
+<div class="logo">Autos<span>Ecuador</span></div>
+<nav><a href="index.html">Inicio</a><a href="costos.html">Costos</a><a href="tramites.html">Trámites</a><a href="vendidos.html">Más vendidos</a><a href="comparativas.html">Comparativas</a><a href="electricos.html">Eléctricos</a><a href="calculadora.html">Calculadora</a></nav>
+</div></header>
+<main><div class="wrap">
+
+<h1>Comparador de autos en Ecuador</h1>
+<p class="lead">Elegi dos modelos y mira las fichas frente a frente. Los datos salen de las
+fichas oficiales de cada marca y de AEADE. Cuando un fabricante no publica un dato,
+la fila dice <em>No publicado</em> y no se compara: preferimos un hueco visible
+antes que un numero inventado.</p>
+
+<div class="cmp-panel">
+  <div class="cmp-sel">
+    <label for="cmp-a">Modelo A</label>
+    <select id="cmp-a"><option value="kia-soluto">Kia Soluto</option>
+<option value="chevrolet-groove">Chevrolet Groove</option>
+<option value="kia-sonet">Kia Sonet</option>
+<option value="hyundai-tucson">Hyundai Tucson</option>
+<option value="chery-arrizo">Chery Arrizo</option>
+<option value="suzuki-swift">Suzuki Swift</option></select>
+  </div>
+  <div class="cmp-vs">vs</div>
+  <div class="cmp-sel">
+    <label for="cmp-b">Modelo B</label>
+    <select id="cmp-b"><option value="kia-soluto">Kia Soluto</option>
+<option value="chevrolet-groove">Chevrolet Groove</option>
+<option value="kia-sonet">Kia Sonet</option>
+<option value="hyundai-tucson">Hyundai Tucson</option>
+<option value="chery-arrizo">Chery Arrizo</option>
+<option value="suzuki-swift">Suzuki Swift</option></select>
+  </div>
+</div>
+
+<div id="cmp-veredicto" class="cmp-veredicto"></div>
+<div id="cmp-tabla" class="cmp-tabla-wrap"><p class="cmp-vacio">Cargando…</p></div>
+
+<h2>Comparaciones ya publicadas</h2>
+<p class="lead">Analisis modelo contra modelo con el detalle de cada uno.</p>
+<div class="cmp-sugerencias">
+<a class="cmp-sug" href="comparar/chevrolet-groove-vs-kia-soluto.html">Kia Soluto vs Chevrolet Groove</a>
+<a class="cmp-sug" href="comparar/chery-arrizo-vs-kia-soluto.html">Kia Soluto vs Chery Arrizo</a>
+<a class="cmp-sug" href="comparar/kia-soluto-vs-suzuki-swift.html">Kia Soluto vs Suzuki Swift</a>
+<a class="cmp-sug" href="comparar/chevrolet-groove-vs-kia-sonet.html">Chevrolet Groove vs Kia Sonet</a>
+<a class="cmp-sug" href="comparar/chery-arrizo-vs-chevrolet-groove.html">Chevrolet Groove vs Chery Arrizo</a>
+<a class="cmp-sug" href="comparar/chevrolet-groove-vs-suzuki-swift.html">Chevrolet Groove vs Suzuki Swift</a>
+<a class="cmp-sug" href="comparar/chery-arrizo-vs-suzuki-swift.html">Chery Arrizo vs Suzuki Swift</a>
+</div>
+
+</div></main>
+<footer><div class="wrap">
+<p><strong>Autos Ecuador</strong> — Costos, trámites y comparativas reales de autos en Ecuador</p>
+<p style="margin-top:9px">Información referencial basada en fuentes oficiales (SRI, ANT, AEADE) y tarifarios
+de concesionarios. Los precios, tasas y requisitos cambian: verifica siempre en la entidad correspondiente
+antes de tomar una decisión.</p>
+<p style="margin-top:9px">Última actualización del sitio: 2026-09-29</p>
+<p style="margin-top:12px" class="pie-legal">
+<a href="acerca.html">Acerca de</a> ·
+<a href="contacto.html">Contacto</a> ·
+<a href="privacidad.html">Privacidad</a> ·
+<a href="cookies.html">Cookies</a>
+</p>
+</div></footer>
+<script>
+(function(){
+  var MODELOS = [{"slug":"kia-soluto","nombre":"Kia Soluto","marca":"Kia","segmento":"Sedán B","precio_desde":15799,"precio_hasta":18790,"versiones":["LX","EX"],"motor":"1.4 L MPI, 4 cilindros, 16 válvulas","potencia_hp":94,"torque_nm":132,"transmision":"Manual 5 vel. / Automática 4 vel.","consumo_urbano":13.8,"consumo_carretera":18.2,"consumo_mixto":15.5,"unidad_consumo":"km/l","tanque_l":43,"maletero_l":475,"peso_kg":1095,"airbags":6,"garantia":"10 años o 160.000 km","origen":"Importado (Corea del Sur)","unidades_2025":8725,"ranking":"Sedán más vendido del Ecuador","notas":"El auto de pasajeros más vendido del país. Excelente consumo y relación precio-equipamiento. Compite directo con Nissan Versa y Hyundai Accent."},{"slug":"chevrolet-groove","nombre":"Chevrolet Groove","marca":"Chevrolet","segmento":"SUV compacto","precio_desde":19999,"precio_hasta":24490,"versiones":["LTZ","Premier MT"],"motor":"1.5 L DVCP","potencia_hp":98,"torque_nm":143,"transmision":"Manual 6 vel.","consumo_mixto":14.0,"unidad_consumo":"km/l","airbags":4,"garantia":"7 años o 150.000 km","origen":"Importado","unidades_2025":4063,"ranking":"SUV más vendido del Ecuador","notas":"Líder del segmento SUV. Red de servicio Chevrolet en todo el país, incluidas ciudades intermedias. Cuota desde $309/mes en planes de financiamiento."},{"slug":"kia-sonet","nombre":"Kia Sonet","marca":"Kia","segmento":"SUV subcompacto","precio_desde":21599,"precio_hasta":25000,"versiones":["Entry","LX","EX","SX","X Line","GT Line"],"motor":"1.5 L, 4 cilindros","potencia_hp":113,"torque_nm":144,"transmision":"Manual / IVT (automática)","consumo_mixto":15.14,"consumo_mixto_ivt":18.03,"unidad_consumo":"km/l","tanque_l":45,"maletero_l":392,"airbags":6,"garantia":"10 años o 160.000 km","origen":"ENSAMBLADO EN QUITO (Aymesa)","unidades_2025":3593,"ranking":"3.er más vendido en H1 2026","notas":"Ensamblado en Ecuador, lo que da ventaja en disponibilidad de repuestos y tiempos de entrega. 6 airbags de serie."},{"slug":"hyundai-tucson","nombre":"Hyundai Tucson","marca":"Hyundai","segmento":"SUV mediano","precio_desde":32499,"precio_hasta":40000,"motor":"2.5 L atmosférico","transmision":"Automática","airbags":6,"garantia":"5 años sin límite de kilometraje","origen":"Importado / ensamblado (según versión)","unidades_2025":2395,"ranking":"Top 5 SUV","notas":"Comparte plataforma con Kia Sportage. Perfil más orientado al confort familiar. Reputación de fiabilidad y red de servicio consolidada.","longitud":4640,"ancho":1865,"alto":1665,"distancia_ejes":2755,"potencia_hp":154,"torque_nm":192,"maletero_l":539},{"slug":"chery-arrizo","nombre":"Chery Arrizo","marca":"Chery","segmento":"Sedán B","precio_desde":16000,"precio_hasta":20000,"origen":"Importado","unidades_2025":1534,"ranking":"Tercer auto de pasajeros más vendido","notas":"Repuestos accesibles. Marca china con crecimiento fuerte (Chery +50,1% en H1 2026).","potencia_hp":114,"torque_nm":141,"cilindrada_cc":1500,"longitud":4532,"ancho":1814,"alto":1487,"distancia_ejes":2650,"maletero_l":430,"airbags":6,"transmision":"Manual 5 velocidades + reversa"},{"slug":"suzuki-swift","nombre":"Suzuki Swift","marca":"Suzuki","segmento":"Hatchback B","precio_desde":15990,"precio_hasta":19000,"origen":"Importado","unidades_2025":1374,"ranking":"Cuarto auto de pasajeros más vendido","notas":"Bajo consumo y bajo costo de mantenimiento. Buena opción urbana.","potencia_hp":80,"torque_nm":112,"cilindrada_cc":1197,"longitud":3860,"ancho":1735,"alto":1520,"distancia_ejes":2450,"peso_kg":928,"maletero_l":265,"transmision":"Manual 5 velocidades","airbags":6,"motor":"1.2L SHVS (Smart Hybrid by Suzuki), 3 cil"}];
+  var CAMPOS = [["precio_desde","Precio desde","USD","menor","precio"],["precio_hasta","Precio hasta","USD","menor","precio"],["cilindrada_cc","Cilindrada","cc",null,"motor"],["potencia_hp","Potencia","hp","mayor","motor"],["torque_nm","Torque","Nm","mayor","motor"],["transmision","Transmision","",null,"motor"],["motor","Motor","",null,"motor"],["consumo_urbano","Consumo urbano","km/l","mayor","consumo"],["consumo_carretera","Consumo carretera","km/l","mayor","consumo"],["consumo_mixto","Consumo mixto","km/l","mayor","consumo"],["tanque_l","Tanque de combustible","L","mayor","consumo"],["maletero_l","Maletero","L","mayor","cuerpo"],["peso_kg","Peso","kg","menor","cuerpo"],["airbags","Airbags","","mayor","seguridad"],["garantia","Garantia","",null,"seguridad"],["origen","Origen","",null,"cuerpo"],["unidades_2025","Unidades vendidas 2025","","mayor","mercado"],["segmento","Segmento","",null,"mercado"],["versiones","Versiones disponibles","",null,"mercado"]];
+  var GRUPOS = {"precio":"Precio","motor":"Motor y transmision","consumo":"Consumo y autonomia","cuerpo":"Dimensiones y peso","seguridad":"Seguridad y garantia","mercado":"Mercado"};
+
+  var porSlug = {};
+  MODELOS.forEach(function(m){ porSlug[m.slug] = m; });
+
+  function num(v){
+    if(v===null||v===undefined||v==="") return null;
+    if(typeof v === "number") return v;
+    var n = parseFloat(String(v).replace(/[^0-9.\-]/g,""));
+    return isNaN(n) ? null : n;
+  }
+
+  function muestra(v, unidad){
+    if(v===null||v===undefined||v==="") return null;
+    if(Object.prototype.toString.call(v)==="[object Array]"){
+      return v.length ? v.join(", ") : null;
+    }
+    if(unidad==="USD"){
+      var n=num(v);
+      if(n===null) return null;
+      return "USD " + n.toLocaleString("es-EC");
+    }
+    if(typeof v === "number" && v % 1 === 0){
+      return unidad ? (v + " " + unidad) : String(v);
+    }
+    return unidad ? (v + " " + unidad) : String(v);
+  }
+
+  function esc(s){
+    return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  }
+
+  function pinta(){
+    var a = porSlug[document.getElementById("cmp-a").value];
+    var b = porSlug[document.getElementById("cmp-b").value];
+    if(!a || !b) return;
+
+    var victoriasA = 0, victoriasB = 0, comparables = 0;
+    var grupoActual = null;
+    var filas = "";
+
+    CAMPOS.forEach(function(c){
+      var clave=c[0], etiq=c[1], unidad=c[2], dir=c[3], grupo=c[4];
+      var va = a[clave], vb = b[clave];
+      var ma = muestra(va, unidad), mb = muestra(vb, unidad);
+      // Si falta en AMBOS lados la fila no aporta: se omite.
+      if(ma === null && mb === null) return;
+      if(grupo !== grupoActual){
+        grupoActual = grupo;
+        filas += '<tr class="cmp-grupo"><td colspan="3">' + esc(GRUPOS[grupo]||grupo) + '</td></tr>';
+      }
+      var claseA = "", claseB = "", marca = "";
+
+      if(dir){
+        var na = num(va), nb = num(vb);
+        if(na === null || nb === null){
+          marca = '<span class="cmp-nc">no comparable</span>';
+        } else if(na !== nb){
+          comparables++;
+          var ganaA = (dir === "menor") ? (na < nb) : (na > nb);
+          if(ganaA){ victoriasA++; claseA = "cmp-mejor"; claseB = "cmp-peor"; }
+          else     { victoriasB++; claseB = "cmp-mejor"; claseA = "cmp-peor"; }
+        }
+      }
+
+      filas += '<tr><th>' + esc(etiq) + '</th>'
+             + '<td class="' + claseA + '">' + (ma===null ? '<span class="cmp-np">No publicado</span>' : esc(ma)) + '</td>'
+             + '<td class="' + claseB + '">' + (mb===null ? '<span class="cmp-np">No publicado</span>' : esc(mb)) + '</td>'
+             + '</tr>';
+    });
+
+    var html = '<table class="cmp-tabla"><thead><tr><th></th>'
+             + '<th>' + esc(a.nombre) + '</th><th>' + esc(b.nombre) + '</th>'
+             + '</tr></thead><tbody>' + filas + '</tbody></table>';
+    document.getElementById("cmp-tabla").innerHTML = html;
+
+    var v = "";
+    if(comparables === 0){
+      v = '<p>No hay suficientes datos publicados para decidir entre estos dos modelos.</p>';
+    } else if(victoriasA === victoriasB){
+      v = '<p><strong>Empate tecnico</strong>: ' + victoriasA + ' a ' + victoriasB
+        + ' en ' + comparables + ' datos comparables.</p>';
+    } else {
+      var gana = victoriasA > victoriasB ? a : b;
+      var vict = Math.max(victoriasA, victoriasB);
+      var pierde = Math.min(victoriasA, victoriasB);
+      v = '<p><strong>' + esc(gana.nombre) + '</strong> gana en ' + vict + ' de '
+        + comparables + ' datos comparables frente a ' + pierde + '.</p>'
+        + '<p class="cmp-nota">Esto cuenta datos publicados, no es un veredicto de compra: '
+        + 'pesa mas lo que a vos te importa (precio, consumo, seguridad, reventa).</p>';
+    }
+    document.getElementById("cmp-veredicto").innerHTML = v;
+
+    // reflejar en la URL para poder compartir la comparacion
+    var q = "?a=" + a.slug + "&b=" + b.slug;
+    if(window.history && window.history.replaceState){
+      window.history.replaceState(null, "", q);
+    }
+  }
+
+  function init(){
+    var selA = document.getElementById("cmp-a");
+    var selB = document.getElementById("cmp-b");
+    var params = new URLSearchParams(window.location.search);
+    var qa = params.get("a"), qb = params.get("b");
+    if(qa && porSlug[qa]) selA.value = qa;
+    if(qb && porSlug[qb]) selB.value = qb;
+    if(selA.value === selB.value && MODELOS.length > 1){
+      for(var i=0;i<MODELOS.length;i++){
+        if(MODELOS[i].slug !== selA.value){ selB.value = MODELOS[i].slug; break; }
+      }
+    }
+    selA.addEventListener("change", pinta);
+    selB.addEventListener("change", pinta);
+    pinta();
+  }
+
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  } else { init(); }
+})();
+</script>
+</body>
+</html>
