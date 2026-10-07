@@ -13,7 +13,7 @@ El bloqueo no distingue montos: una multa de $30 sin pagar detiene la misma matr
 
 ## Por qué la matrícula se bloquea
 
-La matrícula vehicular exige estar al día en obligaciones. El sistema cruza tu placa con la base de infracciones. Si aparece algo pendiente —una multa, un convenio vencido, una contravención— el trámite no avanza, aunque tengas el dinero en la mano.
+La matrícula vehicular exige estar al día en obligaciones. El sistema cruza tu placa con la base de infracciones. Si aparece algo pendiente (una multa, un convenio vencido, una contravención) el trámite no avanza, aunque tengas el dinero en la mano.
 
 > La revisión técnica también puede observarse por deudas de tránsito: no es solo la ventanilla de matriculación. Un pendiente te va a parar en más de un paso del mismo proceso.
 

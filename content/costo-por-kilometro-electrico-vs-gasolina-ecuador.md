@@ -67,7 +67,7 @@ La comparación directa, sin rodeos:
 | --- | --- | --- |
 | Costo por km | $0,020 – $0,029 | $0,048 – $0,072 |
 | Costo por 100 km | $2,00 – $2,90 | $4,78 – $7,18 |
-| Factor | — | **2 a 3 veces más caro** |
+| Factor |, | **2 a 3 veces más caro** |
 
 ## Escenarios anuales: 10.000, 15.000 y 20.000 km
 

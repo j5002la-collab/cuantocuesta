@@ -9,7 +9,7 @@ seo_titulo: Depreciación: cuánto pierde valor un carro por año
 
 Un carro pierde valor cada año. Para el **SRI**, el avalúo baja un **20% anual**, con un piso del **10% del PVP original**: por más años que pasen, el avalúo no baja de ese piso. En el **mercado real**, la caída tiene su propio ritmo, y ahí el modelo y la marca pesan tanto como los años.
 
-Esa diferencia —avalúo fiscal frente a precio de mercado— es la clave para entender cuánto vale realmente tu auto y cuándo conviene venderlo.
+Esa diferencia (avalúo fiscal frente a precio de mercado) es la clave para entender cuánto vale realmente tu auto y cuándo conviene venderlo.
 
 ## La regla del SRI: 20% anual con piso del 10%
 
@@ -66,7 +66,7 @@ Vender tiene un costo de oportunidad: si esperas, el auto vale menos; pero si ve
 | 3-5 años | Equilibrio precio/depreciación | Ya perdiste cerca de la mitad |
 | 8-10 años | Poco capital expuesto | Menor liquidez y menor precio |
 
-> La depreciación no se detiene mientras el auto está parado. Un vehículo sin uso y con mantenimiento atrasado se deprecia igual —o más— que uno usado a diario con servicios al día. El peor enemigo del valor no es el kilometraje, es el abandono.
+> La depreciación no se detiene mientras el auto está parado. Un vehículo sin uso y con mantenimiento atrasado se deprecia igual (o más) que uno usado a diario con servicios al día. El peor enemigo del valor no es el kilometraje, es el abandono.
 
 ## Tabla de depreciación a 5 años
 
@@ -74,7 +74,7 @@ Estimación sobre un auto de **$20.000** al momento de la compra:
 
 | Año | Valor estimado de mercado | Pérdida acumulada |
 | --- | --- | --- |
-| 0 | $20.000 | — |
+| 0 | $20.000 |, |
 | 1 | $16.500-17.000 | ~$3.000-3.500 |
 | 2 | $14.000-14.500 | ~$5.500-6.000 |
 | 3 | $12.000-12.500 | ~$7.500-8.000 |

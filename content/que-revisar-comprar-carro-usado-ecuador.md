@@ -20,7 +20,7 @@ No gastes tiempo ni gasolina sin hacer esto primero:
 3. **Compara el precio contra el avalúo del SRI y contra publicaciones similares.** Un precio muy por debajo del mercado no es una oportunidad, es una señal.
 4. **Confirma que el vendedor es el propietario real.** Si vende "con poder" de un tercero, revisa el poder y su vigencia.
 
-> Un auto con gravamen o con reserva de dominio no se puede transferir hasta que la deuda esté saldada. Verificar esto primero evita que pierdas el tiempo — o el dinero.
+> Un auto con gravamen o con reserva de dominio no se puede transferir hasta que la deuda esté saldada. Verificar esto primero evita que pierdas el tiempo, o el dinero.
 
 ## Checklist mecánico en la visita
 
@@ -96,7 +96,7 @@ El daño por agua es el más difícil de ver y el más caro de reparar, porque a
 
 El impuesto del traspaso de dominio es del **1% sobre el mayor valor entre el precio del contrato y el avalúo del SRI**. Si en el contrato declaras $10.000 y el avalúo del SRI es $12.000, pagas sobre $12.000. No sirve declarar menos: el SRI toma el valor más alto.
 
-> El contrato de compraventa debe estar legalizado. Si compras y no haces el traspaso ese mismo día, el auto sigue a nombre del vendedor — y cualquier multa, infracción o responsabilidad posterior queda a su nombre. Haz el trámite juntos.
+> El contrato de compraventa debe estar legalizado. Si compras y no haces el traspaso ese mismo día, el auto sigue a nombre del vendedor, y cualquier multa, infracción o responsabilidad posterior queda a su nombre. Haz el trámite juntos.
 
 ## Resumen práctico
 

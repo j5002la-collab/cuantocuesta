@@ -8,7 +8,7 @@ actualizado: 2026-09-26
 
 **Ecuador tiene 94 puntos de recarga para vehículos eléctricos en todo el país: 48 en Quito y 11 en Guayaquil.** Cargar cuesta entre **$8 y $10**, y el tiempo depende del tipo de carga: **40 minutos a 1 hora y media** en carga rápida, o unas **8 horas** en casa con conector de 220 voltios.
 
-Esa distribución dice mucho. **Quito y Guayaquil concentran 59 de los 94 puntos** — el 63%. Si vives fuera de esas dos ciudades, planificar dónde cargas deja de ser un detalle y se vuelve parte de la decisión de compra.
+Esa distribución dice mucho. **Quito y Guayaquil concentran 59 de los 94 puntos**, el 63%. Si vives fuera de esas dos ciudades, planificar dónde cargas deja de ser un detalle y se vuelve parte de la decisión de compra.
 
 ## La red en números
 
@@ -58,7 +58,7 @@ En casa, **8 horas** encaja bien con la rutina: enchufas al llegar de noche, sal
 
 El costo **depende del punto y del tipo de vehículo**, y la tarifa regulada varía por horario. Cargar en horario de tarifa baja es la diferencia entre pagar $0,05 o $0,10 por kWh: el doble.
 
-Traducido a costo operativo, esto equivale aproximadamente a **$0,02 a $0,03 por kilómetro** — frente a **$0,048 a $0,072** de un auto a gasolina con Extra o Ecopaís a **$3,21 el galón**. El desglose completo está en nuestra guía de costo por kilómetro.
+Traducido a costo operativo, esto equivale aproximadamente a **$0,02 a $0,03 por kilómetro**, frente a **$0,048 a $0,072** de un auto a gasolina con Extra o Ecopaís a **$3,21 el galón**. El desglose completo está en nuestra guía de costo por kilómetro.
 
 ## Antes de comprar sin cargador en casa
 

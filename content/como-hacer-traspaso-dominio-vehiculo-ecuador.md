@@ -102,7 +102,7 @@ Por eso conviene planificar media jornada o más: no basta con ir a una sola ven
 
 ## Qué mirar antes de firmar el contrato
 
-El contrato fija el precio, y sobre ese precio —o sobre el avalúo, si es mayor— se calcula el 1%. Antes de firmar:
+El contrato fija el precio, y sobre ese precio (o sobre el avalúo, si es mayor) se calcula el 1%. Antes de firmar:
 
 1. Consulta el **avalúo del SRI** por placa.
 2. Compara el avalúo con el precio que vas a declarar.

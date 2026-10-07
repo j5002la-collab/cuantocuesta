@@ -13,7 +13,7 @@ Esa es la respuesta corta y también la honesta: **sí existen beneficios, pero 
 
 > **Advertencia previa:** el régimen tributario de vehículos cambia con reformas y reglamentos. Todo lo de este artículo es orientación para saber **qué preguntar y a quién**, no una liquidación fiscal. Antes de firmar un contrato, pide el detalle por escrito al concesionario y confírmalo con el **SRI**.
 
-## Qué se dice de los incentivos — y qué no
+## Qué se dice de los incentivos, y qué no
 
 Lo verificable es la existencia y la dirección del beneficio:
 
@@ -23,8 +23,8 @@ Lo verificable es la existencia y la dirección del beneficio:
 | Incluyen exención de ciertos impuestos, como el ICE | **Verificado** |
 | Incluyen aranceles de importación exentos, según el caso | **Verificado** (varía según el caso) |
 | Los híbridos tienen tratamiento fiscal distinto a los eléctricos puros | **Verificado** |
-| Porcentaje o monto exacto del ahorro por modelo | **No verificado** — confirma en el SRI |
-| Norma o artículo específico que lo respalda hoy | **No verificado** — confirma en el SRI |
+| Porcentaje o monto exacto del ahorro por modelo | **No verificado**, confirma en el SRI |
+| Norma o artículo específico que lo respalda hoy | **No verificado**, confirma en el SRI |
 
 Lo que **no** vamos a hacer es rellenar los huecos con números plausibles. La diferencia entre un incentivo real y uno supuesto puede ser varios miles de dólares en tu compra, y si te equivocas, la equivocación es tuya.
 

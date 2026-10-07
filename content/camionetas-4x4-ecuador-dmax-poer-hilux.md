@@ -27,7 +27,7 @@ Con la D-Max en medio a $34.000, la estructura es clara: la Poer entra cómoda, 
 
 ## Costo real de operación
 
-Estimaciones mensuales de operación — combustible, seguro, matrícula y mantenimiento, con 12.000 km al año:
+Estimaciones mensuales de operación, combustible, seguro, matrícula y mantenimiento, con 12.000 km al año:
 
 | Modelo | Costo mensual estimado | Costo a 5 años (aprox.) |
 | --- | --- | --- |
@@ -51,7 +51,7 @@ Aquí está el argumento menos visible y más costoso a largo plazo.
 | Red de servicio en ciudades intermedias | No especificado | Sí, incluida | No especificado |
 
 **Lo verificado:**
-- La Poer gana en el origen local — se ensambla en Ambato, y eso acorta esperas de partes.
+- La Poer gana en el origen local, se ensambla en Ambato, y eso acorta esperas de partes.
 - La D-Max gana en red: Chevrolet tiene cobertura en todo el país, incluidas ciudades intermedias. Para quien vive fuera de Quito y Guayaquil, ese es un factor de peso.
 - La Hilux gana en intervalos de mantenimiento: sus plazos entre servicios son más largos que el promedio, lo que se traduce en menos visitas al taller al año.
 
@@ -61,7 +61,7 @@ Aquí está el argumento menos visible y más costoso a largo plazo.
 
 | Modelo | Argumento de reventa |
 | --- | --- |
-| Toyota Hilux | Alta retención de valor en el mercado de usados — el más fuerte del comparativo |
+| Toyota Hilux | Alta retención de valor en el mercado de usados, el más fuerte del comparativo |
 | Chevrolet D-Max | 5.515 unidades al año: el mayor volumen de las tres, mercado de usados profundo |
 | GWM Poer | 4.092 unidades y ensamblaje local: buena liquidez, pero menor historial de precio sostenido |
 
@@ -71,19 +71,19 @@ La D-Max compensa su menor retención relativa con volumen: hay más compradores
 
 ## Uso recomendado: para qué sirve cada una
 
-### GWM Poer — trabajo intensivo con presupuesto controlado
+### GWM Poer, trabajo intensivo con presupuesto controlado
 
 Si la camioneta es herramienta de trabajo y el precio de entrada manda, la Poer es la única de las tres que arranca en $27.000. Ensamblada en Ambato, con 4.092 unidades vendidas en 2025, es una compra que ya pasó la prueba del mercado.
 
 **Mejor para:** contratistas, agro, transporte de carga, uso mixto ciudad-campo con presupuesto ajustado.
 
-### Chevrolet D-Max — la más vendida, la más segura de revender
+### Chevrolet D-Max, la más vendida, la más segura de revender
 
 5.515 unidades en 2025: es la camioneta más vendida de Ecuador por un margen amplio. Ese volumen significa que hay más unidades en circulación, más repuestos en stock y más talleres que ya la conocen. La red de servicio Chevrolet llega a ciudades intermedias.
 
 **Mejor para:** quien quiere la opción más difundida, necesita servicio cerca de casa y no quiere sorpresas de disponibilidad.
 
-### Toyota Hilux — reventa y menos visitas al taller
+### Toyota Hilux, reventa y menos visitas al taller
 
 Precio de entrada $38.000 y hasta $55.000, el más caro del comparativo. A cambio: intervalos de mantenimiento más largos que el promedio y la mayor retención de valor en usados del trío. Si vas a usar la camioneta tres o cinco años y venderla, esa retención cambia el cálculo.
 

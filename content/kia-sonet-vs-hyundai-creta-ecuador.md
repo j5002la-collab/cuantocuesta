@@ -10,14 +10,14 @@ actualizado: 2026-09-26
 
 La pregunta correcta no es "cuál es mejor", sino si el salto de segmento justifica el dinero extra. Aquí está el desglose.
 
-> El Sonet se ensambla en Quito (Aymesa) y el Creta en Ecuador. Los dos se arman localmente — eso acorta tiempos de entrega y disponibilidad de repuestos frente a un importado puro.
+> El Sonet se ensambla en Quito (Aymesa) y el Creta en Ecuador. Los dos se arman localmente, eso acorta tiempos de entrega y disponibilidad de repuestos frente a un importado puro.
 
 ## Ficha técnica frente a frente
 
 | Dato | Kia Sonet | Hyundai Creta |
 | --- | --- | --- |
 | Segmento | SUV subcompacto | SUV mediano |
-| Precio | $21.599 – ~$25.000 | Superior al Sonet por posicionamiento de línea — varía por versión |
+| Precio | $21.599 – ~$25.000 | Superior al Sonet por posicionamiento de línea, varía por versión |
 | Motor | 1.5 L, 4 cil., 113 hp a 6.300 rpm | No especificado en nuestra ficha |
 | Torque | 144 Nm | No especificado |
 | Transmisión | Manual o IVT | No especificado |
@@ -47,7 +47,7 @@ Si viajas con tres adultos atrás de forma habitual, el segmento mediano se sien
 | --- | --- | --- |
 | Combinado | 15,14 km/l | 18,03 km/l |
 
-Aquí hay un dato que sorprende a muchos: **la versión automática IVT consume menos que la manual** — 18,03 contra 15,14 km/l combinados. El 1.5 L con transmisión IVT está optimizado para bajas vueltas sostenidas.
+Aquí hay un dato que sorprende a muchos: **la versión automática IVT consume menos que la manual**, 18,03 contra 15,14 km/l combinados. El 1.5 L con transmisión IVT está optimizado para bajas vueltas sostenidas.
 
 Traducido a dinero, con 12.000 km al año y Extra/Ecopaís a $3,21 el galón:
 
@@ -91,7 +91,7 @@ El Sonet, además, es el **tercer modelo más vendido de Ecuador en el H1 2026**
 
 ## ¿Vale la pena subir de segmento?
 
-Subir de un subcompacto a un mediano cuesta, en términos generales de mercado, **entre $4.000 y $10.000 más** — depende de versión y promoción. Ese dinero compra:
+Subir de un subcompacto a un mediano cuesta, en términos generales de mercado, **entre $4.000 y $10.000 más**, depende de versión y promoción. Ese dinero compra:
 
 **Lo que ganas con un mediano:**
 - Más espacio para piernas y hombros atrás

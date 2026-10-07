@@ -69,7 +69,7 @@ Además de la consulta registral, hay señales de contexto que apuntan a un cré
 Las multas de tránsito no bloquean el uso del auto, pero **sí bloquean el traspaso**. Antes de cerrar la compra, revisa:
 
 1. **Infracciones registradas** con la placa en el sistema de la ANT.
-2. **Multas en proceso de impugnación** — pueden reaparecer meses después.
+2. **Multas en proceso de impugnación**, pueden reaparecer meses después.
 3. **Fotomultas en corredores y cámaras de velocidad.**
 4. **Pensiones o tasas municipales pendientes** del vehículo.
 

@@ -63,7 +63,7 @@ Escenario: 12.000 km al año, combustible Extra o Ecopaís a **$3,21 el galón**
 | **Total anual** | **$2.377 – $2.813** | **$2.267 – $2.703** |
 | **Equivalente mensual** | **$198 – $234** | **$189 – $225** |
 
-El Sonet cuesta más al año que un sedán de $16.000 —el seguro por el mayor valor del vehículo explica gran parte— pero menos que la mayoría de SUV medianos. La IVT ahorra **$110 al año** en combustible, y algo más si manejas mucho en ciudad, donde el rango 15–18 km/l se aprecia frente a una manual mal aprovechada.
+El Sonet cuesta más al año que un sedán de $16.000 (el seguro por el mayor valor del vehículo explica gran parte) pero menos que la mayoría de SUV medianos. La IVT ahorra **$110 al año** en combustible, y algo más si manejas mucho en ciudad, donde el rango 15–18 km/l se aprecia frente a una manual mal aprovechada.
 
 Cruce de verificación: el tarifario oficial de un concesionario Ford fija el costo de mantenimiento en **$0,048 por kilómetro**, que a 12.000 km son **$576 al año**. El rango $400–$600 es consistente con ese dato de referencia.
 

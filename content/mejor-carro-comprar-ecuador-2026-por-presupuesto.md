@@ -40,8 +40,8 @@ El top 6 concentra más del 60% de las ventas. Comprar dentro de esas marcas te 
 
 Por qué gana este rango:
 
-- **Maletero de 475 L** — más que cualquier hatchback del rango, y más que varios SUV compactos
-- **Garantía de 10 años o 160.000 km** — la más larga de los cuatro
+- **Maletero de 475 L**, más que cualquier hatchback del rango, y más que varios SUV compactos
+- **Garantía de 10 años o 160.000 km**, la más larga de los cuatro
 - **Consumo mixto de 15,5 km/l (manual) y 14,2 km/l (automática)**
 - Motor 1.4 L de 94 hp, 132 Nm, tanque de 43 L, 1.095 kg de peso
 - 94 hp alcanzan para ciudad y carretera sin sobrar; es un auto de uso, no de prestaciones
@@ -66,7 +66,7 @@ Aquí aparece la decisión central de la mayoría de compradores ecuatorianos.
 Es el SUV más vendido de Ecuador con **4.063 unidades en 2025**, y por buenas razones:
 
 - Entra al rango SUV desde **$19.999** en la versión LTZ
-- Cuota desde **$309 al mes** — el acceso más realista a un SUV nuevo
+- Cuota desde **$309 al mes**, el acceso más realista a un SUV nuevo
 - 1.5 L DVCP de 98 hp y 143 Nm, más torque que el Soluto
 - 4 airbags, ABS + EBD, control electrónico de estabilidad, asistente de arranque en pendiente
 - Asientos abatibles 60/40, ecocuero, pantalla táctil de 8"
@@ -90,14 +90,14 @@ Este rango se parte en dos caminos según para qué necesitas el vehículo.
 ### Ganador por relación precio/producto: GWM Poer
 
 - Arranca en **$27.000**: la 4x4 nueva más accesible del mercado
-- **Ensamblada en Ambato por Ciauto** — repuestos y tiempos de entrega locales
+- **Ensamblada en Ambato por Ciauto**, repuestos y tiempos de entrega locales
 - **4.092 unidades en 2025**, segunda camioneta más vendida de Ecuador
 - Precio más bajo que camionetas japonesas o americanas equivalentes
 
 ### Ganador si no necesitas platón: Hyundai Tucson
 
 - **$32.499** de entrada, motor 2.5 L atmosférico, transmisión automática
-- **6 airbags** y garantía de **5 años sin límite de kilometraje** — la única del comparativo sin tope de kilómetros
+- **6 airbags** y garantía de **5 años sin límite de kilometraje**, la única del comparativo sin tope de kilómetros
 - 2.395 unidades en 2025; 872 unidades en el top 5 SUV de 2026
 - Comparte plataforma con el Kia Sportage, pero con perfil más orientado al confort familiar
 

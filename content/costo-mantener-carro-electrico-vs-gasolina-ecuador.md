@@ -51,7 +51,7 @@ Si compras un eléctrico, pregunta **por escrito**:
 - Si hay cobertura de **degradación** y qué porcentaje acepta como reclamo.
 - Si la garantía exige mantenimiento en talleres autorizados.
 
-> La garantía de la batería es la cláusula más importante del contrato. Confirma cuántos años cubre, qué degradación acepta como reclamo y si exige servicios en talleres autorizados — porque exigirlo puede atarte a una red que en Ecuador todavía es escasa.
+> La garantía de la batería es la cláusula más importante del contrato. Confirma cuántos años cubre, qué degradación acepta como reclamo y si exige servicios en talleres autorizados, porque exigirlo puede atarte a una red que en Ecuador todavía es escasa.
 
 ## La barrera real en Ecuador: talleres y diagnóstico
 

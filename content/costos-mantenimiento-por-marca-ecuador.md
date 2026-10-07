@@ -106,11 +106,11 @@ Antes de firmar, haz este ejercicio en cuatro pasos:
 3. **Verifica el intervalo de aceite y el tipo que exige el motor.** Un intervalo corto multiplica las visitas al año.
 4. **Calcula tu kilometraje real anual**, no el promedio del país. Si haces 25.000 km al año, un auto de mantenimiento bajo te ahorra más que cualquier descuento de vitrina.
 
-> La marca más barata de comprar no es siempre la más barata de mantener. Un auto de $5.000 menos en la vitrina puede costarte $800 más al año en repuestos — y a 5 años esa diferencia se invierte. La excepción: si vendes el auto a los 2 o 3 años, el primer propietario absorbe la depreciación y el costo de mantenimiento pesa menos.
+> La marca más barata de comprar no es siempre la más barata de mantener. Un auto de $5.000 menos en la vitrina puede costarte $800 más al año en repuestos, y a 5 años esa diferencia se invierte. La excepción: si vendes el auto a los 2 o 3 años, el primer propietario absorbe la depreciación y el costo de mantenimiento pesa menos.
 
 ### El detalle de la garantía
 
-La garantía extiende la tranquilidad, pero no elimina el costo: obliga a hacer el mantenimiento en el concesionario, que suele cobrar más que un taller independiente. Modelos como el Kia Soluto ofrecen 10 años o 160.000 km, el Chevrolet Groove 7 años o 150.000 km. En ambos casos, el mantenimiento dentro de la garantía es obligatorio para conservarla — y ese costo ya está dentro de los rangos anuales de esta guía.
+La garantía extiende la tranquilidad, pero no elimina el costo: obliga a hacer el mantenimiento en el concesionario, que suele cobrar más que un taller independiente. Modelos como el Kia Soluto ofrecen 10 años o 160.000 km, el Chevrolet Groove 7 años o 150.000 km. En ambos casos, el mantenimiento dentro de la garantía es obligatorio para conservarla, y ese costo ya está dentro de los rangos anuales de esta guía.
 
 ## Resumen práctico
 

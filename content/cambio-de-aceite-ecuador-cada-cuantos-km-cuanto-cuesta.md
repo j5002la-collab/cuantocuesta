@@ -53,7 +53,7 @@ En Guayaquil, Manta y las zonas amazónicas, la combinación de polvo y humedad 
 Un servicio serio no es solo drenar el aceite. Debería incluir:
 
 1. **Aceite nuevo** del tipo que especifica el fabricante.
-2. **Filtro de aceite nuevo** — reemplazarlo siempre, no limpiarlo.
+2. **Filtro de aceite nuevo**, reemplazarlo siempre, no limpiarlo.
 3. **Revisión del nivel** de refrigerante, líquido de frenos y líquido de dirección.
 4. **Inspección visual** de fugas en el cárter y alrededor del filtro.
 5. **Registro del kilometraje** en la factura o el libro de mantenimiento.
@@ -95,7 +95,7 @@ No siempre "cambiar antes" es mejor. Hay tres casos donde el gasto extra no te d
 2. **Usar aceite de especificación superior a la que exige el fabricante** solo porque "es mejor". Si el manual admite semisintético, pagar el doble por sintético no cambia el resultado.
 3. **Pagar el paquete del concesionario cuando el auto ya salió de garantía** y no hay problema mecánico. El paquete sirve mientras protege la garantía; después, un taller independiente serio cobra menos por lo mismo.
 
-> Si el vehículo está en garantía, respeta los intervalos y usa el aceite que indica el manual. Saltarte un servicio puede anular la garantía — la del Kia Soluto llega a 10 años o 160.000 km, y perderla sale mucho más caro que un cambio de aceite.
+> Si el vehículo está en garantía, respeta los intervalos y usa el aceite que indica el manual. Saltarte un servicio puede anular la garantía, la del Kia Soluto llega a 10 años o 160.000 km, y perderla sale mucho más caro que un cambio de aceite.
 
 ## Cómo saber si te están cobrando de más
 

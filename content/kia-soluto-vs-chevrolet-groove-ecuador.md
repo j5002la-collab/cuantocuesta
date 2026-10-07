@@ -38,7 +38,7 @@ El Soluto es **185 mm más largo** que el Groove, pero el Groove es un SUV: gana
 | Carretera | 18,2 km/l | 16,8 km/l | No especificado |
 | Mixto | 15,5 km/l | 14,2 km/l | No especificado |
 
-La ficha técnica de Chevrolet Ecuador no publica consumo homologado del Groove. Con 1.5 L y peso de SUV compacto, el rango esperable está entre 12 y 14 km/l mixto — **verifícalo en tu prueba de manejo**, no lo tomes como dato oficial.
+La ficha técnica de Chevrolet Ecuador no publica consumo homologado del Groove. Con 1.5 L y peso de SUV compacto, el rango esperable está entre 12 y 14 km/l mixto, **verifícalo en tu prueba de manejo**, no lo tomes como dato oficial.
 
 A 12.000 km al año con Extra o Ecopaís a $3,21 el galón:
 

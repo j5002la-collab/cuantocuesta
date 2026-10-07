@@ -9,7 +9,7 @@ seo_titulo: Carros eléctricos en Ecuador 2026: precios
 
 En Ecuador hoy se venden **carros 100% eléctricos de 23 marcas y 42 modelos**, con precios que van desde **$28.000 hasta $150.000**. El piso del mercado ya no es un experimento: son modelos de entrada con autonomía declarada de 500 a 650 km.
 
-El crecimiento es la parte llamativa. En 2025 se vendieron **4.276 vehículos 100% eléctricos**, contra **1.088 en 2024** — casi cuatro veces más en un solo año. Y en el primer semestre de 2026, **uno de cada cuatro autos vendidos en el país fue híbrido o eléctrico**.
+El crecimiento es la parte llamativa. En 2025 se vendieron **4.276 vehículos 100% eléctricos**, contra **1.088 en 2024**, casi cuatro veces más en un solo año. Y en el primer semestre de 2026, **uno de cada cuatro autos vendidos en el país fue híbrido o eléctrico**.
 
 > **Dato verificado:** los eléctricos puros siguen siendo solo el **3% de las ventas totales** de vehículos en 2026. El otro gran bloque del sector electrificado son los híbridos. Es un mercado en crecimiento, no un mercado maduro.
 
@@ -34,7 +34,7 @@ Dos marcas concentran la conversación, por razones distintas.
 
 **BYD** vendió **2.916 unidades en 2025**, un **+243,1%** frente a las 850 de 2024. Su oferta en Ecuador es **100% eléctrica**: no vende híbridos ni combustión en el país. Es, de lejos, la marca que más ha empujado el volumen del segmento.
 
-**Kia** llega con la red más estructurada. Ofrece **8 vehículos eléctricos** en Ecuador — EV2, EV3, EV4, EV5, EV6, EV9, PV5 Pasajeros y PV5 Carga — con autonomías declaradas de **500 a 650 km**. Kia fue **la primera marca en introducir vehículos 100% eléctricos en Ecuador, en 2014, con el Soul**, y hoy respalda la oferta con **20 electrolineras de carga ultrarrápida**, más de **200 puntos de carga media**, **49 talleres autorizados en movilidad eléctrica** y más de **12 millones de dólares en stock de repuestos**.
+**Kia** llega con la red más estructurada. Ofrece **8 vehículos eléctricos** en Ecuador (EV2, EV3, EV4, EV5, EV6, EV9, PV5 Pasajeros y PV5 Carga) con autonomías declaradas de **500 a 650 km**. Kia fue **la primera marca en introducir vehículos 100% eléctricos en Ecuador, en 2014, con el Soul**, y hoy respalda la oferta con **20 electrolineras de carga ultrarrápida**, más de **200 puntos de carga media**, **49 talleres autorizados en movilidad eléctrica** y más de **12 millones de dólares en stock de repuestos**.
 
 | Marca | Oferta en Ecuador | Autonomía declarada | Respaldo |
 | --- | --- | --- | --- |

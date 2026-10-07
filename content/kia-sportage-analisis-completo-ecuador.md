@@ -74,7 +74,7 @@ Para comparar contra tu taller: aceite y filtro **$50–$90**, alineación y bal
 
 No hay datos por versión disponibles en las fuentes consultadas, así que no vamos a construir una lista de equipamiento especulativa.
 
-Lo verificable es la plataforma compartida con el Hyundai Tucson. El Tucson ofrece **6 airbags** y garantía de **5 años sin límite de kilometraje**. Compartir plataforma implica que la base estructural —distancia entre ejes, arquitectura de suspensión, puntos de anclaje— proviene del mismo desarrollo. El equipamiento de seguridad interior, en cambio, se define por versión y por mercado, y ahí no se puede extrapolar.
+Lo verificable es la plataforma compartida con el Hyundai Tucson. El Tucson ofrece **6 airbags** y garantía de **5 años sin límite de kilometraje**. Compartir plataforma implica que la base estructural (distancia entre ejes, arquitectura de suspensión, puntos de anclaje) proviene del mismo desarrollo. El equipamiento de seguridad interior, en cambio, se define por versión y por mercado, y ahí no se puede extrapolar.
 
 Recomendación práctica: al cotizar, pide que te confirmen por escrito el número de airbags, la presencia de control de estabilidad y asistente de arranque en pendiente, y si la garantía tiene límite de kilometraje. Son los tres puntos donde un SUV mediano se diferencia de otro.
 

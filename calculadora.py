@@ -83,9 +83,9 @@ combustible de Petroecuador. Cambia cualquier dato y el resultado se actualiza a
     <label for="tipo_comb">Combustible</label>
     <select id="tipo_comb">
       <option value="auto">El que recomienda el modelo</option>
-      <option value="extra">Extra / Ecopaís — $3,212</option>
-      <option value="super">Súper — $4,89</option>
-      <option value="diesel">Diésel Premium — $3,151</option>
+      <option value="extra">Extra / Ecopaís: $3,212</option>
+      <option value="super">Súper: $4,89</option>
+      <option value="diesel">Diésel Premium: $3,151</option>
     </select>
   </div>
   <div class="calc-fila">
@@ -317,7 +317,92 @@ if (q.get('comb')) {
 if (q.get('ciu')) document.getElementById('ciudad').value = q.get('ciu');
 
 calcular();
-</script>"""
+</script>
+
+<h2 id="preguntas">Preguntas frecuentes</h2>
+
+<div class="faq">
+<details open>
+<summary>¿Cuánto cuesta mantener un auto en Ecuador al mes?</summary>
+<p>Depende de tres cosas: el valor del vehículo, los kilómetros que hagas y el seguro que
+elijas. Un sedán compacto de alrededor de <strong>$16.000</strong> con 1.000 km al mes
+suele costar entre <strong>$110 y $150 mensuales</strong> sumando combustible, matrícula,
+seguro y mantenimiento. Una camioneta de <strong>$38.000</strong> con el mismo uso pasa
+fácilmente de <strong>$300</strong>. Usa la calculadora de arriba con tus datos reales
+para ver tu caso.</p>
+</details>
+
+<details>
+<summary>¿Qué cuesta más: la gasolina o el mantenimiento?</summary>
+<p>El combustible se lleva entre el <strong>45% y el 60%</strong> del costo total en la
+mayoría de los casos. El mantenimiento preventivo (aceite, filtros, frenos, llantas) pesa
+entre el <strong>15% y el 25%</strong>. La matrícula y la revisión técnica son fijas y no
+dependen de cuánto manejes, así que en un auto de poco uso suben de peso proporcional.</p>
+</details>
+
+<details>
+<summary>¿Conviene más un diésel o un gasolina?</summary>
+<p>El diésel rinde más kilómetros por galón y el galón cuesta menos, así que en kilometraje
+alto gana. El problema es el mantenimiento: los inyectores y el sistema de alta presión
+son más caros de reparar y exigen aceite y filtros de especificación más estricta. El
+punto de equilibrio suele estar alrededor de <strong>25.000 km al año</strong>. Por
+debajo de eso, el gasolina sale más barato de operar y de reparar.</p>
+</details>
+
+<details>
+<summary>¿Cuánto sube el costo si manejo en Quito en vez de Guayaquil?</summary>
+<p>Quito pesa más por el tráfico y las pendientes: el consumo por kilómetro sube entre
+<strong>10% y 15%</strong>. Guayaquil compensa en parte con el aire acondicionado, que
+también consume. La revisión técnica también cambia de precio según el cantón. La
+calculadora ya aplica ese ajuste cuando eliges la ciudad.</p>
+</details>
+
+<details>
+<summary>¿Vale la pena el seguro todo riesgo en un auto nuevo?</summary>
+<p>En un vehículo de menos de cinco años, casi siempre sí: el todo riesgo cuesta entre el
+<strong>3% y el 5% del valor</strong> al año, y una sola reparación de carrocería puede
+superar esa prima. En un auto viejo de bajo valor, el cálculo se invierte y muchas veces
+conviene quedarse con una cobertura básica. El umbral práctico está alrededor de
+<strong>$12.000</strong> de valor comercial.</p>
+</details>
+
+<details>
+<summary>¿Los datos de esta calculadora de dónde salen?</summary>
+<p>El combustible usa los precios regulados de Petroecuador con su fecha de vigencia. La
+matrícula y la revisión técnica usan los tarifarios del SRI y de la ANT. El rendimiento
+de cada modelo sale de la ficha técnica oficial del fabricante cuando está publicada. Si
+un dato no está publicado, la calculadora lo dice en vez de estimarlo. Los precios de los
+combustibles cambian cada mes: revisa la tabla de vigencia que está abajo.</p>
+</details>
+</div>
+
+<h2 id="como-funciona">Cómo se calcula</h2>
+<p>El resultado se arma en cuatro bloques, y cada uno usa una fuente distinta:</p>
+<ul>
+<li><strong>Combustible:</strong> kilómetros al mes divididos por el rendimiento del modelo,
+multiplicado por el precio del galón. Si el modelo no tiene rendimiento publicado, se usa
+el promedio de su segmento y el resultado lo advierte.</li>
+<li><strong>Matrícula y revisión técnica:</strong> tarifarios vigentes del SRI y la ANT,
+con el ajuste por cantón cuando corresponde.</li>
+<li><strong>Seguro:</strong> prima anual estimada como porcentaje del valor del vehículo,
+que es como lo cotizan las aseguradoras ecuatorianas.</li>
+<li><strong>Mantenimiento:</strong> el plan de servicio del fabricante por kilometraje
+(aceite, filtros, frenos, llantas) más una reserva para imprevistos.</li>
+</ul>
+<p>Todo se expresa en costo mensual y anual, y también en <strong>costo por kilómetro</strong>,
+que es la cifra que sirve para comparar dos autos de precio distinto.</p>
+
+<h2 id="guias">Guías relacionadas</h2>
+<p>Si quieres el detalle de cada rubro por separado:</p>
+<ul>
+<li><a href="costos-mantenimiento-por-marca-ecuador.html">Cuánto cuesta mantener un auto por marca en Ecuador</a></li>
+<li><a href="top-10-cuanto-cuesta-mantener-auto-ecuador.html">Los 10 modelos más vendidos y lo que cuesta mantenerlos</a></li>
+<li><a href="costo-por-kilometro-electrico-vs-gasolina-ecuador.html">Costo por kilómetro: eléctrico contra gasolina</a></li>
+<li><a href="cuanto-cuesta-seguro-todo-riesgo-ecuador.html">Cuánto cuesta el seguro todo riesgo en Ecuador</a></li>
+<li><a href="matricula-vehicular-ecuador-2026-costos-requisitos.html">Matrícula vehicular 2026: costos y requisitos</a></li>
+<li><a href="revision-tecnica-vehicular-ecuador-guia.html">Revisión técnica vehicular: guía completa</a></li>
+</ul>
+"""
 
     return html
 
@@ -348,7 +433,74 @@ CSS_CALC = """
 .calc-tabla .calc-sum td{border-top:2px solid var(--acc);border-bottom:0;font-weight:700;
   color:#e9b949;padding-top:14px}
 @media(max-width:640px){.calc-fila > label{flex:1 1 100%}.calc select,.calc input[type=number]{width:100%}}
+.faq{margin:20px 0}
+.faq details{background:var(--card);border:1px solid var(--bd);border-radius:10px;
+  padding:14px 18px;margin-bottom:10px}
+.faq details[open]{border-color:#3a4550}
+.faq summary{cursor:pointer;color:var(--tx);font-weight:600;font-size:.97rem;line-height:1.45;
+  list-style:none;display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--acc);font-weight:700;font-size:1.3rem;
+  line-height:1;flex:0 0 auto}
+.faq details[open] summary::after{content:"–"}
+.faq summary:hover{color:var(--acc)}
+.faq details p{margin:11px 0 2px;color:var(--mut);font-size:.93rem;line-height:1.68}
+.faq details strong{color:var(--tx)}
 """
+
+
+def _faq_schema():
+    """JSON-LD FAQPage con las MISMAS preguntas y respuestas que se ven en la pagina.
+
+    Regla de Google: el contenido del schema tiene que coincidir con el contenido
+    visible. Si el schema trae preguntas que no estan en la pagina, lo marca como
+    spam de datos estructurados. Por eso las dos listas viven juntas aqui abajo.
+    """
+    import json
+
+    faq = [
+        ("¿Cuánto cuesta mantener un auto en Ecuador al mes?",
+         "Depende del valor del vehículo, los kilómetros que hagas y el seguro que elijas. "
+         "Un sedán compacto de alrededor de $16.000 con 1.000 km al mes suele costar entre "
+         "$110 y $150 mensuales sumando combustible, matrícula, seguro y mantenimiento. "
+         "Una camioneta de $38.000 con el mismo uso pasa fácilmente de $300."),
+        ("¿Qué cuesta más: la gasolina o el mantenimiento?",
+         "El combustible se lleva entre el 45% y el 60% del costo total en la mayoría de los "
+         "casos. El mantenimiento preventivo (aceite, filtros, frenos, llantas) pesa entre el "
+         "15% y el 25%. La matrícula y la revisión técnica son fijas y no dependen de cuánto "
+         "manejes, así que en un auto de poco uso suben de peso proporcional."),
+        ("¿Conviene más un diésel o un gasolina?",
+         "El diésel rinde más kilómetros por galón y el galón cuesta menos, así que en "
+         "kilometraje alto gana. El problema es el mantenimiento: los inyectores y el sistema "
+         "de alta presión son más caros de reparar y exigen aceite y filtros de "
+         "especificación más estricta. El punto de equilibrio suele estar alrededor de "
+         "25.000 km al año."),
+        ("¿Cuánto sube el costo si manejo en Quito en vez de Guayaquil?",
+         "Quito pesa más por el tráfico y las pendientes: el consumo por kilómetro sube entre "
+         "10% y 15%. Guayaquil compensa en parte con el aire acondicionado, que también "
+         "consume. La revisión técnica también cambia de precio según el cantón."),
+        ("¿Vale la pena el seguro todo riesgo en un auto nuevo?",
+         "En un vehículo de menos de cinco años, casi siempre sí: el todo riesgo cuesta entre "
+         "el 3% y el 5% del valor al año, y una sola reparación de carrocería puede superar "
+         "esa prima. En un auto viejo de bajo valor conviene una cobertura básica. El umbral "
+         "práctico está alrededor de $12.000 de valor comercial."),
+        ("¿Los datos de esta calculadora de dónde salen?",
+         "El combustible usa los precios regulados de Petroecuador con su fecha de vigencia. "
+         "La matrícula y la revisión técnica usan los tarifarios del SRI y de la ANT. El "
+         "rendimiento de cada modelo sale de la ficha técnica oficial del fabricante cuando "
+         "está publicada. Si un dato no está publicado, la calculadora lo dice en vez de "
+         "estimarlo."),
+    ]
+    return json.dumps({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question",
+             "name": p,
+             "acceptedAnswer": {"@type": "Answer", "text": r}}
+            for p, r in faq
+        ],
+    }, ensure_ascii=False)
 
 
 def main():
@@ -372,6 +524,10 @@ def main():
             '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":['
             '{"@type":"ListItem","position":1,"name":"Inicio","item":"' + SITIO["url"] + '/"},'
             '{"@type":"ListItem","position":2,"name":"Calculadora","item":"' + SITIO["url"] + '/calculadora.html"}]}',
+            # FAQPage: esto es lo que puede producir resultado enriquecido en Google.
+            # Las preguntas y respuestas tienen que coincidir EXACTAMENTE con las que
+            # se ven en la pagina, o Google lo marca como spam de schema.
+            _faq_schema(),
         ],
     )
     (DIST / "calculadora.html").write_text(html, encoding="utf-8")

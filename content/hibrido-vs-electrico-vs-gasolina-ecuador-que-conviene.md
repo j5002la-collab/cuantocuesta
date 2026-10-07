@@ -117,6 +117,6 @@ El híbrido gana donde falta uno de esos tres factores. Es la razón por la que 
 
 La gasolina sigue ganando cuando haces pocos kilómetros o el presupuesto manda.
 
-**El orden correcto de decisión es este:** primero dónde cargas, segundo cuántos kilómetros haces al año, tercero tu presupuesto. Si los tres apuntan al eléctrico, cómpralo sin dudar. Si cualquiera falla, el híbrido es probablemente tu respuesta — y está bien.
+**El orden correcto de decisión es este:** primero dónde cargas, segundo cuántos kilómetros haces al año, tercero tu presupuesto. Si los tres apuntan al eléctrico, cómpralo sin dudar. Si cualquiera falla, el híbrido es probablemente tu respuesta, y está bien.
 
 Y recuerda dos cosas que cambian con cada reforma: el costo exacto de cargar según el punto y el horario, y el detalle de los incentivos tributarios, que **varía y conviene verificar con el SRI** antes de decidir.

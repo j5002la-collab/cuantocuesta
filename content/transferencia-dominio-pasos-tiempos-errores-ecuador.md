@@ -83,7 +83,7 @@ El **impuesto del 1%** es la parte variable y la más importante. Si declaras $1
 
 ## El papel de la notaría
 
-La notaría **legaliza el contrato y reconoce firmas**; no hace la transferencia. Sin el contrato legalizado, la ANT no procesa el trámite. Y algo importante: la notaría **no verifica deudas ni gravámenes** — eso lo tienes que verificar tú antes de firmar.
+La notaría **legaliza el contrato y reconoce firmas**; no hace la transferencia. Sin el contrato legalizado, la ANT no procesa el trámite. Y algo importante: la notaría **no verifica deudas ni gravámenes**, eso lo tienes que verificar tú antes de firmar.
 
 ## Si el vendedor desaparece
 
@@ -93,7 +93,7 @@ Es un riesgo real y frecuente. Si no puedes hacer la transferencia con el vended
 - Si ya pagaste y el vendedor desapareció, tendrás que recurrir a un **abogado** para lograr la transferencia forzosa o la resolución del contrato.
 - Guarda todo: contrato, comprobantes de pago, mensajes y datos del vendedor.
 - Un **poder vigente** puede evitar el problema: si alguien vende por otro, el poder debe permitirlo y estar inscrito.
-- Mientras el auto siga a nombre del vendedor, las multas e infracciones posteriores llegan a su nombre — pero el auto lo usas tú, sin respaldo legal pleno.
+- Mientras el auto siga a nombre del vendedor, las multas e infracciones posteriores llegan a su nombre, pero el auto lo usas tú, sin respaldo legal pleno.
 
 ## Cómo comprar sin riesgos
 

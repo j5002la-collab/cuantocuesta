@@ -13,11 +13,11 @@ Ese cálculo te da un ancla antes de escuchar la cifra del vendedor. Sin ancla, 
 
 ## El método del porcentaje de depreciación
 
-El avalúo del SRI se deprecia alrededor de un **20% anual**. Usando el Kia Soluto 1.4L —el auto más vendido del Ecuador en 2025, con 8.725 unidades y precio de $15.799— el cálculo queda así:
+El avalúo del SRI se deprecia alrededor de un **20% anual**. Usando el Kia Soluto 1.4L (el auto más vendido del Ecuador en 2025, con 8.725 unidades y precio de $15.799) el cálculo queda así:
 
 | Antigüedad | Avalúo referencial | Pérdida acumulada |
 | --- | --- | --- |
-| Nuevo | $15.799 | — |
+| Nuevo | $15.799 |, |
 | 1 año | $12.639 | $3.160 |
 | 2 años | $10.111 | $5.688 |
 | 3 años | $8.089 | $7.710 |

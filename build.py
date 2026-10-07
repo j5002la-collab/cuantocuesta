@@ -243,13 +243,13 @@ def pagina(titulo, descripcion, cuerpo, ruta_rel="", canonical="", og_imagen="",
            '<a href="' + ruta_rel + 'tramites.html">Trámites</a>'
            '<a href="' + ruta_rel + 'vendidos.html">Más vendidos</a>'
            '<a href="' + ruta_rel + 'comparativas.html">Comparativas</a>'
+           '<a href="' + ruta_rel + 'compra.html">Comprar usado</a>'
            '<a href="' + ruta_rel + 'electricos.html">Eléctricos</a>'
            '<a href="' + ruta_rel + 'calculadora.html">Calculadora</a></nav>')
     og = f'<meta property="og:image" content="{escape(og_imagen)}">' if og_imagen else ""
     tw = '<meta name="twitter:card" content="summary_large_image">' if og_imagen else ""
     ld = "\n".join(
-        f'<script type="application/ld+json">{s}</script>' for s in schema
-    ) if schema else ""
+        f'<script type="application/ld+json">{s}</script>' for s in schema) if schema else ""
     ads_head = anuncios.encabezado()
     return f"""<!DOCTYPE html>
 <html lang="es-EC">
@@ -279,7 +279,7 @@ def pagina(titulo, descripcion, cuerpo, ruta_rel="", canonical="", og_imagen="",
 {cuerpo}
 </div></main>
 <footer><div class="wrap">
-<p><strong>Autos Ecuador</strong> — {escape(SITIO['tagline'])}</p>
+<p><strong>Autos Ecuador</strong>: {escape(SITIO['tagline'])}</p>
 <p style="margin-top:9px">Información referencial basada en fuentes oficiales (SRI, ANT, AEADE) y tarifarios
 de concesionarios. Los precios, tasas y requisitos cambian: verifica siempre en la entidad correspondiente
 antes de tomar una decisión.</p>
@@ -419,10 +419,20 @@ en Ecuador. Sin estimaciones vagas: tarifas del SRI, la ANT y tarifarios de conc
         "financiamiento": "Crédito y financiamiento",
         "electricos": "Eléctricos e híbridos",
     }
+    # Las categorias que tienen pagina propia se enlazan desde el h2.
+    # OJO: antes el h2 era solo texto, asi que las paginas de categoria que no
+    # estaban en el <nav> (compra.html) quedaban HUERFANAS — 0 enlaces entrantes,
+    # y Google las deja en "Crawled - currently not indexed".
+    PAGINA_PROPIA = {"costos", "tramites", "comparativas", "compra",
+                     "electricos", "vendidos"}
+
     for c in orden_cats + [k for k in cats if k not in orden_cats]:
         if c not in cats:
             continue
-        partes.append(f'<h2 id="{c}">{escape(nombres.get(c, c.title()))}</h2><div class="grid">')
+        titulo_cat = escape(nombres.get(c, c.title()))
+        encabezado = (
+            f'<a href="{c}.html">{titulo_cat}</a>' if c in PAGINA_PROPIA else titulo_cat)
+        partes.append(f'<h2 id="{c}">{encabezado}</h2><div class="grid">')
         for a in sorted(cats[c], key=lambda x: x["titulo"]):
             partes.append(f"""<a class="card" href="{a['slug']}.html">
 <h3>{escape(a['titulo'])}</h3>
@@ -430,12 +440,11 @@ en Ecuador. Sin estimaciones vagas: tarifas del SRI, la ANT y tarifarios de conc
         partes.append("</div>")
 
     return pagina(
-        "Autos Ecuador — Costos, trámites y comparativas de autos",
+        "Autos Ecuador | Costos, trámites y comparativas de autos",
         SITIO["descripcion"],
         "\n".join(partes),
         canonical=f"{SITIO['url']}/",
-        schema=schema_sitio(),
-    )
+        schema=schema_sitio(),)
 
 
 def resolver_imagen(a):
@@ -468,13 +477,12 @@ def construir_articulo(a, articulos):
     # imagen principal del articulo
     img = resolver_imagen(a)
     if img:
-        alt = a.get("imagen_alt") or f"{a['titulo']} — gráfico con datos verificados"
+        alt = a.get("imagen_alt") or f"{a['titulo']}: gráfico con datos verificados"
         partes.append(
             f'<figure class="figura">'
             f'<img src="img/{escape(img)}" alt="{escape(alt)}" '
             f'width="1200" height="675" loading="eager" decoding="async">'
-            f'</figure>'
-        )
+            f'</figure>')
 
     partes.append(anuncios.insertar_en_cuerpo(cuerpo_html))
 
@@ -570,8 +578,8 @@ cilindraje, el rendimiento y el tipo de combustible.</p>
 SRI y la ANT según cilindraje), <strong>seguro</strong> (SPPAT obligatorio, más todo riesgo si lo
 contratas), <strong>combustible</strong> y <strong>mantenimiento preventivo</strong>. Este último se
 acumula por kilómetro recorrido, no por mes, así que se siente poco a poco y sorprende al final.</p>
-<p>Con los precios vigentes —Extra y Ecopaís a <strong>$3,212</strong> el galón, Súper a
-<strong>$4,89</strong> y Diésel Premium a <strong>$3,151</strong>— la decisión que más mueve el
+<p>Con los precios vigentes (Extra y Ecopaís a <strong>$3,212</strong> el galón, Súper a
+<strong>$4,89</strong> y Diésel Premium a <strong>$3,151</strong>) la decisión que más mueve el
 resultado es el octanaje: si tu versión admite Extra, usarla en lugar de Súper ahorra más de $500
 al año en un SUV mediano.</p>
 <p>Usa la <a href="calculadora.html">calculadora de costo mensual</a> para ver tu caso exacto, o
@@ -592,15 +600,26 @@ errores concretos que hacen que el trámite se caiga y tengas que volver.</p>"""
             "Comparativas entre modelos",
             "Los autos más vendidos de Ecuador comparados con datos: precio, consumo, seguridad y costos.",
             """<p>Elegir entre dos modelos que cuestan parecido es más fácil con números que con
-folletos. El mercado ecuatoriano creció un <strong>41,4% en el primer semestre de 2026</strong> —
-récord histórico con <strong>78.185 unidades</strong>— y eso abarató y amplió la oferta: hoy hay
+folletos. El mercado ecuatoriano creció un <strong>41,4% en el primer semestre de 2026</strong>
+(récord histórico con <strong>78.185 unidades</strong>) y eso abarató y amplió la oferta: hoy hay
 más opciones en cada rango de precio que hace tres años.</p>
 <p>Estas comparativas enfrentan modelo contra modelo con los mismos criterios: precio real de
 lista, consumo declarado, costo mensual calculado con las tarifas vigentes, seguridad de serie y
 valor de reventa. Cuando un dato no está publicado por el fabricante, lo decimos en lugar de
 rellenarlo con una estimación disfrazada de certeza.</p>
 <p>Ecuador vende el combustible por galón (3,785 litros), así que también comparamos el rendimiento
-en las dos unidades para que puedas contrastarlo con la ficha de tu versión.</p>"""),
+en las dos unidades para que puedas contrastarlo con la ficha de tu versión.</p>
+<p>Si prefieres verlo tú mismo en vez de leer tabla por tabla, el
+<strong><a href="comparador.html">comparador interactivo</a></strong> enfrenta dos modelos cualquiera
+lado a lado y marca en verde cuál gana en cada campo. Son 18 campos agrupados en precio, motor,
+consumo, dimensiones, seguridad y mercado. Cuando un dato no está publicado en la ficha oficial,
+la fila dice "No publicado" en vez de estimarlo, y la comparación de ese campo se omite: preferimos
+una tabla con huecos visibles a una tabla completa con números inventados.</p>
+<p>Tres advertencias antes de decidir con estas tablas. Primero, el precio de lista no es el precio
+de calle: los concesionarios publican un precio base y luego suman versiones, accesorios y el
+porcentaje de IVA según el segmento. Segundo, el consumo declarado es de laboratorio y en la sierra
+rinde distinto que en la costa. Tercero, dos versiones del mismo modelo pueden diferir en seguridad
+de serie, así que verifica que estás comparando el mismo nivel de equipamiento.</p>"""),
         "vendidos": (
             "Los más vendidos, analizados uno por uno",
             "Análisis individual de los modelos que dominan el mercado ecuatoriano: precio, consumo, costos y veredicto.",
@@ -623,17 +642,27 @@ inundado puede verse impecable y fallar meses después. La buena noticia es que 
 es verificable antes de pagar</strong>.</p>
 <p>Tres verificaciones que cuestan poco y evitan pérdidas grandes: consultar <strong>gravámenes y
 multas</strong> en el sistema de la ANT, revisar el <strong>CUV</strong> para ver el historial de
-transferencias, y calcular el <strong>precio justo</strong> con el avalúo del SRI —que se deprecia
-20% cada año con un piso del 10% del precio original— antes de sentarte a negociar.</p>
+transferencias, y calcular el <strong>precio justo</strong> con el avalúo del SRI (que se deprecia
+20% cada año con un piso del 10% del precio original) antes de sentarte a negociar.</p>
 <p>También conviene saber qué no te dice nadie: la transferencia de dominio requiere notaría y el
 1% del valor, y si el vendedor desaparece después de cobrar, el trámite se complica mucho más de
-lo que la gente anticipa.</p>"""),
+lo que la gente anticipa.</p>
+<p>Un usado no se inspecciona con la vista. Dos cosas que se hacen antes de pagar y que la mayoría
+omite: pedir el historial de mantenimiento (facturas de taller con kilometraje, no el cuaderno de
+mantenimiento lleno a mano) y llevar la unidad a un mecánico independiente, no al taller que el
+vendedor recomienda. Una revisión en elevador cuesta poco y muestra lo que el vistazo en la vereda
+no ve: fugas, óxido estructural, soldaduras en el larguero y desgaste irregular de llantas, que
+delata un choque mal reparado.</p>
+<p>El kilometraje del tablero no es confiable por sí solo. Contrástalo con el desgaste real: los
+pedales, el volante, la palanca y los asientos cuentan una historia distinta si el auto declara
+40.000 km y tiene 120.000. Y si el auto tiene gravamen activo, no lo compres así haya acuerdo de
+palabras: la prenda sigue a la unidad, no al dueño anterior, y la puedes terminar pagando tú.</p>"""),
         "electricos": (
             "Eléctricos e híbridos",
             "Catálogo, costos reales de carga, incentivos tributarios y red de electrolineras en Ecuador.",
             """<p>Los vehículos electrificados ya representan alrededor del <strong>18% de las ventas
-nuevas</strong> en Ecuador, y el ritmo sigue subiendo. Pero la información práctica —cuánto cuesta
-cargar de verdad, cuánto se ahorra frente a gasolina, qué incentivos existen— está dispersa o
+nuevas</strong> en Ecuador, y el ritmo sigue subiendo. Pero la información práctica (cuánto cuesta
+cargar de verdad, cuánto se ahorra frente a gasolina, qué incentivos existen) está dispersa o
 directamente no existe.</p>
 <p>Los números, para que los tengas claros: cargar un eléctrico cuesta entre <strong>$8 y $10</strong>
 por carga completa en tarifa residencial, contra los <strong>$43,97</strong> que cuesta el
@@ -641,7 +670,18 @@ combustible de un sedán a gasolina en 1.000 km. En costo mensual, un eléctrico
 <strong>$37,50</strong> frente a los <strong>$75,97</strong> de su equivalente a gasolina.</p>
 <p>Las barreras reales no son el costo por kilómetro: son la red de carga pública, el tiempo de
 recarga y la disponibilidad de talleres especializados fuera de Quito y Guayaquil. Estas guías
-cubren las tres con datos del catálogo ecuatoriano.</p>"""),
+cubren las tres con datos del catálogo ecuatoriano.</p>
+<p>Antes de firmar, conviene entender qué se está comprando con un eléctrico en Ecuador. Los
+incentivos tributarios existen (arancel cero para el segmento y exención del ICE en varios casos),
+pero se aplican sobre un precio de lista que ya viene alto porque casi todas las unidades llegan
+importadas de China. El ahorro real aparece en la operación, no en la compra: quien carga en casa
+en tarifa residencial nocturna gasta una fracción de lo que cuesta el combustible equivalente, y
+quien depende de cargadores públicos rápidos gasta bastante más.</p>
+<p>La garantía de la batería es el dato que casi nadie revisa y el que más pesa a cinco años.
+Pregunta por la cobertura específica sobre la batería de tracción (años y kilómetros, que suelen
+ser dos cifras distintas), qué porcentaje de degradación cubre el reemplazo y qué taller de la red
+ecuatoriana atiende ese trabajo. Un vehículo con buena autonomía y sin taller a menos de 400 km
+obliga a mover la unidad para cualquier reparación mayor.</p>"""),
     }
     for cat, (nombre, desc, intro) in INDICES.items():
         (DIST / f"{cat}.html").write_text(
@@ -649,7 +689,7 @@ cubren las tres con datos del catálogo ecuatoriano.</p>"""),
 
     # páginas legales (obligatorias para AdSense)
     (DIST / "privacidad.html").write_text(pagina(
-        "Política de privacidad — Autos Ecuador",
+        "Política de privacidad | Autos Ecuador",
         "Cómo Autos Ecuador trata los datos de sus visitantes, uso de cookies y publicidad.",
         """<a class="volver" href="index.html">← Inicio</a>
 <h1>Política de privacidad</h1>
@@ -705,7 +745,7 @@ continuado del sitio implica la aceptación de la versión vigente.</p>
 
     # política de cookies (requisito explícito de Google Publisher Policies)
     (DIST / "cookies.html").write_text(pagina(
-        "Política de cookies — Autos Ecuador",
+        "Política de cookies | Autos Ecuador",
         "Qué cookies usa este sitio, para qué sirven y cómo puedes controlarlas.",
         """<a class="volver" href="index.html">← Inicio</a>
 <h1>Política de cookies</h1>
@@ -756,7 +796,7 @@ continuado del sitio se entiende como aceptación de esta política.</p>
         encoding="utf-8")
 
     (DIST / "acerca.html").write_text(pagina(
-        "Acerca de — Autos Ecuador",
+        "Acerca de | Autos Ecuador",
         "Quiénes somos y cómo verificamos los datos de costos, trámites y comparativas de autos en Ecuador.",
         """<a class="volver" href="index.html">← Inicio</a>
 <h1>Acerca de Autos Ecuador</h1>
@@ -792,7 +832,7 @@ legales o tributarias, consulta con un profesional.</p>
 fecha de actualización al inicio.</p>"""), encoding="utf-8")
 
     (DIST / "contacto.html").write_text(pagina(
-        "Contacto — Autos Ecuador",
+        "Contacto | Autos Ecuador",
         "Escríbenos para corregir un dato, sugerir un tema o consultar por colaboraciones.",
         """<a class="volver" href="index.html">← Inicio</a>
 <h1>Contacto</h1>

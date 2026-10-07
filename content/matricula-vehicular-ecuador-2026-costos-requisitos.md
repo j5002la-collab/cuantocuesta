@@ -100,7 +100,7 @@ La **nueva especie de matrícula** ($25) solo se paga cuando cambia el propietar
 - La matrícula promedio es de **~$180 al año**; el rango va de ~$35 a más de $1.800.
 - Se compone de **cinco rubros**: IPVM (SRI), rodaje (municipio), SPPAT, tasa ANT y revisión técnica.
 - El **IPVM va del 0,5% al 6%** del avalúo; el rodaje es fijo por tramo y cambia por ciudad.
-- El **avalúo del SRI** —no el precio de compra— define todo. Se deprecia 20% anual, con piso del 10% del PVP.
+- El **avalúo del SRI** (no el precio de compra) define todo. Se deprecia 20% anual, con piso del 10% del PVP.
 - Paga **dentro de tu mes** para evitar multas y recuerda que el primer rechequeo de la revisión es gratis.
 
 Los valores son referenciales para 2026 y varían según ciudad, cilindraje y avalúo. Confirma el monto exacto en el SRI, la ANT y tu GAD antes de pagar.

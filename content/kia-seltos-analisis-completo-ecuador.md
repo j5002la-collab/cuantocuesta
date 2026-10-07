@@ -41,7 +41,7 @@ Lo que sí es verificable es su posición en la gama: **por debajo del Sportage 
 | Hyundai Tucson (referencia del mediano) | $32.499 – ~$40.000 | 2.395 |
 | Kia Sportage | No especificado públicamente | 2.512 |
 
-El mapa es útil: el Sonet cierra cerca de **$25.000** y el Tucson arranca en **$32.499**. Un SUV compacto intermedio se mueve, por razonamiento de gama, en la franja de **$26.000 a $30.000** — pero eso es **estimación declarada**, no precio publicado del Seltos. Cotiza al menos en tres concesionarios: en este rango, la diferencia entre agencias por la misma versión fácilmente llega a cuatro cifras.
+El mapa es útil: el Sonet cierra cerca de **$25.000** y el Tucson arranca en **$32.499**. Un SUV compacto intermedio se mueve, por razonamiento de gama, en la franja de **$26.000 a $30.000**, pero eso es **estimación declarada**, no precio publicado del Seltos. Cotiza al menos en tres concesionarios: en este rango, la diferencia entre agencias por la misma versión fácilmente llega a cuatro cifras.
 
 ## Cuánto cuesta mantenerlo
 
