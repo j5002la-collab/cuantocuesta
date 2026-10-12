@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generador de sitio estático — Portal automotriz Ecuador.
+Generador de sitio estático, Portal automotriz Ecuador.
 Sin dependencias externas. Solo stdlib.
 
 Uso:
@@ -421,7 +421,7 @@ en Ecuador. Sin estimaciones vagas: tarifas del SRI, la ANT y tarifarios de conc
     }
     # Las categorias que tienen pagina propia se enlazan desde el h2.
     # OJO: antes el h2 era solo texto, asi que las paginas de categoria que no
-    # estaban en el <nav> (compra.html) quedaban HUERFANAS — 0 enlaces entrantes,
+    # estaban en el <nav> (compra.html) quedaban HUERFANAS, 0 enlaces entrantes,
     # y Google las deja en "Crawled - currently not indexed".
     PAGINA_PROPIA = {"costos", "tramites", "comparativas", "compra",
                      "electricos", "vendidos"}
@@ -583,7 +583,38 @@ acumula por kilómetro recorrido, no por mes, así que se siente poco a poco y s
 resultado es el octanaje: si tu versión admite Extra, usarla en lugar de Súper ahorra más de $500
 al año en un SUV mediano.</p>
 <p>Usa la <a href="calculadora.html">calculadora de costo mensual</a> para ver tu caso exacto, o
-empieza por el desglose de cada modelo abajo.</p>"""),
+empieza por el desglose de cada modelo abajo.</p>
+
+<h2>Los cuatro rubros, uno por uno</h2>
+<p><strong>Matrícula.</strong> Se paga una vez al año y se calcula sobre el avalúo del vehículo, no
+sobre lo que pagaste. Incluye rubros del SRI (impuesto a la propiedad, IVA según el segmento) y de
+la ANT (tasa de matriculación, placas, calcomanía). El avalúo del SRI se deprecia 20% cada año con
+un piso del 10% del precio original, así que un auto de cinco años paga bastante menos que uno nuevo.
+Los vehículos híbridos y eléctricos tienen exenciones parciales o totales según el segmento.</p>
+<p><strong>Seguro.</strong> El SPPAT (seguro obligatorio de accidentes de tránsito) es mínimo y de
+cobertura limitada. El todo riesgo es el rubro donde más varía el precio: entre aseguradoras la
+diferencia llega al 40% para el mismo vehículo, y depende de la edad del conductor, el uso declarado,
+la deducible elegido y la zona de circulación.</p>
+<p><strong>Combustible.</strong> Es el rubro que más se siente mes a mes porque se paga en cada
+tanqueada. El gasto no depende solo del rendimiento del motor: depende del octanaje que admite tu
+versión. Si el manual permite Extra y estás poniendo Súper, la diferencia supera los $500 al año en
+un SUV mediano. Revisa el manual antes de asumir que necesitas la gasolina cara.</p>
+<p><strong>Mantenimiento.</strong> Se acumula por kilómetro recorrido, no por mes, y por eso
+sorprende. Los servicios de 10.000, 20.000 y 40.000 km tienen costos muy distintos: el de 40.000
+suele incluir cambio de bujías, filtros y revisión de frenos, y puede costar varias veces lo que el
+servicio básico. El rubro más caro de todos es el cambio de correa de distribución, que en algunos
+modelos solo existe cada 100.000 km pero cuesta como un año de mantenimiento junto.</p>
+
+<h2>Los tres errores de cálculo más comunes</h2>
+<p><strong>Uno: comparar por rendimiento y no por costo por kilómetro.</strong> Un auto con mejor
+rendimiento pero servicio cada 5.000 km puede costar más que otro que rinde menos y se mantiene cada
+10.000. Lo que importa es el costo total por kilómetro, no la cifra suelta.</p>
+<p><strong>Dos: olvidar la depreciación.</strong> Un auto nuevo pierde entre 15% y 20% de su valor el
+primer año. Eso no sale de tu bolsillo como una factura, pero es el costo más grande de tener un
+auto, y solo se materializa el día que lo vendes.</p>
+<p><strong>Tres: no presupuestar el imprevisto.</strong> Un juego de llantas, un alternador o un
+choque sin seguro cubren varios meses del presupuesto mensual. Conviene reservar un fondo aparte en
+vez de confiar en que el mes saldrá como el promedio.</p>"""),
         "tramites": (
             "Trámites vehiculares",
             "Matrícula, traspaso de dominio, revisión técnica y certificados: pasos y costos.",
@@ -595,7 +626,41 @@ vehículo</strong>. La matriculación depende del último dígito de la placa, e
 exige notaría y el 1% del valor del vehículo, y la revisión técnica tiene precio distinto en cada
 cantón. Bloqueadores habituales: multas de tránsito sin pagar y gravámenes activos.</p>
 <p>Cada guía de esta sección lista el costo de cada rubro, los documentos que debes llevar y los
-errores concretos que hacen que el trámite se caiga y tengas que volver.</p>"""),
+errores concretos que hacen que el trámite se caiga y tengas que volver.</p>
+
+<h2>Los tres trámites que más se repiten</h2>
+<p><strong>Matriculación.</strong> Se hace una vez al año y el calendario depende del <em>último
+dígito de la placa</em>: cada dígito tiene su mes asignado. Si llegas tarde pagas recargo e interés,
+y si acumulas dos años sin matricular el vehículo puede ser retenido. Antes de ir, verifica que no
+tengas multas pendientes: sin eso pagado el sistema rechaza el trámite.</p>
+<p><strong>Traspaso de dominio.</strong> Es el más caro y el que más se complica. Requiere
+<em>notaría</em> (se reconoce la firma del vendedor), el pago del <strong>1% del valor del
+vehículo</strong>, y que el vehículo no tenga gravámenes activos. Si el vendedor no lo quiere hacer,
+no aceptes un "traspaso por dentro": la unidad sigue a nombre de él, y cualquier multa o infracción
+posterior llega a su nombre; lo que en la práctica te bloquea para vender después.</p>
+<p><strong>Revisión técnica vehicular.</strong> Es anual y el <em>precio cambia según el cantón</em>,
+porque es una tasa municipal. Revisa frenos, luces, emisiones, suspensión y llantas; si algo falla te
+dan un plazo corto para corregir y volver, con costo de reinspección.</p>
+
+<h2>Por qué se caen los trámites</h2>
+<p>Casi siempre es por una de estas cuatro razones, y todas se verifican antes de hacer fila:</p>
+<ul class="legal">
+<li><strong>Multas de tránsito sin pagar.</strong> El sistema bloquea cualquier trámite pendiente.</li>
+<li><strong>Gravámenes activos.</strong> Si el auto tiene una prenda o deuda, no se puede transferir
+hasta que se levante.</li>
+<li><strong>Documentos incompletos.</strong> Falta la matrícula del año anterior, la cédula del
+vendedor o el contrato notariado.</li>
+<li><strong>Plazos vencidos.</strong> Cada trámite tiene su ventana; pasado el plazo cambia el valor
+y a veces el procedimiento.</li>
+</ul>
+
+<h2>Hacerlo tú o contratar un gestor</h2>
+<p>Los tres trámites se pueden hacer por cuenta propia, y el costo de hacerlo es tiempo en fila más el
+valor de las tasas. Un gestor cobra por ese tiempo y por conocer el procedimiento. Si tu caso es un
+traspaso con gravamen o una matriculación atrasada, el gestor ahorra más de lo que cobra. Si es una
+matriculación al día sin novedades, hacerla tú es perfectamente viable.</p>
+<p>Lo que no conviene en ningún caso es firmar un traspaso sin notaría confiando en que "después lo
+arreglamos".</p>"""),
         "comparativas": (
             "Comparativas entre modelos",
             "Los autos más vendidos de Ecuador comparados con datos: precio, consumo, seguridad y costos.",
@@ -619,7 +684,37 @@ una tabla con huecos visibles a una tabla completa con números inventados.</p>
 de calle: los concesionarios publican un precio base y luego suman versiones, accesorios y el
 porcentaje de IVA según el segmento. Segundo, el consumo declarado es de laboratorio y en la sierra
 rinde distinto que en la costa. Tercero, dos versiones del mismo modelo pueden diferir en seguridad
-de serie, así que verifica que estás comparando el mismo nivel de equipamiento.</p>"""),
+de serie, así que verifica que estás comparando el mismo nivel de equipamiento.</p>
+
+<h2>Qué comparamos y qué no</h2>
+<p><strong>Lo que sí entra en la comparación:</strong> precio de lista por versión, motor y
+transmisión, consumo declarado, dimensiones exteriores e interiores, capacidad de maletero,
+equipamiento de seguridad de serie, garantía de fábrica y volumen de ventas del modelo en Ecuador
+(dato de AEADE).</p>
+<p><strong>Lo que no:</strong> sensaciones de manejo, calidad percibida de materiales y confort de
+suspensión. Son criterios legítimos para decidir, pero no se pueden comparar con una tabla sin
+mentir: depende del uso, de las vías y de cada conductor. Para eso hay que manejar los dos autos.</p>
+
+<h2>Cómo leer estas comparativas</h2>
+<p>Empieza por el precio, porque define si los dos modelos compiten de verdad: comparar un auto de
+$18.000 con uno de $32.000 no es una comparación, es una descripción. Luego mira el costo mensual
+calculado, que incorpora combustible, seguro y mantenimiento con las tarifas vigentes, es el número
+que más se parece a tu realidad.</p>
+<p>Después vienen los campos donde un modelo suele ganar claramente: consumo (donde un motor más
+chico casi siempre gana), espacio interior (donde el más largo gana) y equipamiento de seguridad de
+serie (donde la versión importada completa suele ganar).</p>
+<p>Por último, el mercado: un modelo con 12.000 unidades vendidas al semestre tiene repuestos en
+cualquier ciudad y muchos mecánicos que lo conocen. Uno con 800 unidades no. Ese dato no aparece en
+ninguna ficha técnica y decide cuánto vas a sufrir una reparación.</p>
+
+<h2>Tres cosas que cambian el resultado</h2>
+<p><strong>La versión.</strong> Dos autos del mismo modelo pueden diferir en bolsas de aire, control
+de estabilidad y frenos ABS según el nivel de equipamiento. Compara la versión específica que vas a
+comprar, no el modelo en general.</p>
+<p><strong>La ciudad.</strong> El rendimiento declarado es de laboratorio. En la sierra, entre
+altitud y pendiente, el consumo sube; en la costa y en terreno plano se acerca más al dato de ficha.</p>
+<p><strong>El año-modelo.</strong> Un cambio de generación deja las fichas viejas obsoletas. Verifica
+que las dos fichas que comparas sean del mismo año-modelo, o el resultado no significa nada.</p>"""),
         "vendidos": (
             "Los más vendidos, analizados uno por uno",
             "Análisis individual de los modelos que dominan el mercado ecuatoriano: precio, consumo, costos y veredicto.",
@@ -633,7 +728,39 @@ mantenerlo mes a mes, qué tan cómodo es para uso familiar o de trabajo, cómo 
 sierra y en la costa, y un veredicto claro con el perfil de comprador al que le sirve y al que no.</p>
 <p>Comprar lo más vendido tiene una ventaja concreta y medible: repuestos disponibles, mecánicos que
 lo conocen y un mercado de usados líquido cuando quieras venderlo. Estas guías te dicen si esa
-ventaja compensa el sobreprecio frente a alternativas menos conocidas.</p>"""),
+ventaja compensa el sobreprecio frente a alternativas menos conocidas.</p>
+
+<h2>Por qué conviene saber qué se vende más</h2>
+<p>El volumen de ventas no dice si un auto es mejor. Dice algo más práctico: <strong>cuánta red de
+soporte tiene</strong>. Un modelo con miles de unidades al año tiene repuestos en stock en las
+principales ciudades, mecánicos que ya lo conocen y un mercado de usados líquido.</p>
+<p>La diferencia se nota en un caso concreto: cuando un repuesto tarda tres semanas en llegar en vez
+de estar en perchas, el auto se queda parado y el costo real de tenerlo sube. Con los modelos
+menos vendidos eso pasa con más frecuencia de lo que la ficha técnica sugiere.</p>
+
+<h2>Cómo leer cada análisis</h2>
+<p>Cada guía sigue la misma estructura, para que puedas comparar entre modelos sin cambiar de
+criterio:</p>
+<ul class="legal">
+<li><strong>Ficha y versiones:</strong> qué motor, qué transmisión y qué equipamiento trae cada
+versión disponible en Ecuador.</li>
+<li><strong>Precio por versión:</strong> el precio de lista de cada nivel, para que sepas cuánto
+cuesta la versión que realmente quieres y no la de entrada.</li>
+<li><strong>Costo mensual:</strong> combustible, seguro y mantenimiento con las tarifas vigentes, al
+uso promedio.</li>
+<li><strong>Uso real:</strong> cómo se comporta cargado, en ciudad, en carretera y con cinco
+ocupantes.</li>
+<li><strong>Veredicto:</strong> a qué tipo de comprador le sirve y a cuál no. Un mismo auto puede ser
+una buena decisión para una familia y una mala para alguien que viaja solo 40 km al día.</li>
+</ul>
+
+<h2>El dato que casi nunca se mira: el valor de reventa</h2>
+<p>Los modelos más vendidos mantienen mejor el valor porque hay demanda constante de usados. Un auto
+que se vende mucho pierde menos valor que uno con ventas marginales, aunque su precio de lista sea
+igual. Si piensas cambiar de auto en cinco años, ese diferencial suele pesar más que la diferencia de
+consumo entre dos modelos parecidos.</p>
+<p>Considérelo junto con el precio: un modelo $1.500 más caro que aguanta mejor su valor puede
+costarte menos al final del ciclo que el más barato de los dos.</p>"""),
         "compra": (
             "Comprar un auto usado",
             "Qué revisar, cómo verificar gravámenes, cómo calcular el precio justo y cómo detectar un choque.",
@@ -656,7 +783,45 @@ delata un choque mal reparado.</p>
 <p>El kilometraje del tablero no es confiable por sí solo. Contrástalo con el desgaste real: los
 pedales, el volante, la palanca y los asientos cuentan una historia distinta si el auto declara
 40.000 km y tiene 120.000. Y si el auto tiene gravamen activo, no lo compres así haya acuerdo de
-palabras: la prenda sigue a la unidad, no al dueño anterior, y la puedes terminar pagando tú.</p>"""),
+palabras: la prenda sigue a la unidad, no al dueño anterior, y la puedes terminar pagando tú.</p>
+
+<h2>El orden correcto de la verificación</h2>
+<p>Comprar un usado tiene una secuencia que conviene no invertir. Primero se <strong>verifica el
+papel</strong>, después se <strong>inspecciona el auto</strong>, y solo entonces se <strong>negocia el
+precio</strong>. Hacerlo al revés es lo que produce los arrepentimientos: cuando ya te enamoraste del
+auto, es mucho más difícil caminar si aparece un gravamen.</p>
+<ul class="legal">
+<li><strong>1. Papel:</strong> consulta de gravámenes y multas, y el historial de transferencias del
+CUV. Es gratis o casi gratis y descarta autos antes de moverte.</li>
+<li><strong>2. Precio:</strong> calcula el rango justo con el avalúo del SRI antes de escuchar la
+cifra del vendedor, para llegar con un número propio.</li>
+<li><strong>3. Auto:</strong> revisión en elevador con un mecánico independiente. No el taller que el
+vendedor recomienda.</li>
+<li><strong>4. Cierre:</strong> traspaso en notaría con el 1% pagado. Nunca "por dentro".</li>
+</ul>
+
+<h2>Señales de un auto chocado o inundado</h2>
+<p>Un carro reparado puede verse impecable. Lo que delata el trabajo son las inconsistencias:</p>
+<ul class="legal">
+<li><strong>Pintura distinta entre paneles</strong> bajo luz natural, o bordes con exceso de
+sellador.</li>
+<li><strong>Tornillos de carrocería con marcas de llave</strong>: señal de que el panel se desmontó.</li>
+<li><strong>Desgaste irregular de llantas</strong>, sobre todo en una sola rueda: el eje puede estar
+desalineado por un golpe.</li>
+<li><strong>Óxido o humedad bajo las alfombras y en los raíles del asiento</strong>: rastro de
+inundación.</li>
+<li><strong>Olor a humedad persistente</strong> que no se va con ventilación.</li>
+<li><strong>Vidrios con fecha distinta al año del auto</strong>: señal de reemplazo por siniestro.</li>
+</ul>
+
+<h2>El kilometraje y el precio</h2>
+<p>El kilometraje del tablero no es prueba de nada por sí solo: se puede modificar. Se contrasta con
+el desgaste real de pedales, volante, palanca y asientos. Un auto que declara 40.000 km y muestra
+pedales gastados tiene otra historia.</p>
+<p>Para el precio, el avalúo del SRI es el punto de partida: se deprecia <strong>20% cada año</strong>
+con un piso del 10% del precio original. El valor de mercado real puede estar por encima o por debajo
+del avalúo según el modelo y su demanda, pero el avalúo te da el número con el que el sistema calcula
+los impuestos; y con el que puedes discutir el precio del vendedor sin quedar en desventaja.</p>"""),
         "electricos": (
             "Eléctricos e híbridos",
             "Catálogo, costos reales de carga, incentivos tributarios y red de electrolineras en Ecuador.",
@@ -681,7 +846,40 @@ quien depende de cargadores públicos rápidos gasta bastante más.</p>
 Pregunta por la cobertura específica sobre la batería de tracción (años y kilómetros, que suelen
 ser dos cifras distintas), qué porcentaje de degradación cubre el reemplazo y qué taller de la red
 ecuatoriana atiende ese trabajo. Un vehículo con buena autonomía y sin taller a menos de 400 km
-obliga a mover la unidad para cualquier reparación mayor.</p>"""),
+obliga a mover la unidad para cualquier reparación mayor.</p>
+
+<h2>Qué revisar antes de comprar un eléctrico en Ecuador</h2>
+<ul class="legal">
+<li><strong>Autonomía real, no la homologada.</strong> El ciclo de homologación es optimista. En la
+sierra, con frío y pendiente, la autonomía baja de forma notable; pide el dato de uso real, no el de
+la ficha.</li>
+<li><strong>Garantía de la batería de tracción.</strong> Años y kilómetros son dos cifras distintas,
+y el menor de los dos manda. Pregunta qué porcentaje de degradación cubre el reemplazo.</li>
+<li><strong>Taller de la red en tu ciudad.</strong> Un vehículo con buena autonomía pero sin taller
+cerca obliga a moverlo para cualquier reparación mayor.</li>
+<li><strong>Tipo de cargador a bordo.</strong> Determina cuánto tardas realmente en cargar. La
+velocidad máxima de carga suele estar limitada por el cargador del auto, no por la electrolinera.</li>
+<li><strong>Peso y costo de llantas.</strong> Los eléctricos pesan más por la batería y gastan llantas
+más rápido y más caras. Es un rubro de mantenimiento que casi nunca se suma.</li>
+</ul>
+
+<h2>Eléctrico puro o híbrido: la decisión práctica</h2>
+<p>Un <strong>híbrido convencional</strong> no se enchufa y no depende de la red de carga: consume
+menos que un gasolina en ciudad y no cambia tu rutina. Un <strong>eléctrico puro</strong> cuesta mucho
+menos por kilómetro, pero depende de dónde cargas.</p>
+<p>La regla práctica: si puedes cargar en casa todas las noches y tu recorrido diario entra en el
+rango de autonomía con margen, el eléctrico puro gana en costo de operación de forma clara. Si
+dependes de cargadores públicos rápidos o haces viajes largos frecuentes, el ahorro se reduce y la
+logística se complica. Ahí el híbrido suele ser la decisión correcta.</p>
+
+<h2>Los incentivos y sus límites</h2>
+<p>Los incentivos tributarios existen (arancel reducido o cero para el segmento, exención del ICE en
+varios casos), pero se aplican sobre un precio de lista que ya viene alto porque buena parte de las
+unidades llegan importadas. El efecto real está en la operación: quien carga en casa en tarifa
+residencial gasta una fracción del equivalente en combustible; quien depende de carga pública rápida
+gasta bastante más.</p>
+<p>Antes de firmar, confirma qué incentivo aplica a la versión específica que estás comprando. No
+todas las versiones del mismo modelo califican igual.</p>"""),
     }
     for cat, (nombre, desc, intro) in INDICES.items():
         (DIST / f"{cat}.html").write_text(
@@ -807,7 +1005,22 @@ continuado del sitio se entiende como aceptación de esta política.</p>
 <p>Comprar y mantener un auto en Ecuador está lleno de cifras dispersas: la matrícula tiene cinco
 rubros distintos, el seguro varía hasta 40% entre aseguradoras, y nadie publica cuánto cuesta el
 servicio de los 60.000 km antes de que firmes.</p>
+<p>Cuando buscamos esa información para una decisión propia, encontramos lo mismo en todas partes:
+blogs con cifras sin fuente, foros con respuestas de hace seis años y publicaciones que mezclan
+precios de otros países. Los datos existían, pero estaban repartidos entre el SRI, la ANT, los
+tarifarios municipales, las fichas de fabricante y los reportes sectoriales.</p>
 <p>Este sitio reúne esos datos en un solo lugar, con la fuente de cada cifra.</p>
+
+<h2>Qué vas a encontrar aquí</h2>
+<p>El contenido está organizado en cuatro áreas que cubren el ciclo completo de tener un auto en
+Ecuador: <a href="costos.html">costos de mantenimiento</a> por modelo, <a href="tramites.html">trámites
+vehiculares</a> con pasos y valores, <a href="comparativas.html">comparativas</a> entre modelos que
+compiten en el mismo rango de precio, y <a href="compra.html">guías para comprar un usado</a> sin
+llevarte una sorpresa.</p>
+<p>Además hay dos herramientas que no son artículos: la <a href="calculadora.html">calculadora de
+costo mensual</a>, que estima el gasto real de un modelo con tus kilómetros y el precio del
+combustible vigente, y el <a href="comparador.html">comparador interactivo</a>, que enfrenta dos
+modelos en 18 campos y marca cuál gana en cada uno.</p>
 
 <h2>Cómo trabajamos</h2>
 <ul class="legal">
@@ -816,9 +1029,26 @@ relacionado con impuestos, tasas y trámites.</li>
 <li><strong>Datos de mercado:</strong> AEADE para volúmenes de venta y comportamiento del sector.</li>
 <li><strong>Tarifarios de concesionarios:</strong> costos de mantenimiento publicados por talleres
 autorizados, no estimaciones.</li>
-<li><strong>Sin cifras inventadas.</strong> Cuando un dato no se puede verificar, lo decimos en
-lugar de rellenarlo.</li>
+<li><strong>Fichas de fabricante:</strong> especificaciones técnicas, consumo declarado y equipamiento
+de serie, tomadas de la ficha oficial de cada versión.</li>
+<li><strong>Tarifas de servicios:</strong> pliegos tarifarios publicados para electricidad,
+combustibles y peajes.</li>
 </ul>
+
+<h2>La regla que no rompemos</h2>
+<p><strong>Sin cifras inventadas.</strong> Cuando un dato no se puede verificar en una fuente oficial,
+lo decimos en lugar de rellenarlo con una estimación que parece un hecho.</p>
+<p>Eso significa que vas a ver huecos visibles. En el comparador, un campo sin dato oficial dice
+<em>"No publicado"</em> y la comparación de ese campo se omite, en vez de asumir un valor. En las
+fichas de modelo, si el fabricante no publica un dato para esa versión, aparece la ausencia en vez
+de un promedio de la competencia.</p>
+<p>Una tabla con huecos es menos vistosa que una tabla completa. También es la única que te sirve
+para decidir.</p>
+
+<h2>Cómo se financia</h2>
+<p>El sitio se sostiene con publicidad display. No vendemos autos, no cobramos por reseñar un modelo
+y no aceptamos pagos de concesionarios o aseguradoras por aparecer mejor posicionados. Si en algún
+momento un contenido pagado existe, estará identificado como tal.</p>
 
 <h2>Nuestro límite</h2>
 <p>Los valores que publicamos son <strong>referenciales</strong>. Las tasas municipales cambian de
@@ -827,9 +1057,16 @@ son temporales. Verifica siempre en la entidad o el establecimiento antes de dec
 <p><strong>No somos asesoría legal, contable ni financiera.</strong> Si tu caso tiene implicaciones
 legales o tributarias, consulta con un profesional.</p>
 
+<h2>Errores y correcciones</h2>
+<p>Un dato desactualizado es un dato equivocado, y nos interesa saberlo. Si encuentras una cifra que
+no cuadra con lo que te cobraron o con lo que dice la entidad, escríbenos desde la página de
+<a href="contacto.html">contacto</a> indicando el artículo. Corregimos y anotamos la fuente nueva.</p>
+
 <h2>Cómo se actualiza</h2>
-<p>Revisamos las guías cuando cambian las tasas, los tarifarios o el mercado. Cada artículo muestra su
-fecha de actualización al inicio.</p>"""), encoding="utf-8")
+<p>Revisamos las guías cuando cambian las tasas, los tarifarios o el mercado. Los rubros que más se
+mueven son los combustibles (precio fijado por el Estado), la matrícula (se recalcula cada año con
+el avalúo del vehículo) y los tarifarios de mantenimiento de las marcas. Cada artículo muestra su
+fecha de actualización al inicio, para que sepas qué tan reciente es lo que estás leyendo.</p>"""), encoding="utf-8")
 
     (DIST / "contacto.html").write_text(pagina(
         "Contacto | Autos Ecuador",
@@ -856,9 +1093,26 @@ agregamos al plan de contenido.</li>
 <li><strong>Colaboraciones y publicidad:</strong> escríbenos con la propuesta.</li>
 </ul>
 
+<h2>Cómo enviar una corrección útil</h2>
+<p>Para corregir una cifra rápido necesitamos tres cosas: <strong>el artículo</strong> (el enlace),
+<strong>el dato que no cuadra</strong> y <strong>de dónde sale el valor correcto</strong> (una factura,
+el tarifario del municipio, la página de la entidad). Con eso verificamos y actualizamos en la misma
+semana.</p>
+<p>Si es un dato de mercado que cambió, menciona la fecha: un precio de concesionaria de hace seis
+meses no sirve para contrastar el de hoy.</p>
+
 <h2>Qué no hacemos</h2>
 <p>No brindamos asesoría legal, contable ni financiera personalizada. Si tu consulta es sobre una
-situación particular con implicaciones legales, acude a un profesional o a la entidad correspondiente.</p>"""), encoding="utf-8")
+situación particular con implicaciones legales, acude a un profesional o a la entidad correspondiente.</p>
+<p>Tampoco intervenimos en trámites, no representamos a nadie ante el SRI ni la ANT, y no gestionamos
+compraventas de vehículos. Este sitio publica información; los trámites los haces tú o un gestor de
+tu confianza.</p>
+
+<h2>Antes de escribir, revisa esto</h2>
+<p>Buena parte de las consultas que llegan ya están respondidas en el sitio. Vale la pena revisar
+primero la <a href="costos.html">sección de costos</a>, la de <a href="tramites.html">trámites</a> o
+la <a href="calculadora.html">calculadora de costo mensual</a>: cubren las preguntas más frecuentes
+sobre matrícula, seguros, combustible y mantenimiento por modelo.</p>"""), encoding="utf-8")
 
     # calculadora interactiva (activo de posicionamiento: herramienta real)
     try:
