@@ -119,10 +119,11 @@ def _js_datos(modelos):
 def pares_validos(modelos, umbral=0.30):
     """Pares que merecen comparativa: mismo segmento o precios cercanos.
 
-    Devuelve (modelo_a, modelo_b, slug_u, slug_v) con los slugs ordenados
-    alfabeticamente. Es la UNICA fuente de verdad para los pares: antes el
-    comparador interactivo usaba otro umbral y otro orden, y generaba enlaces
-    a paginas que no existian (404 internos).
+    Devuelve (modelo_a, modelo_b, slug_a, slug_b) EN EL ORDEN DEL CATALOGO.
+    Es la UNICA fuente de verdad para los pares: antes el comparador
+    interactivo usaba otro umbral y ordenaba los slugs alfabeticamente, y
+    generaba enlaces a paginas que no existian (404 internos). El orden del
+    catalogo es el que ya esta indexado: no se cambia.
     """
     out = []
     for i, a in enumerate(modelos):
@@ -134,8 +135,7 @@ def pares_validos(modelos, umbral=0.30):
             mismo_seg = a.get("segmento") and a.get("segmento") == b.get("segmento")
             cerca = abs(pa - pb) / max(pa, pb) <= umbral
             if mismo_seg or cerca:
-                u, v = sorted([a["slug"], b["slug"]])
-                out.append((a, b, u, v))
+                out.append((a, b, a["slug"], b["slug"]))
     return out
 
 
