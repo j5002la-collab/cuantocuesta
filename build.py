@@ -8,6 +8,7 @@ Uso:
 
 Salida: dist/
 """
+import hashlib
 import json
 import os
 import re
@@ -531,6 +532,52 @@ def construir_indice(categoria, articulos, nombre, desc, intro=""):
         partes.append("</div>")
     return pagina(nombre, desc, "\n".join(partes),
                   schema=schema_coleccion(nombre, desc, categoria))
+
+
+LASTMOD_MAP = DATA / "lastmod.json"
+
+
+def arreglar_canonicas():
+    """Rellena el canonical vacio de cada pagina con su URL absoluta.
+
+    La plantilla pagina() acepta canonical="" por compatibilidad, pero las
+    paginas que no lo pasan quedaban con <link rel="canonical" href="">,
+    que es invalido y frena la indexacion. Se corrige sobre dist/ para
+    cubrir cualquier generador (build, comparador, calculadora...).
+    """
+    n = 0
+    for f in sorted(DIST.rglob("*.html")):
+        rel = f.relative_to(DIST).as_posix()
+        url = f"{SITIO['url']}/" if rel == "index.html" else f"{SITIO['url']}/{rel}"
+        txt = f.read_text(encoding="utf-8")
+        nuevo = txt.replace('<link rel="canonical" href="">',
+                            f'<link rel="canonical" href="{url}">')
+        if nuevo != txt:
+            f.write_text(nuevo, encoding="utf-8")
+            n += 1
+    return n
+
+
+def fecha_cambio(rel, contenido):
+    """Fecha del ultimo cambio real de una pagina, segun hash del contenido.
+
+    Devuelve la fecha guardada si el hash no cambio; si cambio (o es nueva),
+    guarda la de hoy. Evita el lastmod falso de "todo actualizado hoy" en
+    cada build, que Google termina ignorando.
+    """
+    try:
+        mapa = json.loads(LASTMOD_MAP.read_text(encoding="utf-8"))
+    except Exception:
+        mapa = {}
+    h = hashlib.sha256(contenido.encode("utf-8")).hexdigest()
+    hoy = date.today().isoformat()
+    prev = mapa.get(rel)
+    if not prev or prev.get("hash") != h:
+        mapa[rel] = {"hash": h, "fecha": hoy}
+        LASTMOD_MAP.parent.mkdir(parents=True, exist_ok=True)
+        LASTMOD_MAP.write_text(json.dumps(mapa, ensure_ascii=False, indent=1),
+                               encoding="utf-8")
+    return mapa[rel]["fecha"]
 
 
 def main():
@@ -1131,6 +1178,10 @@ sobre matrícula, seguros, combustible y mantenimiento por modelo.</p>"""), enco
         print(f"  ⚠ comparador no generado: {e}")
         archivos, pares = [], []
 
+    # canonical absoluto: la plantilla lo deja vacio en las paginas que no lo pasan
+    n_can = arreglar_canonicas()
+    print(f"  ✓ canonical corregido en {n_can} páginas")
+
     # sitemap
     urls = (["index.html", "costos.html", "tramites.html", "comparativas.html",
              "vendidos.html", "compra.html", "electricos.html",
@@ -1152,8 +1203,10 @@ sobre matrícula, seguros, combustible y mantenimiento por modelo.</p>"""), enco
             pri = "0.8"
         else:
             pri = "0.9"
+        archivo = DIST / u
+        lastmod = fecha_cambio(u, archivo.read_text(encoding="utf-8")) if archivo.exists() else SITIO["actualizado"]
         sm.append(f"<url><loc>{loc}</loc>"
-                  f"<lastmod>{SITIO['actualizado']}</lastmod>"
+                  f"<lastmod>{lastmod}</lastmod>"
                   f"<priority>{pri}</priority></url>")
     sm.append("</urlset>")
     (DIST / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")
