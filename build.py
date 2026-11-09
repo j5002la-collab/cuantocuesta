@@ -195,6 +195,11 @@ figcaption{color:var(--mut);font-size:.78rem;margin-top:8px;text-align:center}
 footer{border-top:1px solid var(--bd);padding:26px 0;color:var(--mut);font-size:.82rem}
 footer a{color:var(--mut)}
 .volver{color:var(--mut);font-size:.85rem;display:inline-block;margin-bottom:16px}
+.migas{font-size:.8rem;color:var(--mut);margin-bottom:14px;line-height:1.5}
+.migas a{color:var(--mut);text-decoration:none}
+.migas a:hover{text-decoration:underline}
+.migas span{margin:0 3px}
+.miga-actual{color:var(--txt)}
 .legal li{margin:4px 0}
 .intro-seccion{margin:22px 0 30px}
 .intro-seccion p{color:var(--mut);font-size:.95rem;line-height:1.72;margin:0 0 14px}
@@ -466,9 +471,15 @@ def resolver_imagen(a):
 
 def construir_articulo(a, articulos):
     cuerpo_html = md_a_html(a["cuerpo_md"])
-    rel = [x for x in articulos if x["categoria"] == a["categoria"] and x["slug"] != a["slug"]][:5]
+    rel = relacionados(a, articulos, 4)
 
-    partes = [f'<a class="volver" href="index.html">← Inicio</a>']
+    cat = a.get("categoria") or ""
+    cat_nombre = escape(CAT_NOMBRES.get(cat, cat.title() or "Guías"))
+    cat_link = (f'<a href="{cat}.html">{cat_nombre}</a>'
+                if cat in PAGINA_PROPIA else cat_nombre)
+    partes = [f'<nav class="migas"><a href="index.html">Inicio</a>'
+              f' <span>›</span> {cat_link} <span>›</span>'
+              f' <span class="miga-actual">{escape(a["titulo"][:70])}</span></nav>']
     partes.append(f'<span class="tag">{escape(a["categoria"])}</span>')
     partes.append(f'<h1>{escape(a["titulo"])}</h1>')
     if a["descripcion"]:
@@ -493,7 +504,7 @@ def construir_articulo(a, articulos):
         partes.append(fin)
 
     if rel:
-        partes.append('<hr><h2>Sigue leyendo</h2><div class="grid">')
+        partes.append('<hr><h2>Artículos relacionados</h2><div class="grid">')
         for r in rel:
             partes.append(f"""<a class="card" href="{r['slug']}.html">
 <h3>{escape(r['titulo'])}</h3>
@@ -534,7 +545,64 @@ def construir_indice(categoria, articulos, nombre, desc, intro=""):
                   schema=schema_coleccion(nombre, desc, categoria))
 
 
+STOP = set("""para por con del las los una unos unas que como este esta estos estas
+sobre entre desde hasta cuando donde cual cuales cuanto cuanta cuantos cuantas
+auto autos carro carros vehiculo vehiculos ecuador guia guias todo toda todos todas
+mas menos pero sino tambien tiene tienen hacer hace cada debe puedes puede""".split())
 LASTMOD_MAP = DATA / "lastmod.json"
+
+CAT_NOMBRES = {
+    "costos": "Cuánto cuesta mantener cada auto",
+    "tramites": "Trámites vehiculares paso a paso",
+    "comparativas": "Comparativas entre modelos",
+    "compra": "Comprar un auto usado",
+    "mantenimiento": "Mantenimiento y repuestos",
+    "financiamiento": "Crédito y financiamiento",
+    "electricos": "Eléctricos e híbridos",
+    "vendidos": "Los más vendidos",
+}
+PAGINA_PROPIA = {"costos", "tramites", "comparativas", "compra",
+                 "electricos", "vendidos"}
+
+
+def _tokens(*textos):
+    """Palabras significativas para medir similitud entre articulos."""
+    t = set()
+    for x in textos:
+        for w in re.findall(r"[a-záéíóúñü0-9]+", (x or "").lower()):
+            if len(w) >= 4 and w not in STOP:
+                t.add(w)
+    return t
+
+
+def relacionados(a, articulos, n=4):
+    """Elige articulos afines por solapamiento de tema, no solo por categoria.
+
+    Antes se tomaban los primeros 5 de la misma categoria, que muchas veces
+    no tenian nada que ver. Ahora puntua coincidencia de palabras del titulo
+    y la descripcion, con bonus por categoria y garantia de al menos un
+    enlace fuera de la categoria (evita islas tematicas).
+    """
+    base = _tokens(a["titulo"], a["descripcion"], a["categoria"])
+    punt = []
+    for x in articulos:
+        if x["slug"] == a["slug"]:
+            continue
+        t = _tokens(x["titulo"], x["descripcion"], x["categoria"])
+        s = len(base & t)
+        if x["categoria"] == a["categoria"]:
+            s += 2
+        punt.append((s, 0 if x["categoria"] == a["categoria"] else 1, x))
+    punt.sort(key=lambda z: (-z[0], z[1], z[2]["slug"]))
+    elegidos = [x for _, _, x in punt[:n]]
+    if elegidos and all(x["categoria"] == a["categoria"] for x in elegidos):
+        otro = next((x for _, d, x in punt if d == 1), None)
+        if otro:
+            elegidos[-1] = otro
+    return elegidos
+
+
+
 
 
 def arreglar_canonicas():
@@ -1171,7 +1239,12 @@ sobre matrícula, seguros, combustible y mantenimiento por modelo.</p>"""), enco
     # comparador de modelos (interactivo + paginas estaticas por par)
     try:
         import comparador
-        n, archivos = comparador.generar_todo(raiz=str(BASE), paginas=pagina)
+        analisis = {}
+        for _a in articulos:
+            if "analisis" in _a["slug"]:
+                analisis[_a["slug"].split("-analisis")[0]] = (_a["slug"], _a["titulo"])
+        n, archivos = comparador.generar_todo(raiz=str(BASE), paginas=pagina,
+                                              analisis=analisis)
         print(f"  ✓ comparador: {n} archivos generados")
         pares = [a for a in archivos if a.startswith("comparar/")]
     except Exception as e:

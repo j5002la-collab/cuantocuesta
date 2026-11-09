@@ -116,6 +116,29 @@ def _js_datos(modelos):
     return json.dumps(modelos, ensure_ascii=False, separators=(",", ":"))
 
 
+def pares_validos(modelos, umbral=0.30):
+    """Pares que merecen comparativa: mismo segmento o precios cercanos.
+
+    Devuelve (modelo_a, modelo_b, slug_u, slug_v) con los slugs ordenados
+    alfabeticamente. Es la UNICA fuente de verdad para los pares: antes el
+    comparador interactivo usaba otro umbral y otro orden, y generaba enlaces
+    a paginas que no existian (404 internos).
+    """
+    out = []
+    for i, a in enumerate(modelos):
+        for b in modelos[i + 1:]:
+            pa = _num(a.get("precio_desde"))
+            pb = _num(b.get("precio_desde"))
+            if pa is None or pb is None:
+                continue
+            mismo_seg = a.get("segmento") and a.get("segmento") == b.get("segmento")
+            cerca = abs(pa - pb) / max(pa, pb) <= umbral
+            if mismo_seg or cerca:
+                u, v = sorted([a["slug"], b["slug"]])
+                out.append((a, b, u, v))
+    return out
+
+
 def comparador_cuerpo(modelos, meta):
     """Cuerpo HTML del comparador interactivo."""
 
@@ -125,18 +148,8 @@ def comparador_cuerpo(modelos, meta):
     )
 
     # pares sugeridos: mismo segmento o precios que se solapan
-    sugeridos = []
-    for i, a in enumerate(modelos):
-        for b in modelos[i + 1:]:
-            pa = _num(a.get("precio_desde"))
-            pb = _num(b.get("precio_desde"))
-            if pa is None or pb is None:
-                continue
-            mismo_seg = a.get("segmento") and a.get("segmento") == b.get("segmento")
-            cerca = abs(pa - pb) / max(pa, pb) <= 0.25
-            if mismo_seg or cerca:
-                pares = sorted([a["slug"], b["slug"]])
-                sugeridos.append((a["nombre"], b["nombre"], pares[0], pares[1]))
+    sugeridos = [(a["nombre"], b["nombre"], u, v)
+                 for a, b, u, v in pares_validos(modelos)]
 
     sugeridos_html = "\n".join(
         f'<a class="cmp-sug" href="comparar/{u}-vs-{v}.html">{escape(n1)} vs {escape(n2)}</a>'
@@ -480,10 +493,30 @@ def modelos_documentados(modelos, minimo=MINIMO_DATOS):
     return completos, flojos
 
 
-def generar_todo(raiz=".", paginas=None):
+def bloque_relacionados(a, b, analisis):
+    """Enlaces de salida desde una comparativa: analisis de cada modelo y hub.
+
+    Sin esto las paginas de /comparar/ eran hojas: solo enlazaban al menu, y
+    no repartian autoridad hacia los analisis ni recibian enlaces de ellos.
+    """
+    items = []
+    for m in (a, b):
+        info = (analisis or {}).get(m["slug"])
+        if info:
+            slug_art, titulo = info
+            items.append(f'<li><a href="../{slug_art}.html">{escape(titulo)}</a></li>')
+    items.append('<li><a href="../comparativas.html">Todas las comparativas</a></li>')
+    items.append('<li><a href="../comparador.html">Comparador interactivo</a></li>')
+    return ('<hr><h2>Más información</h2><ul class="legal">'
+            + "".join(items) + "</ul>")
+
+
+def generar_todo(raiz=".", paginas=None, analisis=None):
     """
     Genera comparador.html y las paginas de pares.
     `paginas` es la funcion pagina() de build.py (titulo, descripcion, cuerpo, ...).
+    `analisis` es un dict {slug_modelo: (slug_articulo, titulo)} para enlazar
+    cada comparativa con el analisis completo de los modelos comparados.
     Devuelve (numero_de_archivos, lista_de_rutas).
     """
     todos, meta = cargar_modelos(os.path.join(raiz, "data", "modelos.json"))
@@ -524,24 +557,13 @@ def generar_todo(raiz=".", paginas=None):
     escritos.append("comparador.html")
 
     # --- paginas estaticas por par ---
-    pares = []
-    for i, a in enumerate(modelos):
-        for b in modelos[i + 1:]:
-            pa, pb = _num(a.get("precio_desde")), _num(b.get("precio_desde"))
-            if pa is None or pb is None:
-                continue
-            mismo_seg = a.get("segmento") and a.get("segmento") == b.get("segmento")
-            cerca = abs(pa - pb) / max(pa, pb) <= 0.30
-            if mismo_seg or cerca:
-                pares.append((a, b))
-
-    for a, b in pares:
-        slug = f"{a['slug']}-vs-{b['slug']}"
+    for a, b, u, v in pares_validos(modelos):
+        slug = f"{u}-vs-{v}"
         html = paginas(
             f"{a['nombre']} vs {b['nombre']}: precio, consumo y seguridad en Ecuador",
             f"Comparacion entre {a['nombre']} y {b['nombre']} en Ecuador: precio, motor, "
             f"consumo declarado, seguridad y garantia, lado a lado.",
-            par_cuerpo(a, b),
+            par_cuerpo(a, b) + bloque_relacionados(a, b, analisis),
             ruta_rel="../",
             canonical=f"https://cuantocuesta.xyz/comparar/{slug}.html",
             schema=[],
